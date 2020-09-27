@@ -1,0 +1,29 @@
+@import  '../variables.scss';
+
+body {
+  background-color: $light-grey;
+}
+
+.App-Content {
+  display: flex; 
+  flex-direction: column;
+}
+
+.Section-Main {
+  display:flex;
+  flex-direction: row;
+}
+.Filters-Container {
+  background-color: $white;
+}
+
+.Panel-Container {
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 500px) {
+
+      .Section-Main {
+        flex-direction: column; 
+      }
+    }

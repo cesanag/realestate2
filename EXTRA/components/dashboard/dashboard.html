@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+    <link rel="stylesheet" type="text/css" href="../reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard-container">
+            <div class="button-container">
+                <button class="button button-new">
+                    Crea Annuncio
+                </button>
+                <button class="button button-edit">
+                    Modifica Annuncio
+                </button>
+                <button class="button button-delete">
+                    Elimina Annuncio
+                </button>
+            </div>
+        </div>
+
+        <!--TO INJECT FROM PANEL-CLOSE.js-->
+        <div class="buttonsfilters-container">
+            <div class="buttonsfilters-buttoncontainer">
+                
+                <input class="search-input" type="search" placeholder="Cerca..." />
+                <button class="buttonsfilters-button">Ordina</button>
+                <button class="buttonsfilters-button">Filtra</button>
+                
+            </div>
+
+        </div>  
+        <div class="panel-container">
+           
+            <div class="panel">
+                <div class="panel-left">
+                    <img class="panel-img" src="../panel/panel-image.jpg">
+                    <div class="property-price-container">
+                        <div class="property-price-text">
+                            € 200.000
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-right">
+                    <div class="panel-right-container">
+                        <div class="property-container-address_location">
+                            <div class="property-address">
+                                via Roma, 154
+                            </div>
+                            <div class="property-location">
+                                Monza MB - Italia
+                            </div>
+                        </div>
+                        <div class="property-feature-container">
+                            <div class="property-feature">
+                                <div class="property-feature-size">210 mq</div>
+                                <div class="property-feature-name">Superficie</div>
+                            </div>
+                            <div class="property-feature">
+                                <div class="property-feature-size">3</div>
+                                <div class="property-feature-name">Locali</div>
+                            </div>
+                            
+                            <div class="property-feature">
+                                <div class="property-feature-size">2</div>
+                                <div class="property-feature-name">Bagni</div>
+                            </div>
+                        </div>
+                        
+                        <div class="property-description">
+                            There are many variations of passages of Lorem Ipsum available, 
+                            but the majority have suffered alteration in some form, by injected humour, 
+                            or randomised words which don't look even slightly believable. 
+                            If you are going to use a passage of Lorem Ipsum, 
+                            you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkbox-container">
+                <input type="checkbox" class="checkbox">
+            </div>
+        </div>
+    </div>
+        
+</body>
+
+
+</html>

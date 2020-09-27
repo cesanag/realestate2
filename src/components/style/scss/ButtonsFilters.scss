@@ -1,0 +1,102 @@
+@import  '../variables.scss';
+
+.buttonsfilters-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+        
+    .property-found {
+        margin-top: 25px;
+        display: flex;
+        font-size: 13px;
+        color: $mid-grey;
+        justify-content: flex-start;
+    }
+
+    .buttonfilters-content {
+    
+        .search-container {
+            display: flex;
+            position: relative;
+            z-index: 999;
+            margin-top: 25px;
+        
+            .search-input {
+                display: flex;
+                font-size: 14px;
+                border: 2px solid $light-grey;
+                padding: 8px;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-appearance: none;
+            }
+            
+            .search-input::-webkit-search-decoration,
+            .search-input::-webkit-search-cancel-button,
+            .search-input::-webkit-search-results-button,
+            .search-input::-webkit-search-results-decoration { 
+                display: none; 
+            }
+            
+            .search-input:focus {
+                outline: none;
+            }
+            
+            .search-icon {
+                display: block;
+                position: absolute;
+                top: 11px;
+                right: 0px;
+                z-index: 999;
+                border-radius: 6px;
+            }
+        }
+
+    .buttonsfilters-buttoncontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 15px;
+        
+        .buttonsfilters-button {
+            cursor: pointer;
+            border: none;
+            padding: 10px 25px 10px 25px;
+            background-color:$white;
+            margin-right: 15px;
+            border-radius: 25px;
+            font-weight: $semibold;
+        }
+        
+        .buttonsfilters-button:focus {
+            outline: none;
+        }
+        
+        .buttonsfilters-button:hover {
+            background-color: $green;
+            color: white;
+        }
+    }
+
+}
+}
+
+@media only screen and (max-width: 700px) {
+    
+.buttonsfilters-container{
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
+
+.buttonsfilters-buttoncontainer {
+    margin-top: 15px;   
+    justify-content: space-evenly;
+
+    .buttonsfilters-button {
+        margin-left:0;
+        margin-right: 0;
+    }
+}
+}

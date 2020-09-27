@@ -1,0 +1,4 @@
+- double range slider
+- header with position:fixed
+- openstreetmap api
+

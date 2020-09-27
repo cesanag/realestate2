@@ -1,0 +1,162 @@
+@import  '../variables.scss';
+
+.panel-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    
+}
+.panel {
+    display: flex;
+    box-shadow: -8px 12px 26px -10px $dark-grey;
+    flex-direction: row;
+    cursor:pointer;
+}
+
+.panel:hover {
+    opacity:0.8;
+}
+
+.panel-left{
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.panel-img {
+    display: flex;
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.property-price-container {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    background-color: $green;
+    border-radius: 6px;
+}
+
+.property-price-text {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    font-size: 12px;
+    padding: 7px 12px 7px 12px;
+    color: $white;
+    font-weight: 700;
+}
+
+.panel-right {
+    display: flex;
+    background-color: $white;
+}
+
+.panel-right-container {
+    display: flex;
+    flex-direction:column;
+    margin: 20px;
+}
+
+.property-address {
+    display: flex;
+    font-weight: $bold;
+    
+}
+.property-feature-container {
+    display:flex;
+    flex-direction: row;
+    margin: 10px 0 10px 0;
+}
+.property-feature {
+    text-align: center;
+    font-size: 9px;
+    margin-right: 15px;
+}
+
+.property-feature-size {
+    background-color:$light-grey;
+    padding: 5px;
+}
+
+.property-feature-name {
+    margin: 5px;
+    font-size: 8px;
+    font-weight: 300;
+}
+
+.property-location {
+    margin-top: 3px;
+    font-size: 9px;
+    color: $mid-grey;
+    text-overflow: ellipsis;
+}
+.property-description {
+    font-size: 10px;
+    color: $mid-grey;
+    line-height: 14px;
+    overflow: hidden;
+    height:70px;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .panel-container {
+        justify-content: center;
+    }
+    .panel {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .panel-img {
+        height: 50vw;
+        width: 100%;
+    }
+    .property-price-container {
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+    .property-price-text {
+        font-size: 15px;
+        padding: 15px;
+    }
+    .property-location {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .property-description {
+        display: none;
+    }
+
+    .property-feature-container {
+        display:flex;
+        flex-direction: row;
+        margin: 10px 0 0px 0;
+    }
+    .property-feature {
+        line-height: 15px;
+        font-size: 12px;
+    }
+    
+    .property-feature-name {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .panel {
+        flex-direction: column;
+        width: 300px;
+    }
+    .panel-img {
+        height: 180px;
+    }
+}
+

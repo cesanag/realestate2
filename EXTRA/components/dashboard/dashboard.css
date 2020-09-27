@@ -1,0 +1,259 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: rgb(231, 231, 231);
+}
+.container {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dashboard-container {
+    padding: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.button-container {
+    flex-direction: row;
+}
+
+.button {
+    cursor: pointer;
+    border: none;
+    padding: 15px 25px 15px 25px;
+    background-color:grey;
+    margin-right: 15px;
+    border-radius: 20px;
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+}
+
+.button-new {
+    background-color: green;
+}
+
+.button-edit {
+    background-color: blue;
+}
+
+.button-delete {
+    background-color: red;
+
+}
+
+.buttonsfilters-container{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 50px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.search-input {
+    display: flex;
+    font-size: 14px;
+    border: 2px solid lightgrey;
+    padding: 8px;
+    width: 30vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-appearance: none;
+    margin-right: 15px;
+}
+
+.buttonsfilters-buttoncontainer {
+    display: flex;
+    flex-direction: row;
+}   
+
+.buttonsfilters-button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    background-color:white;
+    margin-right: 15px;
+    border-radius: 25px;
+    font-weight: 400;
+}
+        
+.buttonsfilters-button:focus {
+    outline: none;
+}
+        
+.buttonsfilters-button:hover {
+    background-color: green;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 25px;
+}
+
+.checkbox {
+    width: 40px;
+    height: 40px;
+}
+
+/*TO INJECT FROM PANEL-CLOSE.js*/
+
+.panel-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.panel {
+    display: flex;
+    box-shadow: -8px 12px 26px -10px rgba(0,0,0,0.2);
+    flex-direction: row;
+    width: 100vw;
+
+}
+
+.panel-left {
+    text-align:center;
+    position: relative;
+}
+.panel-img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-price-container {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    background-color: #00ab5c;
+    border-radius: 6px;
+}
+
+.property-price-text {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    font-size: 12px;
+    padding: 7px 12px 7px 12px;
+    color: white;
+    font-weight: 700;
+}
+
+.panel-right {
+    display: flex;
+    background-color: white;
+    height: 100%;
+}
+
+.panel-right-container {
+    display: flex;
+    flex-direction:column;
+    margin: 20px;
+}
+
+.property-address {
+    display: flex;
+    font-weight: 700;
+    
+}
+.property-feature-container {
+    display:flex;
+    flex-direction: row;
+    margin: 10px 0 10px 0;
+}
+.property-feature {
+    text-align: center;
+    font-size: 9px;
+    margin-right: 15px;
+}
+
+.property-feature-size {
+    background-color:rgb(231, 231, 231);
+    padding: 5px;
+}
+
+.property-feature-name {
+    margin: 5px;
+    font-size: 8px;
+    font-weight: 300;
+}
+
+.property-location {
+    margin-top: 3px;
+    font-size: 9px;
+    color: grey;
+    text-overflow: ellipsis;
+}
+.property-description {
+    font-size: 9px;
+    color: grey;
+    line-height: 12px;
+    overflow: hidden;
+    height:70px;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .panel-container {
+        height: 100%;
+    }
+    .panel {
+        flex-direction: column;
+    }
+    .panel-img {
+        height: 50vw;
+        width: 100%;
+    }
+    .property-price-container {
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+
+    }
+    .property-price-text {
+        font-size: 15px;
+        padding: 15px;
+    }
+    .property-location {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .property-description {
+        display: none;
+    }
+
+    .property-feature-container {
+        display:flex;
+        flex-direction: row;
+        margin: 10px 0 0px 0;
+    }
+    .property-feature {
+        line-height: 15px;
+        font-size: 12px;
+    }
+    
+    .property-feature-name {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .panel {
+        flex-direction: column;
+        width: 300px;
+    }
+    .panel-img {
+        height: 180px;
+    }
+}

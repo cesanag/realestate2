@@ -1,0 +1,64 @@
+|----------|
+| FRONTEND |
+|----------|
+
+FILTERS/SEARCH
+- Clicking on 'CERCA' button makes server requests with corresponding values
+	selection criteria:
+	double value, single value.. filters
+	string value of search input field
+and renders it on the DOM (selected price, dimension, rooms). 
+	steps:
+		select technology to fetch data => js fetch ? axios ?
+		on button press => fetch data with set parameters => store data in main component state => 
+		re render page when data changes to reflect search
+BUTTONS
+- Clicking on button "Map" toggle "Map element" window visibility
+	- To use OpenStreetMap API (free)
+	- Map is interactive, with markers connected with the house position	
+- Clicking on button "Ordina" toggles visibility of "List order element" with the following ordering options:
+	- Most relevant ("automatic")
+	- Alphabetical order
+	- Price order
+- Clicking on button "Filtra" toggle "Filter element" window visibility on the left
+	- window has slide-animation from left
+	steps: link visibility of filter element to a main component state boolean value, which is triggered via click on "Filtra"
+	const [showFilterElement, setShowFilterElement] = useState(false);
+	on buttonClick => (to verify) setShowFilterElement(!showFilterElement);
+
+PANEL (LIST)
+- Clicking on "Panel" (every part of it) opens the corresponding page with the listed house.
+	should this open a new page? use react router to create a specific link
+
+PANEL (PAGE)
+- User can interact with "Contact" buttons - "Messaggio" (on desktop) or "Telefona" (on mobile).
+	-Clicking on "Messaggio" (desktop only) after filling the input with text will send an email to the admin email.
+	-Clicking on "Telefona" (mobile only) will start a telephone call to admin telephone.
+
+|-----------------------|
+| BACKEND FOR THE ADMIN |
+|-----------------------|
+
+User can add and remove new house listing (Panels) by going to address.com/admin
+
+=> address.com/admin
+
+	- User can input username and password. 
+	- User can show password visibility.
+	- Password can be stored for future logins(localStorage?)
+
+	- If username and password are correct, 
+		when User click on button "Entra":
+		- ? the page will be different (same address, different content for logged user?)
+			OR: 
+		- ? the app will route to another address (address.com/dashboard)
+
+=> address.com/dashboard
+
+	- User can see the house listing he made.
+	- User can Add and Remove the house listings by his choice.
+
+=> address.com/dashboard/new
+	
+	- 
+
