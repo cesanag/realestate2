@@ -20,6 +20,9 @@ function App() {
                 <DashboardPosting />
             </div>
             <div className="Panel-Container">
+                <div class="Preview-Text">
+                Anteprima
+                </div>
                 <PanelOpen />
                 <PanelClose />
           </div>

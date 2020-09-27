@@ -17,7 +17,10 @@ function Header() {
                 <input type="number" className="input input-short input-bathrooms" min="0"placeholder="Bagni"/>
                 <input type="number" className="input input-short input-dimension" step="10"min="0"placeholder="Superficie (mq)"/>
                 <textarea name="textarea" id="" cols="30" rows="5" className="input input-description" placeholder="Descrizione"></textarea>
-                            
+                
+                <button className="upload-photo">
+                    Anteprima
+                </button>       
                 <button className="upload-photo">
                     Carica Foto
                 </button>
