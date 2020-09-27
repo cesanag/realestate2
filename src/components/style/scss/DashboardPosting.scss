@@ -6,11 +6,7 @@ body {
     background-color: rgb(231, 231, 231);
 }
 
-.dashboardnewlisting-container {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-}
+
 .listing-container {
     padding: 50px;
     background-color: white;
@@ -25,6 +21,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .input {
@@ -33,12 +30,14 @@ body {
     margin-bottom: 15px;
     border-radius: 10px;
     border: 2px solid lightgrey;
+   
 }
 
 .input-description {
     resize: none;
 }
 .upload-photo {
+    cursor: pointer;
     padding: 15px;
     margin-top: 25px;
     border-radius:50px;
@@ -46,4 +45,10 @@ body {
     background-color: white;
 }
 
+@media only screen and (max-width: 800px) {
 
+.dashboardnewlisting-container {
+        flex-direction: column;
+      
+}
+}

@@ -1,0 +1,1 @@
+*,body,input{font-family:'Montserrat', sans-serif}body{background-color:#e7e7e7}.App-Content{display:flex;flex-direction:column}.Section-Main{display:flex;flex-direction:row;width:100vw}.Panel-Container{flex-direction:column}@media only screen and (max-width: 500px){.Section-Main{flex-direction:column}}

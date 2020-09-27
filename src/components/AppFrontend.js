@@ -1,13 +1,13 @@
 import React from 'react';
 
-import './style/css/App.css';
+import './style/css/AppFrontend.css';
 import Header from './Header';
 // import Dashboard from './Dashboard';
 import ButtonsFilters from './ButtonsFilters';
 import Filters from './Filters';
 import PanelClose from './PanelClose';
 
-function App() {
+function AppFrontend() {
   return (
     <div className="App">
       <div className="App-Content">
@@ -32,4 +32,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppFrontend;

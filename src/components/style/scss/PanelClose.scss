@@ -1,36 +1,36 @@
 @import  '../variables.scss';
 
-.panel-container {
+.panelclose-container {
     display: flex;
     justify-content: center;
     margin: 25px;
     
 }
-.panel {
+.panelclose {
     display: flex;
     box-shadow: -8px 12px 26px -10px $dark-grey;
     flex-direction: row;
     cursor:pointer;
 }
 
-.panel:hover {
+.panelclose:hover {
     opacity:0.8;
 }
 
-.panel-left{
+.panelclose-left{
     display: flex;
     position: relative;
     height: 100%;
 }
 
-.panel-img {
+.panelclose-img {
     display: flex;
     height: 200px;
     width: 250px;
     object-fit: cover;
 }
 
-.property-price-container {
+.panelclose-property-price-container {
     display: flex;
     position: absolute;
     top: 10px;
@@ -40,63 +40,63 @@
     border-radius: 6px;
 }
 
-.property-price-text {
+.panelclose-property-price-text {
     align-items: center;
     justify-content: center;
     align-self: center;
     align-content: center;
-    font-size: 12px;
+    font-size: $big;
     padding: 7px 12px 7px 12px;
     color: $white;
     font-weight: 700;
 }
 
-.panel-right {
+.panelclose-right {
     display: flex;
     background-color: $white;
 }
 
-.panel-right-container {
+.panelclose-right-container {
     display: flex;
     flex-direction:column;
     margin: 20px;
 }
 
-.property-address {
+.panelclose-property-address {
     display: flex;
     font-weight: $bold;
     
 }
-.property-feature-container {
+.panelclose-property-feature-container {
     display:flex;
     flex-direction: row;
     margin: 10px 0 10px 0;
 }
-.property-feature {
+.panelclose-property-feature {
     text-align: center;
-    font-size: 9px;
+    font-size: $medium;
     margin-right: 15px;
 }
 
-.property-feature-size {
+.panelclose-property-feature-size {
     background-color:$light-grey;
     padding: 5px;
 }
 
-.property-feature-name {
+.panelclose-property-feature-name {
     margin: 5px;
-    font-size: 8px;
+    font-size: $medium;
     font-weight: 300;
 }
 
-.property-location {
+.panelclose-property-location {
     margin-top: 3px;
-    font-size: 9px;
+    font-size: $medium;
     color: $mid-grey;
     text-overflow: ellipsis;
 }
-.property-description {
-    font-size: 10px;
+.panelclose-property-description {
+    font-size: $medium;
     color: $mid-grey;
     line-height: 14px;
     overflow: hidden;
@@ -106,56 +106,56 @@
 
 @media only screen and (max-width: 700px) {
     
-    .panel-container {
+    .panelclose-container {
         justify-content: center;
     }
-    .panel {
+    .panelclose {
         flex-direction: column;
         justify-content: center;
     }
-    .panel-img {
+    .panelclose-img {
         height: 50vw;
         width: 100%;
     }
-    .property-price-container {
+    .panelclose-property-price-container {
         top: 20px;
         right: 20px;
         z-index: 999;
     }
-    .property-price-text {
-        font-size: 15px;
+    .panelclose-property-price-text {
+        font-size: $big;
         padding: 15px;
     }
-    .property-location {
+    .panelclose-property-location {
         margin-top: 5px;
-        font-size: 12px;
+        font-size: $medium;
     }
-    .property-description {
+    .panelclose-property-description {
         display: none;
     }
 
-    .property-feature-container {
+    .panelclose-property-feature-container {
         display:flex;
         flex-direction: row;
         margin: 10px 0 0px 0;
     }
-    .property-feature {
+    .panelclose-property-feature {
         line-height: 15px;
-        font-size: 12px;
+        font-size: $medium;
     }
     
-    .property-feature-name {
-        font-size: 11px;
+    .panelclose-property-feature-name {
+        font-size: $medium;
     }
 }
 
 @media only screen and (max-width: 500px) {
     
-    .panel {
+    .panelclose {
         flex-direction: column;
         width: 300px;
     }
-    .panel-img {
+    .panelclose-img {
         height: 180px;
     }
 }
