@@ -1,6 +1,11 @@
 *, body, input {
     font-family: 'Montserrat', sans-serif;
 }
+
+button {
+    cursor:pointer;
+}
+
 //colors
 $white:  #ffffff;
 $light-grey: rgb(231, 231, 231);

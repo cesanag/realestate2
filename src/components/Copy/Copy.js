@@ -1,5 +1,6 @@
 
 const Copy = {
+    
     //Main
     company: "ImmobiMonza",
     currency: "€",
@@ -30,7 +31,6 @@ const Copy = {
     map: "Mappa",
     order: "Ordina",
     filter: "Filtra",
-    city: "Monza",
 
     //Dashboard
     listings: "I tuoi annunci",
@@ -41,7 +41,6 @@ const Copy = {
     address: "Indirizzo",
     city: "Città",
     province: "Provincia",
-    price: "Prezzo",
     description: "Descrizione"
 }
 

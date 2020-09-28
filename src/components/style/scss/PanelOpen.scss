@@ -152,18 +152,20 @@
 .panelopen-contact-button-container {
     display: flex;
     justify-content: center;
-    background-color: $green;
+    background-color: $white;
     border-radius: 6px;
     align-items:center;
     padding: 0 25px 0 25px;
     margin-bottom: 5px;
+    border: 2px solid $green;
+
 }
 
 .panelopen-contact-button-text {
     font-size: $big;
     padding: 10px 15px 10px 15px;
     border-radius: 6px;
-    color: $white;
+    color: $green;
     font-weight: $semibold;
 }
 

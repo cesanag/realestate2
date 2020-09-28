@@ -21,10 +21,10 @@ function AppFrontend() {
             </div> 
             <div className="Panel-Close-Container">
               <ButtonsFilters />
-              <PanelClose />
-              <PanelClose />
-              <PanelClose />
-              <PanelClose />
+              <PanelClose className="Panel-Close"/>
+              <PanelClose className="Panel-Close"/>
+              <PanelClose className="Panel-Close"/>
+              <PanelClose className="Panel-Close"/>
           </div>
         </div>
       </div>

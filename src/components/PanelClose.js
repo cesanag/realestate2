@@ -1,11 +1,10 @@
 import React from 'react';
 import './style/css/PanelClose.css';
-import image from './ImageSample.jpg'
-import {Copy} from './Copy/Copy'
+import image from './ImageSample.jpg';
+import {Copy} from './Copy/Copy';
 
 function PanelClose() {
     return (
-        
         <div className="panelclose-container">
             <div className="panelclose">
                 <div className="panelclose-left">

@@ -33,7 +33,7 @@ input {
 }
 
 input:focus {
-    outline: none;
+    
 }
 .login-button {
     color: white;
@@ -46,7 +46,7 @@ input:focus {
 }
 
 .login-button:focus {
-    outline: none;
+    
 }
 
 .login-button:hover {

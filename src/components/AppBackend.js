@@ -5,7 +5,7 @@ import Header from './Header';
 //import Dashboard from './Dashboard';
 import PanelClose from './PanelClose';
 import PanelOpen from './PanelOpen';
-import DashboardPosting from './DashboardPosting'
+import Posting from './Posting'
 
 function App() {
   return (
@@ -17,10 +17,10 @@ function App() {
         </div>
         <div className="Section-Main">
             <div className="Posting-Container">
-                <DashboardPosting />
+                <Posting />
             </div>
             <div className="Panel-Container">
-                <div class="Preview-Text">
+                <div className="Preview-Text">
                 Anteprima
                 </div>
                 <PanelOpen />
