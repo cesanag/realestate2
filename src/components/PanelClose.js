@@ -1,7 +1,7 @@
 import React from 'react';
 import './style/css/PanelClose.css';
 import image from './ImageSample.jpg'
-import {CopyMain, CopyFilters} from './Copy/Copy'
+import {Copy} from './Copy/Copy'
 
 function PanelClose() {
     return (
@@ -12,7 +12,7 @@ function PanelClose() {
                     <img className="panelclose-img" alt="img" src={image} />
                     <div className="panelclose-property-price-container">
                         <div className="panelclose-property-price-text">
-                           {CopyMain.currency} 200.000
+                           {Copy.currency} 200.000
                         </div>
                      </div>
                 </div>
@@ -23,22 +23,22 @@ function PanelClose() {
                                 via Roma, 154
                             </div>
                             <div className="panelclose-property-location">
-                                Monza MB - {CopyMain.country}
+                                Monza MB - {Copy.country}
                             </div>
                         </div>
                         <div className="panelclose-property-feature-container">
                             <div className="panelclose-property-feature">
-                                <div className="panelclose-property-feature-size">210 {CopyMain.measure}</div>
-                                <div className="panelclose-property-feature-name">{CopyFilters.dimension}</div>
+                                <div className="panelclose-property-feature-size">210 {Copy.measure}</div>
+                                <div className="panelclose-property-feature-name">{Copy.dimension}</div>
                             </div>
                             <div className="panelclose-property-feature">
                                 <div className="panelclose-property-feature-size">3</div>
-                                <div className="panelclose-property-feature-name">{CopyFilters.rooms}</div>
+                                <div className="panelclose-property-feature-name">{Copy.rooms}</div>
                             </div>
                             
                             <div className="panelclose-property-feature">
                                 <div className="panelclose-property-feature-size">2</div>
-                                <div className="panelclose-property-feature-name">{CopyFilters.bathrooms}</div>
+                                <div className="panelclose-property-feature-name">{Copy.bathrooms}</div>
                             </div>
                         </div>
                         

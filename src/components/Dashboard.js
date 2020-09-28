@@ -1,17 +1,17 @@
 import React from 'react';
 import './style/css/Dashboard.css';
-import {CopyDashboard} from './Copy/Copy'
+import {Copy} from './Copy/Copy'
 
 
 function Dashboard() {
     return (
             <div className="dashboard-container">
                 <div className="button-name">
-                    {CopyDashboard.listings}
+                    {Copy.listings}
                 </div>
                 <div className="button-container">
                     <button className="button button-new">
-                    {CopyDashboard.create}
+                    {Copy.create}
                     </button>
                     {/*
                         <button className="button button-edit">
@@ -19,7 +19,7 @@ function Dashboard() {
                     </button>
                         */}
                     <button className="button button-delete">
-                    {CopyDashboard.delete}
+                    {Copy.delete}
                     </button>
                 </div>
             </div>

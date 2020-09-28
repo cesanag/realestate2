@@ -1,7 +1,7 @@
 import React from 'react';
 import './style/css/Filters.css';
 import MultiRangeSlider from './MultiRangeSlider/MultiRangeSlider.js';
-import {CopyMain, CopyFilters} from './Copy/Copy'
+import {Copy} from './Copy/Copy'
 
 function Filters() {
     return (
@@ -9,54 +9,54 @@ function Filters() {
         <div className="filters-closefilters">X</div>
             <div className="filters-type">
                 <div className="filters-name">
-                    {CopyFilters.type}
+                    {Copy.type}
                 </div>
                         <div className="type-container">
                                 <button className="type-button">
                                     <div className="type-text">
-                                    {CopyFilters.type1}
+                                    {Copy.type1}
                                     </div>
                                 </button>
                                 <button className="type-button">
                                     <div className="type-text">
-                                    {CopyFilters.type2}
+                                    {Copy.type2}
                                     </div>
                                 </button>
                                 <button className="type-button type-button-selected">
                                     <div className="type-text">
-                                    {CopyFilters.type3}
+                                    {Copy.type3}
                                     </div>
                                 </button>
                                 <button className="type-button">
                                     <div className="type-text">
-                                    {CopyFilters.type4}
+                                    {Copy.type4}
                                     </div>
                                 </button>
                         </div>
             </div>
             <div className="filters-price">
                 <div className="filters-name">
-                {CopyFilters.price}
+                {Copy.price}
                 </div>
                 <div className="slider-container">
-                    <div className="slider-text">{CopyMain.currency} 10000</div>
+                    <div className="slider-text">{Copy.currency} 10000</div>
                     <input className="slider" type="range" min="1000" max="10000000" />
                     <MultiRangeSlider className="slider"/>
                 </div>
             </div>
             <div className="filters-dimensione">
                 <div className="filters-name">
-                    {CopyFilters.dimension}
+                    {Copy.dimension}
                 </div>
                 <div className="slider-container">
-                    <div className="slider-text">{CopyMain.measure} 180</div>
+                    <div className="slider-text">{Copy.measure} 180</div>
                     <input className="slider" type="range" min="10" max="500" />
                 </div>
             </div>
             
             <div className="filters-feature">
                 <div className="filters-name">
-                {CopyFilters.rooms}
+                {Copy.rooms}
                 </div>
                 <div className="slider-container">
                     <div className="slider-text">2</div>
@@ -64,7 +64,7 @@ function Filters() {
                 </div>
                 
                 <div className="filters-name">
-                    {CopyFilters.bathrooms}
+                    {Copy.bathrooms}
                 </div>
                 <div className="slider-container">
                     <div className="slider-text">5</div>

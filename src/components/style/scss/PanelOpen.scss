@@ -39,9 +39,16 @@
 
 .panelopen-down-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin: 50px;
+}
+
+.panelopen-down-second {
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+    align-content: center;
 }
 
 .panelopen-property-price-container {
@@ -60,9 +67,16 @@
     color: $white;
     font-weight: $bold;
 }
+
 .panelopen-down-location_price_feature {
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.panelopen-down {
+    display: flex;
+    flex-direction: column;
 }
 .panelopen-down-left {
     flex-direction: column;
@@ -119,50 +133,20 @@
     margin: 25px 0 25px 0;
 }
 
-.panelopen-down-second {
-    margin-left: 25px;
-}
-
 .panelopen-social-options-container {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
 }
 
 .panelopen-social-button-container {
     font-size: $medium;
     padding: 10px 45px 10px 45px;
     background-color: $white;
-    margin-right: 10px;
-    border: 0.5px solid $light-grey;
+    border: 0.5px solid $mid-grey;
     color:$dark-grey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.panelopen-contact-form-container {
-    background-color: $light-grey;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-}
-
-.panelopen-contacts {
-    font-size: $medium;
-    color: $dark-grey;
-}
-
-.panelopen-contact-textarea {
-    font-size: $medium;
-    box-sizing: border-box;
-    border: none;
-    display: flex;
-    padding: 15px;
-    margin: 15px 0 15px 0;
-    resize: none;
-}
-.panelopen-contact-textarea:focus {
-    outline:none;
+    margin-right: 25px;
+    
 }
 
 .panelopen-contact-button-container {
@@ -171,11 +155,12 @@
     background-color: $green;
     border-radius: 6px;
     align-items:center;
+    padding: 0 25px 0 25px;
     margin-bottom: 5px;
 }
 
 .panelopen-contact-button-text {
-    font-size: $medium;
+    font-size: $big;
     padding: 10px 15px 10px 15px;
     border-radius: 6px;
     color: $white;
@@ -183,64 +168,9 @@
 }
 
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 900px) {
 
-    .panelopen-down-container {
-        flex-direction: column;
-        background-color: $white;
-    }
-
-    .panelopen-down-second {
-        margin-left: 0;
-        margin-top: 25px;
-    }
-
-    .panelopen-social-options-container {
-        justify-content: center;
-    }
+  
 }
 
-@media only screen and (max-width: 800px) {
 
-    .panelopen-down {
-        flex-direction: column;
-    }
-    .panelopen-down-left {
-        margin-bottom: 15px;
-    }
-
-    .panelopen-down-second {
-        margin: 25px;
-    }
-    .panelopen-down-right {
-        margin: 0;
-    }
-
-    .panelopen-social-options-container {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 420px) {
-    .panelopen-property-price-container {
-        justify-content: center;
-    }
-    .panelopen-property-address {
-        display: block;
-    }
-    .panelopen-down-left {
-        text-align: center;
-        justify-content: center;
-    }
-    .panelopen-down-right {
-        flex-direction: column;
-    }
-    .panelopen-property-feature-container{
-        justify-content: space-evenly;
-    }
-
-    .panelopen-property-feature {
-        margin: 15px 10px 0 0px;
-    }
-
-}

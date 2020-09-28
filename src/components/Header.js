@@ -1,6 +1,6 @@
 import React from 'react';
 import './style/css/Header.css';
-import {CopyMain} from './Copy/Copy'
+import {Copy} from './Copy/Copy'
 
 function Header() {
     return (
@@ -15,7 +15,7 @@ function Header() {
                 </svg>
                 </div>
                 <div className="header-text">
-                    {CopyMain.company}
+                    {Copy.company}
                 </div>
                 <div className="button-login">
                   
