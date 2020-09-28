@@ -2,7 +2,6 @@ import React from 'react';
 import './style/css/Dashboard.css';
 import {Copy} from './Copy/Copy'
 
-
 function Dashboard() {
     return (
             <div className="dashboard-container">
