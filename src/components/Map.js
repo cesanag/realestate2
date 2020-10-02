@@ -6,7 +6,7 @@ import map from './MapSample.jpg'
 function Map() {
     return (
       <div className="map-container">
-        <img className="map-content" src={map} alt="map"/>
+        <img className="map-img" src={map} alt="map"/>
       </div>
         
     );

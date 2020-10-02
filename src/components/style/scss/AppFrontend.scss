@@ -20,6 +20,7 @@ body {
 .Section-Main {
   display:flex;
   flex-direction: row;
+  
 }
 .Filters-Container {
   background-color: $white;
@@ -30,7 +31,10 @@ body {
   margin-right: 25px;
 }
 
-
+.Map-Container {
+  display: flex;
+  
+}
 .is-hidden {
   display: none;
   // height: 0%;
@@ -41,13 +45,14 @@ body {
 }
 
 .is-visible{
-  display: block;
+  
   // height: 100%;
   // width: 100%;
   // opacity: 100;
   // transition: all .15s ease-in-out;
 
 }
+
 
 @media only screen and (max-width: 500px) {
 
