@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style/css/Filters.css';
-import MultiRangeSlider from './MultiRangeSlider/MultiRangeSlider.js';
+// import MultiRangeSlider from './MultiRangeSlider/MultiRangeSlider.js';
 import {Copy} from './Copy/Copy'
 
 function Filters() {
+    const [display, setDisplay] = useState("flex");
+    const closeFilters = {display: display}
     return (
-        <div className="filters-container">
-        <div className="filters-closefilters">X</div>
+        <div style={closeFilters} className="filters-container">
+            <button className="filters-closefilters" onClick= {() => setDisplay('none')}>X
+            </button>
             <div className="filters-type">
                 <div className="filters-name">
                     {Copy.type}
@@ -41,7 +44,7 @@ function Filters() {
                 <div className="slider-container">
                     <div className="slider-text">{Copy.currency} 10000</div>
                     <input className="slider" type="range" min="1000" max="10000000" />
-                    <MultiRangeSlider className="slider"/>
+                    {/* <MultiRangeSlider className="slider"/> */}
                 </div>
             </div>
             <div className="filters-dimensione">

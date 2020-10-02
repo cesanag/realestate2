@@ -73,7 +73,7 @@ body {
 
 
 .type-button {
-    cursor: pointer;
+    
     flex: 0 50%;
     border: 5px solid white;
     padding: 12px;
@@ -117,7 +117,7 @@ body {
     width: 25px;
     height: 25px;
     background: rgb(195, 195, 195);
-    cursor: pointer;
+    
 }
 
 .slider:active {
@@ -136,7 +136,7 @@ body {
 }
 
 .feature-button {
-    cursor: pointer;
+    
     flex: 0 25%;
     border: 5px solid white;
     padding: 12px;

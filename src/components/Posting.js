@@ -1,16 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style/css/Posting.css';
 import {Copy} from './Copy/Copy'
 
 function Header() {
+    const [phone, setPhone] = useState('');
+    const handleChange = ({target})=> {
+        const newPhone = target.value;
+        setPhone(newPhone)
+    }
     return (
         <div className="listing-container">
             <div className="listing-name">
                 Crea Nuovo Annuncio
             </div>
             <div className="listing-input">
-                <input type="text" className="input input-address" placeholder={Copy.address} />
-                <input type="text" className="input input-city" placeholder={Copy.city}/>
+                <input value={phone} onChange={handleChange} type="text" className="input input-address" placeholder={Copy.address} />
+                <input value={phone} type="text" className="input input-city" placeholder={Copy.city}/>
                 <input type="text" className="input input-province" placeholder={Copy.province}/>
                 <input type="number" className="input input-price" step="100" min="0" placeholder={Copy.price}/>
                 <input type="number" className="input input-short input-rooms" min="0"placeholder={Copy.rooms}/>

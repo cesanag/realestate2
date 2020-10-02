@@ -4,6 +4,7 @@ import './style/css/PanelOpen.css';
 import image from './ImageSample.jpg'
 import iconMail from './icon/icon-mail.svg'
 import iconPhone from './icon/icon-phone.svg'
+import iconPrint from './icon/icon-print.svg'
 
 import {Copy} from './Copy/Copy'
 
@@ -51,16 +52,12 @@ function PanelOpen() {
                             </div>
                         </div>
                             <div className="panelopen-down-second">    
-                            <button className="panelopen-contact-button-container">
-                                <div className="panelopen-button-icon">
-                                    <img alt="icon-mail" src={iconMail} />   
-                                </div>
+                            <button className="panelopen-contact-button-container">    
+                                <img className="panelopen-contact-button-image" alt="icon-mail" src={iconMail} />   
                                 <div className="panelopen-contact-button-text">{Copy.email}</div>
                             </button>
                             <button className="panelopen-contact-button-container">
-                                <div>
-                                    <img alt="icon-phone" src={iconPhone} />
-                                </div>
+                                <img className="panelopen-contact-button-image" alt="icon-phone" src={iconPhone} />
                                 <div className="panelopen-contact-button-text">{Copy.phone}</div>
                             </button>
                         </div>
@@ -85,6 +82,7 @@ function PanelOpen() {
                             </div>
                             <div className="panelopen-social-options-container">
                                 <button className="panelopen-social-button-container">
+                                    <img className="panelopen-social-button-image" src={iconPrint} alt="icon-print"/>
                                     <div className="panelopen-social-button-text">{Copy.print}</div>
                                 </button>
                                 <button className="panelopen-social-button-container">

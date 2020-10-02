@@ -37,7 +37,7 @@ input:focus {
 }
 .login-button {
     color: white;
-    cursor: pointer;
+    
     border: none;
     padding: 10px 25px 10px 25px;
     background-color: #00ab5c;
