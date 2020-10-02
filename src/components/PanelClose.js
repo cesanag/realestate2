@@ -16,7 +16,6 @@ function PanelClose() {
                      </div>
                 </div>
                 <div className="panelclose-right">
-                    <div className="panelclose-right-container">
                         <div className="panelclose-property-container-address_location">
                             <div className="panelclose-property-address">
                                 via Roma, 154
@@ -68,7 +67,6 @@ function PanelClose() {
                             If you are going to use a passage of Lorem Ipsum, 
                             you need to be sure there isn't anything embarrassing hidden in the middle of text. 
                         </div>
-                    </div>
                 </div>
             </div>
         </div>

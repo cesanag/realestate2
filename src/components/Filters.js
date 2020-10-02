@@ -4,17 +4,17 @@ import './style/css/Filters.css';
 import {Copy} from './Copy/Copy'
 
 function Filters() {
-    const [display, setDisplay] = useState("flex");
-    const closeFilters = {display: display}
+    // const [toggleFilters, setToggleFilters] = useState(true);
+    // const toggleClasses = `filters-container ${toggleFilters ? "is-visible" : "is-hidden"}`
     return (
-        <div style={closeFilters} className="filters-container">
-            <button className="filters-closefilters" onClick= {() => setDisplay('none')}>X
-            </button>
+        <div className= "filters-container">
+            {/* <button className="filters-closefilters" onClick= {() => setToggleFilters(!toggleFilters)}> X
+            </button> */}
             <div className="filters-type">
                 <div className="filters-name">
                     {Copy.type}
                 </div>
-                        <div className="type-container">
+                        <div className= "type-container">
                                 <button className="type-button">
                                     <div className="type-text">
                                     {Copy.type1}

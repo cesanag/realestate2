@@ -1,8 +1,6 @@
 @import  '../variables.scss';
 
 .panelclose-container {
-    display: flex;
-    justify-content: center;
     margin-top: 50px;
     
 }
@@ -10,8 +8,8 @@
     display: flex;
     box-shadow: -8px 12px 26px -10px $dark-grey;
     flex-direction: row;
-    ;
-    height: 200px;   
+    height: 200px;
+    background-color: $white;   
 }
 
 .panelclose:hover {
@@ -22,7 +20,6 @@
     display: flex;
     position: relative;
     height: 200px;
-  
 }
 
 .panelclose-img {
@@ -53,13 +50,8 @@
 
 .panelclose-right {
     display: flex;
-    background-color: $white;
-}
-
-.panelclose-right-container {
-    display: flex;
-    flex-direction:column;
-    margin: 20px;
+    flex-direction: column;
+    margin: 25px;
 }
 
 .panelclose-property-address {
@@ -93,13 +85,15 @@
     margin-top: 3px;
     font-size: $medium;
     color: $mid-grey;
-    text-overflow: ellipsis;
 }
+
 .panelclose-property-description {
+    line-height: 14px;
     font-size: $medium;
     color: $mid-grey;
-    text-overflow:ellipsis;
     overflow: hidden;
+    text-overflow: ellipsis;
+    
 }
 
 @media only screen and (max-width: 700px) {

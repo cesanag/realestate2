@@ -9,6 +9,14 @@ body {
   flex-direction: column;
 }
 
+.Section-Header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  
+}
+
 .Section-Main {
   display:flex;
   flex-direction: row;
@@ -20,6 +28,25 @@ body {
 .Panel-Close-Container {
   margin-left: 25px;
   margin-right: 25px;
+}
+
+
+.is-hidden {
+  display: none;
+  // height: 0%;
+  // width: 0%;
+  // opacity: 0;
+  // transition: all .15s ease-in-out;
+  
+}
+
+.is-visible{
+  display: block;
+  // height: 100%;
+  // width: 100%;
+  // opacity: 100;
+  // transition: all .15s ease-in-out;
+
 }
 
 @media only screen and (max-width: 500px) {

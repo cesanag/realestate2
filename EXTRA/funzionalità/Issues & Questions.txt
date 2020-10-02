@@ -1,4 +1,3 @@
- - How to render SVG image instead of code?
  - How to make server request without database?
  - How to insert js function into jsx?
  - OpenStreetMap (OpenLayers): how to implement it in React?

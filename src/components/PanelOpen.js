@@ -5,6 +5,7 @@ import image from './ImageSample.jpg'
 import iconMail from './icon/icon-mail.svg'
 import iconPhone from './icon/icon-phone.svg'
 import iconPrint from './icon/icon-print.svg'
+import iconShare from './icon/icon-share.svg'
 
 import {Copy} from './Copy/Copy'
 
@@ -86,6 +87,7 @@ function PanelOpen() {
                                     <div className="panelopen-social-button-text">{Copy.print}</div>
                                 </button>
                                 <button className="panelopen-social-button-container">
+                                    <img className="panelopen-social-button-image" src={iconShare} alt="icon-share"/>
                                     <div className="panelopen-social-button-text">{Copy.share}</div>
                                 </button>
                             </div>
