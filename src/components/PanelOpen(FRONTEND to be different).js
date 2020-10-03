@@ -10,9 +10,6 @@ import iconShare from './icon/icon-share.svg'
 import {Copy} from './Copy/Copy'
 
 function PanelOpen(props) {
-    // function handleChange (event) {
-    //     props.onChange(event.target.value)
-    // }
     return (
         <div className="panelopen-container">
             <div className="panelopen">
@@ -27,11 +24,13 @@ function PanelOpen(props) {
                      <div className="panelopen-down-location_price_feature">
                         <div className="panelopen-down">
                             <div className="panelopen-down-left">
-                                <input placeholder={Copy.sampleAddress} value={props.address} className="panelopen-property-address panelopen-input">
-
-                                </input>
-                                <input placeholder={Copy.sampleProvince} value={props.province} className="panelopen-property-location panelopen-input">
-                                </input>
+                                
+                                <div  className="panelopen-property-address">
+                                    <input value={props.value}></input>
+                                </div>
+                                <div className="panelopen-property-location">
+                                    Monza MB - {Copy.country}
+                                </div>
                             </div>
                             <div className="panelopen-down-right">
                                     <div className="panelopen-property-price-container">

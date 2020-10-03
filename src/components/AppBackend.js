@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import './style/css/AppBackend.css';
 
@@ -8,7 +8,12 @@ import PanelClose from './PanelClose';
 import PanelOpen from './PanelOpen';
 import Posting from './Posting'
 
-function App() {
+function AppBackend() {
+  const [address, setAddress] = useState('')
+  function handleAddress(newAddress) {
+    setAddress(newAddress)
+  }
+ 
   return (
     <div className="App">
       <div className="App-Content">
@@ -18,14 +23,14 @@ function App() {
         </div>
         <div className="Section-Main">
             <div className="Posting-Container">
-                <Posting />
+                <Posting onChange={handleAddress}/>
             </div>
             <div className="Panel-Container">
                 <div className="Preview-Text">
                 Anteprima
                 </div>
-                <PanelOpen />
-                <PanelClose />
+                <PanelOpen address={address} />
+                <PanelClose address={address}/>
           </div>
         </div>
       </div>
@@ -33,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppBackend;

@@ -3,7 +3,10 @@ import './style/css/ButtonsFilters.css';
 import iconSearch from './icon/icon-search.svg'
 import {Copy} from './Copy/Copy'
 
-function ButtonsFilters() {
+function ButtonsFilters({onFilterClick, onMapClick}) {
+    const displayNone = {
+        display: "none"
+    }
     return (
         <div className="buttonsfilters-container">
             <div className="buttonfilters-content">
@@ -15,9 +18,14 @@ function ButtonsFilters() {
                     </div> 
             
                 <div className="buttonsfilters-buttoncontainer">
-                    <button className="buttonsfilters-button">{Copy.filter}</button>
-                    <button className="buttonsfilters-button">{Copy.order}</button>
-                    <button className="buttonsfilters-button">{Copy.map}</button>
+                    <button onClick={onFilterClick} className="buttonsfilters-button">{Copy.filter}</button>
+                    <select className="buttonsfilters-button">
+                            <option style={displayNone} value={Copy.order}>{Copy.order}</option>
+                            <option value="Più rilevanti">Recenti</option>
+                            <option value="Ordine alfabetico">A alla Z</option>
+                            <option value="Ordina per nome">Prezzo</option>
+                    </select>
+                    <button onClick={onMapClick} className="buttonsfilters-button">{Copy.map}</button>
                 </div>
             </div>
             <div className="property-found"> 148 {Copy.found} Monza</div>

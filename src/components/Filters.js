@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style/css/Filters.css';
 // import MultiRangeSlider from './MultiRangeSlider/MultiRangeSlider.js';
 import {Copy} from './Copy/Copy'
 
 function Filters() {
-    // const [toggleFilters, setToggleFilters] = useState(true);
-    // const toggleClasses = `filters-container ${toggleFilters ? "is-visible" : "is-hidden"}`
+
     return (
+        
         <div className= "filters-container">
-            {/* <button className="filters-closefilters" onClick= {() => setToggleFilters(!toggleFilters)}> X
-            </button> */}
             <div className="filters-type">
                 <div className="filters-name">
                     {Copy.type}
