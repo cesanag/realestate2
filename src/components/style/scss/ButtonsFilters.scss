@@ -38,10 +38,6 @@
                 display: none; 
             }
             
-            .search-input:focus {
-                
-            }
-            
             .search-icon {
                 display: block;
                 position: absolute;
@@ -59,17 +55,12 @@
         margin-top: 15px;
         
         .buttonsfilters-button {
-            
             border: none;
             padding: 10px 25px 10px 25px;
             background-color:$white;
             margin-right: 15px;
             border-radius: 25px;
             font-weight: $semibold;
-        }
-        
-        .buttonsfilters-button:focus {
-            
         }
         
         .buttonsfilters-button:hover {
@@ -95,6 +86,10 @@
     .buttonsfilters-button {
         margin-left:0;
         margin-right: 0;
+    }
+
+    .buttonsfilters-button-map {
+        display: none;
     }
 }
 }

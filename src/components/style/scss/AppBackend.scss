@@ -4,14 +4,17 @@ body {
   background-color: $light-grey;
 }
 
-.App {
-  display: flex;
-}
 .App-Content {
   display: flex; 
   flex-direction: column;
 }
 
+.Section-Header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
 .Section-Main {
   display:flex;
   flex-direction: row;

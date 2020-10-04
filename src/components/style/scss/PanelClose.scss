@@ -1,19 +1,25 @@
 @import  '../variables.scss';
 
 .panelclose-container {
-    margin-top: 50px;
-    
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .panelclose {
     display: flex;
-    box-shadow: -8px 12px 26px -10px $dark-grey;
+    box-shadow: -8px 12px 26px -10px $black-opaque;
     flex-direction: row;
     height: 200px;
     background-color: $white;   
 }
 
-.panelclose:hover {
-    opacity:0.8;
+.panelclose-preview {
+    border: none;
+}
+
+.panelclose-preview:empty:not(:focus):before{
+    content:attr(panel-sample-text);
+    opacity: 0.4;
+    color: $dark-grey;
 }
 
 .panelclose-left{
@@ -27,6 +33,7 @@
     width: 250px;
     height: 100%;
     object-fit: cover;
+    background: $light-light-grey url("../../icon/icon-imgplaceholder.svg") no-repeat center;
 }
 
 .panelclose-property-price-container {

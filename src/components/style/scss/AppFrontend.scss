@@ -14,19 +14,21 @@ body {
   position: sticky;
   top: 0;
   z-index: 9999;
-  
 }
 
 .Section-Main {
   display:flex;
   flex-direction: row;
-  
+
 }
 .Filters-Container {
   background-color: $white;
 }
 
 .Panel-Close-Container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -37,7 +39,7 @@ body {
 }
 .is-hidden {
   display: none;
-  // height: 0%;
+  // visibility: hidden;
   // width: 0%;
   // opacity: 0;
   // transition: all .15s ease-in-out;
@@ -45,14 +47,20 @@ body {
 }
 
 .is-visible{
-  
-  // height: 100%;
+  // visibility: visible;
   // width: 100%;
   // opacity: 100;
   // transition: all .15s ease-in-out;
 
 }
 
+
+@media only screen and (max-width: 700px) {
+
+    .Map-Container {
+      display: none;
+    }
+}
 
 @media only screen and (max-width: 500px) {
 

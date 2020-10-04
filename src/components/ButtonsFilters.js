@@ -25,7 +25,7 @@ function ButtonsFilters({onFilterClick, onMapClick}) {
                             <option value="Ordine alfabetico">A alla Z</option>
                             <option value="Ordina per nome">Prezzo</option>
                     </select>
-                    <button onClick={onMapClick} className="buttonsfilters-button">{Copy.map}</button>
+                    <button onClick={onMapClick} className="buttonsfilters-button buttonsfilters-button-map">{Copy.map}</button>
                 </div>
             </div>
             <div className="property-found"> 148 {Copy.found} Monza</div>

@@ -9,11 +9,11 @@ import PanelOpen from './PanelOpen';
 import Posting from './Posting'
 
 function AppBackend() {
-  const [address, setAddress] = useState('')
-  function handleAddress(newAddress) {
-    setAddress(newAddress)
+  //Input Values
+  const [inputAddress, setInputAddress] = useState()
+  function handleInputs(newInputAddress) {
+    setInputAddress(newInputAddress)
   }
- 
   return (
     <div className="App">
       <div className="App-Content">
@@ -23,14 +23,14 @@ function AppBackend() {
         </div>
         <div className="Section-Main">
             <div className="Posting-Container">
-                <Posting onChange={handleAddress}/>
+                <Posting onChange={handleInputs}/>
             </div>
             <div className="Panel-Container">
                 <div className="Preview-Text">
                 Anteprima
                 </div>
-                <PanelOpen address={address} />
-                <PanelClose address={address}/>
+                <PanelClose address={inputAddress} />
+                <PanelOpen  />
           </div>
         </div>
       </div>

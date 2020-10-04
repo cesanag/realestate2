@@ -1,7 +1,7 @@
 import React from 'react';
 import './style/css/PanelOpen.css';
 
-import image from './ImageSample.jpg'
+// import image from './ImageSample.jpg'
 import iconMail from './icon/icon-mail.svg'
 import iconPhone from './icon/icon-phone.svg'
 import iconPrint from './icon/icon-print.svg'
@@ -10,16 +10,13 @@ import iconShare from './icon/icon-share.svg'
 import {Copy} from './Copy/Copy'
 
 function PanelOpen(props) {
-    // function handleChange (event) {
-    //     props.onChange(event.target.value)
-    // }
     return (
         <div className="panelopen-container">
             <div className="panelopen">
                 <div className="panelopen-up">
-                    <img className="panelopen-img" alt="" src={image}></img>
+                    <img className="panelopen-img" alt="" width="30" ></img>
                     <div className="see-more-photo">
-                        10 {Copy.morephoto}
+                        {Copy.morephoto}
                     </div>
                 </div>
             <div className="panelopen-down-container">
@@ -27,29 +24,44 @@ function PanelOpen(props) {
                      <div className="panelopen-down-location_price_feature">
                         <div className="panelopen-down">
                             <div className="panelopen-down-left">
-                                <input placeholder={Copy.sampleAddress} value={props.address} className="panelopen-property-address panelopen-input">
-
-                                </input>
-                                <input placeholder={Copy.sampleProvince} value={props.province} className="panelopen-property-location panelopen-input">
-                                </input>
+                                <div panel-sample-text={Copy.address} 
+                                    className="panelopen-property-address panelopen-preview">
+                                    {props.address}
+                                </div>
+                                <div panel-sample-text={Copy.province} 
+                                    className="panelopen-property-location panelopen-preview">
+                                </div>
                             </div>
                             <div className="panelopen-down-right">
                                     <div className="panelopen-property-price-container">
-                                        <div className="panelopen-property-price-text"> {Copy.currency} 200.000</div>
+                                        <div panel-sample-text={Copy.price} 
+                                            className="panelopen-property-price-text panelopen-preview">
+                                        </div>
                                     </div>
                                     <div className="panelopen-property-feature-container">
                                         <div className="panelopen-property-feature">
-                                            <div className="panelopen-property-feature-size">210 {Copy.measure}</div>
-                                            <div className="panelopen-property-feature-name">{Copy.dimension}</div>
+                                            <div panel-sample-text={Copy.dimension} 
+                                                className="panelopen-property-feature-size panelopen-preview">
+                                            </div>
+                                            <div className="panelopen-property-feature-name">
+                                                {Copy.dimension}
+                                            </div>
                                         </div>
                                         <div className="panelopen-property-feature">
-                                            <div className="panelopen-property-feature-size">3</div>
-                                            <div className="panelopen-property-feature-name">{Copy.rooms}</div>
+                                            <div panel-sample-text={Copy.rooms} 
+                                                className="panelopen-property-feature-size panelopen-preview">
+                                            </div>
+                                            <div className="panelopen-property-feature-name"
+                                                >{Copy.rooms}
+                                            </div>
                                         </div>
-                                        
                                         <div className="panelopen-property-feature">
-                                            <div className="panelopen-property-feature-size">2</div>
-                                            <div className="panelopen-property-feature-name">{Copy.bathrooms}</div>
+                                            <div panel-sample-text={Copy.bathrooms} 
+                                                className="panelopen-property-feature-size panelopen-preview">
+                                            </div>
+                                            <div className="panelopen-property-feature-name">
+                                                {Copy.bathrooms}
+                                            </div>
                                         </div>   
                                     </div>
                             </div>
@@ -57,48 +69,40 @@ function PanelOpen(props) {
                             <div className="panelopen-down-second">    
                             <button className="panelopen-contact-button-container">    
                                 <img className="panelopen-contact-button-image" alt="icon-mail" src={iconMail} />   
-                                <div className="panelopen-contact-button-text">{Copy.email}</div>
+                                <div className="panelopen-contact-button-text">
+                                    {Copy.email}
+                                </div>
                             </button>
                             <button className="panelopen-contact-button-container">
                                 <img className="panelopen-contact-button-image" alt="icon-phone" src={iconPhone} />
-                                <div className="panelopen-contact-button-text">{Copy.phone}</div>
+                                <div className="panelopen-contact-button-text">
+                                    {Copy.phone}
+                                </div>
                             </button>
                         </div>
-                   
                         </div>    
-                            <div className="panelopen-property-description">
-                                There are many variations of passages of Lorem Ipsum available, 
-                                but the majority have suffered alteration in some form, by injected humour, 
-                                or randomised words which don't look even slightly believable.
-
-                                If you are going to use a passage of Lorem Ipsum, 
-                                you need to be sure there isn't anything embarrassing hidden in the middle of text.
-                                There are many variations of passages of Lorem Ipsum available, 
-                                but the majority have suffered alteration in some form, by injected humour, 
-                                or randomised words which don't look even slightly believable.
-
-                                If you are going to use a passage of Lorem Ipsum, 
-                                you need to be sure there isn't anything embarrassing hidden in the middle of text.
-                                There are many variations of passages of Lorem Ipsum available, 
-                                but the majority have suffered alteration in some form, by injected humour, 
-                                or randomised words which don't look even slightly believable. 
+                            <div panel-sample-text={Copy.description} 
+                                className="panelopen-property-description panelopen-preview">
                             </div>
                             <div className="panelopen-social-options-container">
                                 <button className="panelopen-social-button-container">
                                     <img className="panelopen-social-button-image" src={iconPrint} alt="icon-print"/>
-                                    <div className="panelopen-social-button-text">{Copy.print}</div>
+                                    <div className="panelopen-social-button-text">
+                                        {Copy.print}
+                                    </div>
                                 </button>
                                 <button className="panelopen-social-button-container">
                                     <img className="panelopen-social-button-image" src={iconShare} alt="icon-share"/>
-                                    <div className="panelopen-social-button-text">{Copy.share}</div>
+                                    <div className="panelopen-social-button-text">
+                                        {Copy.share}
+                                        </div>
                                 </button>
                             </div>
-                        </div>
-                    
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-    );
+    )
   }
 
   export default PanelOpen;
