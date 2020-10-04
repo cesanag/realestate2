@@ -14,11 +14,13 @@ function AppBackend() {
   function handleInputs(newInputAddress) {
     setInputAddress(newInputAddress)
   }
+
+  // https://medium.com/better-programming/best-practices-for-handling-a-form-with-multiple-inputs-using-react-hooks-a0abf9207284
+  
   return (
     <div className="App">
-      <div className="App-Content">
         <div className="Section-Header">
-          <Header />
+          <Header className="Section-Header"/>
           {/*<Dashboard />*/}
         </div>
         <div className="Section-Main">
@@ -30,10 +32,9 @@ function AppBackend() {
                 Anteprima
                 </div>
                 <PanelClose address={inputAddress} />
-                <PanelOpen  />
+                <PanelOpen  address={inputAddress} />
           </div>
         </div>
-      </div>
     </div>
   );
 }

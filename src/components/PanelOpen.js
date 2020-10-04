@@ -81,7 +81,7 @@ function PanelOpen(props) {
                             </button>
                         </div>
                         </div>    
-                            <div panel-sample-text={Copy.description} 
+                            <div panel-sample-text={Copy.sampleDescription} 
                                 className="panelopen-property-description panelopen-preview">
                             </div>
                             <div className="panelopen-social-options-container">

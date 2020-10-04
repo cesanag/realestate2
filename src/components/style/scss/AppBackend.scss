@@ -1,12 +1,15 @@
 @import  '../variables.scss';
 
+#root {
+  display: flex;
+}
+
 body {
   background-color: $light-grey;
 }
 
-.App-Content {
-  display: flex; 
-  flex-direction: column;
+.App {
+  background-color: $light-grey;
 }
 
 .Section-Header {
@@ -18,22 +21,14 @@ body {
 .Section-Main {
   display:flex;
   flex-direction: row;
-  height: 100vh;
 }
 
 .Panel-Container {
-    flex-direction: column;
-    margin: 50px;
+  margin: 50px;
+  width: 100%;
 }
 
 .Preview-Text {
   font-weight: $bold;
   margin-bottom: 25px;
 }
-
-@media only screen and (max-width: 800px) {
-
-      .Section-Main {
-        flex-direction: column; 
-      }
-    }
