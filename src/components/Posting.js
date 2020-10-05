@@ -3,6 +3,13 @@ import './style/css/Posting.css';
 import {Copy} from './Copy/Copy'
 
 function Posting(props) {
+    
+
+    // const handleFilterCountries = event => {
+    //     const { name, value } = event.target;
+    //     setFilterInput({ [name]: value });
+    // };
+
     function handleInputsEvent (event) {
         props.onChange(event.target.value)
     }
@@ -13,7 +20,7 @@ function Posting(props) {
                 {Copy.newPost}
             </div>
             <div className="listing-input">
-                <input required onChange={handleInputsEvent} 
+                <input required onChange={handleInputsEvent}
                     name="address" type="text" 
                     className="input input-address required"
                     placeholder={Copy.address} />

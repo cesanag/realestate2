@@ -1,14 +1,32 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 import './style/css/AppBackend.css';
 
 import Header from './Header';
-//import Dashboard from './Dashboard';
+// import Dashboard from './Dashboard';
+import Navigator from './Navigator';
+
 import PanelClose from './PanelClose';
 import PanelOpen from './PanelOpen';
 import Posting from './Posting'
 
 function AppBackend() {
+  // // const [countries, setCountries] = useState([]);  
+  // // const componentIsMounted = useRef(true)
+  // const [filterInput, setFilterInput] = useReducer(
+  //   (state, newState) => ({ ...state, ...newState }),
+  //   {
+  //     name: "",
+  //     capital: "",
+  //     population: ""
+  //   }
+  // );
+
+//   const handleFilterCountries = event => {
+//     const { name, value } = event.target;
+//     setFilterInput({ [name]: value });
+// };
+ 
   //Input Values
   const [inputAddress, setInputAddress] = useState()
   function handleInputs(newInputAddress) {
@@ -21,8 +39,10 @@ function AppBackend() {
     <div className="App">
         <div className="Section-Header">
           <Header className="Section-Header"/>
-          {/*<Dashboard />*/}
+          <Navigator />
+
         </div>
+        
         <div className="Section-Main">
             <div className="Posting-Container">
                 <Posting onChange={handleInputs}/>

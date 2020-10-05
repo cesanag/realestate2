@@ -33,9 +33,13 @@ const Copy = {
     filter: "Filtra",
 
     //Dashboard
-    listings: "I tuoi annunci",
+    listings: "I miei annunci",
     create: "Crea",
     delete: "Elimina",
+
+    //Navigator
+    backArrow: "<",
+    frontArrow: ">",
 
     //Posting
     address: "Indirizzo",
