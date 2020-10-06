@@ -55,9 +55,6 @@ function Posting(props) {
                     className="input input-description"
                     placeholder={Copy.description}>
                 </textarea>
-                <button type="submit" className="button preview-button">
-                    {Copy.preview}
-                </button>
                 <button className="button upload-photo-button">
                     {Copy.uploadPhoto}
                 </button>

@@ -37,9 +37,7 @@ const Copy = {
     create: "Crea",
     delete: "Elimina",
 
-    //Navigator
-    backArrow: "<",
-    frontArrow: ">",
+    //Navigatorss
 
     //Posting
     address: "Indirizzo",

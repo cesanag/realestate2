@@ -1,23 +1,19 @@
 import React from 'react';
 import './style/css/Navigator.css';
+import iconLeftArrow from './icon/icon-leftarrow.svg'
 import {Copy} from './Copy/Copy';
 
 function Navigator() {
     return (
-        <header>
             <div className="navigator-container">
-                <button className="navigator-button">
-                    {Copy.backArrow} 
-                    &nbsp;&nbsp;&nbsp;Indietro
-                    
+                <button className="navigator-button back-button">
+                    <img className="navigator-img"src={iconLeftArrow}></img>
+                    <div className="navigator-text">Torna a I miei Annunci</div>
                 </button>
-                <div className="navigator-text">
-                    
-                </div>
-              
-
+                <button type="submit" className="navigator-button save-button">
+                    <div className="navigator-text">Salva</div>
+                </button>
             </div>
-        </header>
     );
   }
 
