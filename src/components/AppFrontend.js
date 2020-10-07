@@ -26,22 +26,21 @@ function AppFrontend() {
       <div className="App-Content">
         <div className="Section-Header">
           <Header />
+          <ButtonsFilters 
+                  onFilterClick={handleToggleFilters} 
+                  onMapClick={handleToggleMap} />
           {/* {<Dashboard />} */}
         </div>
         <div className="Section-Main">
-          
             <div className={toggleFilterClasses}>
               <Filters />
             </div> 
             <div className="Panel-Close-Container">
-              <ButtonsFilters 
-                  onFilterClick={handleToggleFilters} 
-                  onMapClick={handleToggleMap} />
+              <div className="property-found"> 148 proprietà trovate a Monza</div>
               <PanelClose className="Panel-Close"/>
               <PanelClose className="Panel-Close"/>
               <PanelClose className="Panel-Close"/>
               <PanelClose className="Panel-Close"/>
-               
           </div>
           <div className={toggleMapClasses}>
               <Map />

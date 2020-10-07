@@ -24,7 +24,7 @@ function Posting(props) {
                     name="address" type="text" 
                     className="input input-address required"
                     placeholder={Copy.address} />
-                <input required onChange={handleInputsEvent}
+                <input required
                     name="city" type="text" 
                     className="input input-city"
                     placeholder={Copy.city}/>

@@ -1,8 +1,8 @@
 import React from 'react';
 import './style/css/Filters.css';
 // import MultiRangeSlider from './MultiRangeSlider/MultiRangeSlider.js';
-import {Copy} from './Copy/Copy'
 
+import {Copy} from './Copy/Copy'
 function Filters() {
 
     return (

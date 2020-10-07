@@ -1,24 +1,17 @@
 @import  '../variables.scss';
 
 .buttonsfilters-container{
-    display: flex;
-    flex-direction: column;
-        
-    .property-found {
-        margin-top: 25px;
-        display: flex;
-        font-size: 13px;
-        color: $mid-grey;
-        justify-content: flex-start;
-    }
+    box-shadow: -8px 12px 26px -10px $black-opaque;
+    padding: 25px;
+    background-color: $white;
 
     .buttonfilters-content {
+        
     
         .search-container {
             display: flex;
             position: relative;
             z-index: 999;
-            margin-top: 25px;
         
             .search-input {
                 display: flex;
@@ -55,41 +48,33 @@
         margin-top: 15px;
         
         .buttonsfilters-button {
+            display: flex;
+            align-items: center;
             border: none;
             padding: 10px 25px 10px 25px;
             background-color:$white;
             margin-right: 15px;
-            border-radius: 25px;
+            border-radius: 15px;
             font-weight: $semibold;
+            border: 2px solid $light-grey;
+            
         }
         
         .buttonsfilters-button:hover {
-            background-color: $green;
-            color: white;
+            border: 2px solid $green;
+        }
+
+        .buttonsfilters-img {
+            margin-right: 10px;
+        }
+        .button-is-clicked {
+            background-color:$cyan;
+            border: 2px solid $cyan;
+        }
+        .button-not-clicked {
+            background-color:$white;
         }
     }
 
-}
-}
-
-@media only screen and (max-width: 800px) {
-    
-.buttonsfilters-container{
-    flex-direction: column;
-    justify-content: space-evenly; 
-}
-
-.buttonsfilters-buttoncontainer {
-    margin-top: 15px;   
-    justify-content: space-evenly;
-
-    .buttonsfilters-button {
-        margin-left:0;
-        margin-right: 0;
-    }
-
-    .buttonsfilters-button-map {
-        display: none;
-    }
 }
 }

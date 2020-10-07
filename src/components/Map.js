@@ -8,7 +8,6 @@ function Map() {
       <div className="map-container">
         <img className="map-img" src={map} alt="map"/>
       </div>
-        
     );
   }
 

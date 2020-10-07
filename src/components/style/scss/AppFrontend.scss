@@ -29,6 +29,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-grow: 1;
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -53,6 +54,14 @@ body {
   // transition: all .15s ease-in-out;
 
 }
+
+.property-found {
+        margin-top: 25px;
+        display: flex;
+        font-size: 13px;
+        color: $mid-grey;
+        justify-content: flex-start;
+    }
 
 
 @media only screen and (max-width: 800px) {
