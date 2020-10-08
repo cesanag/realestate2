@@ -56,11 +56,13 @@
             margin-right: 15px;
             border-radius: 15px;
             font-weight: $semibold;
-            border: 2px solid $light-grey;
+            border: 2px solid $cyan;
             
         }
         
         .buttonsfilters-button:hover {
+            color: white;
+            background-color: $green;
             border: 2px solid $green;
         }
 

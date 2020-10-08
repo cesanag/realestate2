@@ -34,6 +34,7 @@
         
         .type-button:hover {
             background-color: $green;
+            color: white;
         }
         
         .type-text {
@@ -43,11 +44,12 @@
             justify-content: center;
             width: 100%;
         }
-
+        
         .type-button-selected {
             background-color: $cyan;
-            box-shadow: inset 0px -21px 0px -16px #00ab5c;
+           /* box-shadow: inset 0px -21px 0px -16px #00ab5c;*/
         }
+        
     }
 
     .slider-container {
