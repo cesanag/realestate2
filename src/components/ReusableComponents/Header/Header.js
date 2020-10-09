@@ -14,7 +14,6 @@ function Header() {
                     {Copy.company}
                 </div>
                 <div className="button-login">
-                  
                 </div>
             </div>
         </header>

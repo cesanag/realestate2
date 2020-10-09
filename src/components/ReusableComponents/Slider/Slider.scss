@@ -1,0 +1,37 @@
+@import  '../../style/variables.scss';
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+
+    .slider-name {
+        margin-top: 35px;
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: $mid-grey;
+    }
+    .slider{
+        margin-top: 15px;
+        appearance: none;
+        height: 5px;
+        background-color: $light-grey;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        border-radius: 15px;
+        width: 25px;
+        height: 25px;
+        background: $cyan;
+    }
+
+    .slider::-webkit-slider-thumb:active {
+        background-color: $green;
+    }
+
+    .slider-text {
+        margin-top: 15px;
+        font-size:14px;
+    }
+}

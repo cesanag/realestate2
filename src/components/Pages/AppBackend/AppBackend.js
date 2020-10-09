@@ -1,33 +1,30 @@
+//Import React
 import React, { useState } from 'react';
 
+//Import Style
 import './AppBackend.scss';
 
-import Header from '../../ReusableComponents/Header/Header';
-// import Dashboard from './Dashboard';
-import Navigator from '../../ReusableComponents/Navigator/Navigator';
-
-import PanelClose from '../../ReusableComponents/PanelClose/PanelClose';
-import PanelOpen from '../../ReusableComponents/PanelOpen/PanelOpen';
-import Posting from '../../ReusableComponents/Posting/Posting'
+//Import ReusableComponents
+import Header from 'components//ReusableComponents/Header/Header';
+import Navigator from 'components//ReusableComponents/Navigator/Navigator';
+import PanelClose from 'components//ReusableComponents/PanelClose/PanelClose';
+import PanelOpen from 'components//ReusableComponents/PanelOpen/PanelOpen';
+import Posting from 'components//ReusableComponents/Posting/Posting'
 
 function AppBackend() {
- 
-  //Input Values
+
+  //Set Input Value State
   const [inputAddress, setInputAddress] = useState()
   function handleInputs(newInputAddress) {
     setInputAddress(newInputAddress)
   }
 
-  // https://medium.com/better-programming/best-practices-for-handling-a-form-with-multiple-inputs-using-react-hooks-a0abf9207284
-  
   return (
     <div className="App">
         <div className="Section-Header">
           <Header className="Section-Header"/>
           <Navigator />
-
         </div>
-        
         <div className="Section-Main">
             <div className="Posting-Container">
                 <Posting onChange={handleInputs}/>

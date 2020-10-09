@@ -3,10 +3,16 @@
 .map-container {
     display:flex;
     width: 350px;
+
+    &.is-hidden {
+        display: none;
+    }
+
+    .map-img {
+        width: 350px;
+        object-fit: cover;
+    }
+    
 }
 
-.map-img {
-    width: 350px;
-    object-fit: cover;
-}
 

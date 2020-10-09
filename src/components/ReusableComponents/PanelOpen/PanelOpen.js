@@ -19,20 +19,20 @@ function PanelOpen(props) {
                         {Copy.morephoto}
                     </div>
                 </div>
-            <div className="panelopen-down-container">
-                <div className="panelopen-down-first">
-                     <div className="panelopen-down-location_price_feature">
-                        <div className="panelopen-down">
-                            <div className="panelopen-down-left">
-                                <div panel-sample-text={Copy.address} 
-                                    className="panelopen-property-address panelopen-preview">
-                                    {props.address}
+                <div className="panelopen-down-container">
+                    <div className="panelopen-down-first">
+                        <div className="panelopen-down-location_price_feature">
+                            <div className="panelopen-down">
+                                <div className="panelopen-down-left">
+                                    <div panel-sample-text={Copy.address} 
+                                        className="panelopen-property-address panelopen-preview">
+                                        {props.address}
+                                    </div>
+                                    <div panel-sample-text={Copy.province} 
+                                        className="panelopen-property-location panelopen-preview">
+                                    </div>
                                 </div>
-                                <div panel-sample-text={Copy.province} 
-                                    className="panelopen-property-location panelopen-preview">
-                                </div>
-                            </div>
-                            <div className="panelopen-down-right">
+                                <div className="panelopen-down-right">
                                     <div className="panelopen-property-price-container">
                                         <div panel-sample-text={Copy.price} 
                                             className="panelopen-property-price-text panelopen-preview">
@@ -64,40 +64,40 @@ function PanelOpen(props) {
                                             </div>
                                         </div>   
                                     </div>
+                                </div>
                             </div>
-                        </div>
                             <div className="panelopen-down-second">    
-                            <button className="panelopen-contact-button-container">    
-                                <img className="panelopen-contact-button-image" alt="icon-mail" src={iconMail} />   
-                                <div className="panelopen-contact-button-text">
-                                    {Copy.email}
-                                </div>
-                            </button>
-                            <button className="panelopen-contact-button-container">
-                                <img className="panelopen-contact-button-image" alt="icon-phone" src={iconPhone} />
-                                <div className="panelopen-contact-button-text">
-                                    {Copy.phone}
-                                </div>
-                            </button>
-                        </div>
-                        </div>    
-                            <div panel-sample-text={Copy.description} 
-                                className="panelopen-property-description panelopen-preview">
-                            </div>
-                            <div className="panelopen-social-options-container">
-                                <button className="panelopen-social-button-container">
-                                    <img className="panelopen-social-button-image" src={iconPrint} alt="icon-print"/>
-                                    <div className="panelopen-social-button-text">
-                                        {Copy.print}
+                                <button className="panelopen-contact-button-container">    
+                                    <img className="panelopen-contact-button-image" alt="icon-mail" src={iconMail} />   
+                                    <div className="panelopen-contact-button-text">
+                                        {Copy.email}
                                     </div>
                                 </button>
-                                <button className="panelopen-social-button-container">
-                                    <img className="panelopen-social-button-image" src={iconShare} alt="icon-share"/>
-                                    <div className="panelopen-social-button-text">
-                                        {Copy.share}
-                                        </div>
+                                <button className="panelopen-contact-button-container">
+                                    <img className="panelopen-contact-button-image" alt="icon-phone" src={iconPhone} />
+                                    <div className="panelopen-contact-button-text">
+                                        {Copy.phone}
+                                    </div>
                                 </button>
                             </div>
+                        </div>    
+                        <div panel-sample-text={Copy.description} 
+                                className="panelopen-property-description panelopen-preview">
+                        </div>
+                        <div className="panelopen-social-options-container">
+                            <button className="panelopen-social-button-container">
+                                <img className="panelopen-social-button-image" src={iconPrint} alt="icon-print"/>
+                                <div className="panelopen-social-button-text">
+                                    {Copy.print}
+                                </div>
+                            </button>
+                            <button className="panelopen-social-button-container">
+                                <img className="panelopen-social-button-image" src={iconShare} alt="icon-share"/>
+                                <div className="panelopen-social-button-text">
+                                    {Copy.share}
+                                    </div>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

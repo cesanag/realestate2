@@ -51,17 +51,10 @@ function Posting(props) {
                     placeholder={Copy.description}>
                 </textarea>
                 <input 
+                    className="input upload-photo-button"
                     placeholder={Copy.uploadPhoto}
-                    type="file" id="uploadFiles" multiple className="input upload-photo-button">
-                        
+                    type="file" id="uploadFiles" multiple>
                 </input>
-                {/*
-                <button className="input">
-                    <label for="uploadFiles" className="input">
-                        Select Image
-                    </label>
-                </button>
-                */}
             </div>
             </form>
         </div>   

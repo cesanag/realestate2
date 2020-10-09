@@ -1,0 +1,28 @@
+@import  '../../style/variables.scss';
+
+.buttonsfilters-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    background-color:$white;
+    margin-right: 15px;
+    border-radius: 15px;
+    font-weight: $semibold;
+    border: 2px solid $cyan;
+
+    &.buttonsfilters-button:hover {
+        color: white;
+        background-color: $green;
+        border: 2px solid $green;
+    }
+    
+    .buttonsfilters-img {
+        margin-right: 10px;
+    }
+    
+    .button-not-clicked {
+        background-color:$white;
+    }
+}
+

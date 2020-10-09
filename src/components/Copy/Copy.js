@@ -27,10 +27,13 @@ const Copy = {
     bathrooms: "Bagni",
 
     //ButtonFilters
-    found: "proprietà trovate a",
+    propertyResult: "proprietà trovate a",
     map: "Mappa",
     order: "Ordina",
     filter: "Filtra",
+    orderByRelevance: "Più rilevanti",
+    orderByName: "Per nome",
+    orderByPrice: "Per prezzo",
 
     //Dashboard
     listings: "I miei annunci",
@@ -51,6 +54,7 @@ const Copy = {
 
     //Sample Panel
     sampleAddress: "via Italia, 1",
+    sampleCity: "Monza",
     sampleProvince: "Milano MI - Italia",
     samplePrice: "€ 100.000",
     sampleDimension: "100 mq",

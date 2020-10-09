@@ -1,5 +1,6 @@
 - double range slider
 - openstreetmap api
 - modal when open "see more photo" (https://dev.to/pnkfluffy/passing-data-from-child-to-parent-with-react-hooks-1ji3)
+- "Nascondi X","Mostra X"... (X = mappa, filtri, ecc)
 
 

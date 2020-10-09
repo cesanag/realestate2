@@ -31,10 +31,6 @@ body {
   margin-right: 25px;
 }
 
-.Map-Container {
-  display: flex;
-  
-}
 .is-hidden {
   display: none;
   // visibility: hidden;
@@ -44,14 +40,9 @@ body {
   
 }
 
-.is-visible{
-  // visibility: visible;
-  // width: 100%;
-  // opacity: 100;
-  // transition: all .15s ease-in-out;
-
+.button-is-selected {
+  background-color: $cyan;
 }
-
 .property-found {
         margin-top: 25px;
         display: flex;
