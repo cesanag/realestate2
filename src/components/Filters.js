@@ -3,11 +3,11 @@ import './style/css/Filters.css';
 // import MultiRangeSlider from './MultiRangeSlider/MultiRangeSlider.js';
 
 import {Copy} from './Copy/Copy'
-function Filters() {
+function Filters({isFilterHidden}) {
 
+    //const toggleFilterClasses = `Filters-Container ${toggleFilters ? "is-visible" : "is-hidden"}`
     return (
-        
-        <div className= "filters-container">
+        <div className= {`filters-container ${isFilterHidden && "is-hidden"}`}>
             <div className="filters-type">
                 <div className="filters-name">
                     {Copy.type}

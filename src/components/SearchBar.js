@@ -6,18 +6,20 @@ import iconMap from './icon/icon-map.svg'
 //import iconList from './icon/icon-list.svg'
 import {Copy} from './Copy/Copy'
 
-
 //creaet leftIconButton component.
 //props: iconName, buttonText, onButtonClick, buttonStyle (dark, light..)
-function ButtonsFilters({children}) {
+function SearchBar() {
 
     return (
-        <div className="buttonsfilters-container">
-            {children}
-        </div>   
+        <div className="search-container">
+        <input className="search-input" type="search" 
+            placeholder={Copy.search + " " + Copy.company + "..."} 
+        />
+        <div className="search-icon">
+            <img alt="search-icon" src={iconSearch} />
+        </div>
+    </div> 
     );
   }
 
-  export default ButtonsFilters;
-        
-    
+  export default SearchBar;
