@@ -11,21 +11,6 @@ import PanelOpen from './PanelOpen';
 import Posting from './Posting'
 
 function AppBackend() {
-  // // const [countries, setCountries] = useState([]);  
-  // // const componentIsMounted = useRef(true)
-  // const [filterInput, setFilterInput] = useReducer(
-  //   (state, newState) => ({ ...state, ...newState }),
-  //   {
-  //     name: "",
-  //     capital: "",
-  //     population: ""
-  //   }
-  // );
-
-//   const handleFilterCountries = event => {
-//     const { name, value } = event.target;
-//     setFilterInput({ [name]: value });
-// };
  
   //Input Values
   const [inputAddress, setInputAddress] = useState()

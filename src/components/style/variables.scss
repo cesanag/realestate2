@@ -5,7 +5,6 @@
 
 button {
     cursor:pointer;
-    padding: 0;
 }
 
 //colors
@@ -16,14 +15,13 @@ $mid-grey: rgb(121, 121, 121);
 $mid-dark-grey: rgb(149, 149, 149);
 $dark-grey: rgb(66, 66, 66);
 $green: #00ab5c;
-$dark-cyan: rgb(173, 215, 255);
+$dark-cyan: rgb(137, 196, 250);
 $cyan: rgb(209, 233, 255);
 $red: rgb(214, 0, 0);
 $black:rgb(0, 0, 0);
 $black-opaque: rgba(0,0,0,0.2);
 
 //font
-$family: 'Montserrat', sans-serif;
 $regular: 300;
 $semibold: 400;
 $bold: 700;

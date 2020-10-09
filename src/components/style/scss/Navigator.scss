@@ -13,9 +13,13 @@
         align-self: center;
         justify-content: center;
         color: $green;
-        margin: 15px;
+        margin: 15px 0px 15px 0;
         padding: 0 10px 0 10px;
-       
+    }
+
+    .navigator-button:hover {
+        color: white;
+        background-color: $green;
     }
 
     .navigator-img {

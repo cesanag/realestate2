@@ -1,6 +1,14 @@
- - How to make server request without database?
- - How to insert js function into jsx?
- - OpenStreetMap (OpenLayers): how to implement it in React?
+SERVER
+    - Is possible to make server request without database?
+    - The database can be an JSON editable by user or we need a database?
+    - How to make filter & search functionality in app?
 
-NOT WORKING => Search Icon : to remove when media query < 700px
-NOT WORKING => header position: fixed
+REACT
+    - How to implement OpenStreetMap (OpenLayers) in React?
+    - How to insert js function into jsx? (for multirangeslider)
+    - How to make button clicked with React?
+    - How to handle multiple React Inputs from Child to Parent?
+    - How to React Route one page to another?
+   
+SVG
+    - Is it possible to add scss $variables to svg file?
