@@ -1,0 +1,80 @@
+@import  '../../style/variables.scss';
+
+.buttonsfilters-container{
+    box-shadow: -8px 12px 26px -10px $black-opaque;
+    padding: 25px;
+    background-color: $white;
+
+    .buttonfilters-content {
+        
+        .search-container {
+            display: flex;
+            position: relative;
+            z-index: 999;
+        
+            .search-input {
+                display: flex;
+                font-size: 14px;
+                border: 2px solid $light-grey;
+                padding: 8px;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-appearance: none;
+            }
+            
+            .search-input::-webkit-search-decoration,
+            .search-input::-webkit-search-cancel-button,
+            .search-input::-webkit-search-results-button,
+            .search-input::-webkit-search-results-decoration { 
+                display: none; 
+            }
+            
+            .search-icon {
+                display: block;
+                position: absolute;
+                top: 11px;
+                right: 0px;
+                z-index: 999;
+                border-radius: 6px;
+            }
+        }
+
+    .buttonsfilters-buttoncontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 15px;
+        
+        .buttonsfilters-button {
+            display: flex;
+            align-items: center;
+            border: none;
+            padding: 10px 25px 10px 25px;
+            background-color:$white;
+            margin-right: 15px;
+            border-radius: 15px;
+            font-weight: $semibold;
+            border: 2px solid $cyan;
+        }
+        
+        .buttonsfilters-button:hover {
+            color: white;
+            background-color: $green;
+            border: 2px solid $green;
+        }
+
+        .buttonsfilters-img {
+            margin-right: 10px;
+        }
+        .button-is-clicked {
+            background-color:$cyan;
+            border: 2px solid $cyan;
+        }
+        .button-not-clicked {
+            background-color:$white;
+        }
+    }
+
+}
+}

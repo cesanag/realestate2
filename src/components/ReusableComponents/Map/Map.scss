@@ -1,0 +1,12 @@
+@import  '../../style/variables.scss';
+
+.map-container {
+    display:flex;
+    width: 350px;
+}
+
+.map-img {
+    width: 350px;
+    object-fit: cover;
+}
+

@@ -1,3 +1,5 @@
+@import  './reset.scss';
+
 //VARIABLES
 *, body, input {
     font-family: 'Montserrat', sans-serif;
@@ -29,3 +31,6 @@ $bold: 700;
 $medium: 12px;
 $big: 15px;
 $giant: 20px;
+
+//icon placeholder
+$imgplaceholder: url("../../icon/icon-imgplaceholder.svg")
