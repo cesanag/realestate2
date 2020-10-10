@@ -3,26 +3,23 @@
 .buttonsfilters-button {
     display: flex;
     align-items: center;
-    border: none;
     padding: 10px 25px 10px 25px;
     background-color:$white;
     margin-right: 15px;
     border-radius: 15px;
     font-weight: $semibold;
-    border: 2px solid $cyan;
+    border: 3px solid $cyan;
+    width: 130px;
+    overflow: hidden;
 
     &.buttonsfilters-button:hover {
-        color: white;
         background-color: $green;
-        border: 2px solid $green;
+        border: 3px solid $green;
+        color: white;
     }
     
     .buttonsfilters-img {
         margin-right: 10px;
-    }
-    
-    .button-not-clicked {
-        background-color:$white;
     }
 }
 

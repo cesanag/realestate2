@@ -32,21 +32,13 @@ input {
     border-radius: 20px;
 }
 
-input:focus {
-    
-}
 .login-button {
     color: white;
-    
     border: none;
     padding: 10px 25px 10px 25px;
     background-color: #00ab5c;
     border-radius: 25px;
     font-weight: 400;
-}
-
-.login-button:focus {
-    
 }
 
 .login-button:hover {

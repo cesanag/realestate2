@@ -16,11 +16,13 @@ import TypeButton from 'components/ReusableComponents/TypeButton/TypeButton'
 import Slider from 'components/ReusableComponents/Slider/Slider'
 
 //Import Icons
-import iconFilters from 'components/icon/icon-filters.svg'
-import iconMap from 'components/icon/icon-map.svg'
+import { ReactComponent as IconFilters } from 'components/icon/icon-filters.svg'
+import { ReactComponent as IconMap } from 'components/icon/icon-map.svg'
+import { ReactComponent as IconList } from 'components/icon/icon-list.svg'
 
 //Import Copy
-import {Copy} from 'components/Copy/Copy'
+import { Copy } from 'components/Copy/Copy'
+import { Color } from 'components/Color/Color'
 
 function AppFrontend() {
 
@@ -46,29 +48,35 @@ function AppFrontend() {
               <SearchBar />
               <div className="buttonsfilters-buttoncontainer">
                 <LeftIconButton
-                  icon={iconFilters}
+                  icon={<IconFilters fill={Color.darkCyan}/>}
                   buttonText={Copy.filter}
                   onButtonClick={handleFilterClick}
                 />
                 <LeftIconButton
-                  icon={iconMap}
+                  icon={<IconMap fill={Color.darkCyan}/>}
                   buttonText={Copy.map}
                   onButtonClick={handleMapClick}
                 />
-                <select className="buttonsfilters-button">
-                  <option style={{display:'none'}} value={Copy.order}>
-                    {Copy.order}
-                  </option>
-                  <option>
-                    {Copy.orderByRelevance}
-                  </option>
-                  <option>
-                    {Copy.orderByName}
-                  </option>
-                  <option>
-                    {Copy.orderByPrice}
-                  </option>
-                </select>
+                <button className="buttonsfilters-button">
+                  <div className="buttonsfilters-img">
+                    <IconList fill={Color.darkCyan}/>
+                  </div>
+                  <label for="button-select"></label>
+                  <select id="button-select"className="button-select">
+                    <option style={{display:'none'}} value={Copy.order}>
+                      {Copy.order}
+                    </option>
+                    <option>
+                      {Copy.orderByRelevance}
+                    </option>
+                    <option>
+                      {Copy.orderByName}
+                    </option>
+                    <option>
+                      {Copy.orderByPrice}
+                    </option>
+                  </select>
+                </button>
               </div>
             </div>
           </ButtonsFilters>

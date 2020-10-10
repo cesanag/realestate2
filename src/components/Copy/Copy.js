@@ -1,4 +1,3 @@
-
 const Copy = {
     
     //Main

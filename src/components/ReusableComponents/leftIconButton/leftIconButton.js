@@ -7,10 +7,12 @@ function LeftIconButton({icon, buttonText, onButtonClick}) {
         <button 
             className="buttonsfilters-button"
             onClick={onButtonClick}>
-            <img className="buttonsfilters-img" alt="icon-filter"
-                src={icon} 
-            />
-              {buttonText}
+              <div className="buttonsfilters-img">
+                {icon}
+              </div>
+              <div class="buttonsfilters-text">
+                {buttonText}
+              </div>
         </button>
     );
   }

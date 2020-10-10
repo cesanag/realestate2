@@ -2,12 +2,13 @@ import React from 'react';
 import './PanelOpen.scss';
 
 // import image from './ImageSample.jpg'
-import iconMail from 'components/icon/icon-mail.svg'
-import iconPhone from 'components/icon/icon-phone.svg'
-import iconPrint from 'components/icon/icon-print.svg'
-import iconShare from 'components/icon/icon-share.svg'
+import { ReactComponent as IconMail } from 'components/icon/icon-mail.svg'
+import { ReactComponent as IconPhone } from 'components/icon/icon-phone.svg'
+import { ReactComponent as IconPrint } from 'components/icon/icon-print.svg'
+import { ReactComponent as IconShare } from 'components/icon/icon-share.svg'
 
-import {Copy} from '../../Copy/Copy'
+import {Copy} from 'components/Copy/Copy'
+import {Color} from 'components/Color/Color'
 
 function PanelOpen(props) {
     return (
@@ -67,14 +68,14 @@ function PanelOpen(props) {
                                 </div>
                             </div>
                             <div className="panelopen-down-second">    
-                                <button className="panelopen-contact-button-container">    
-                                    <img className="panelopen-contact-button-image" alt="icon-mail" src={iconMail} />   
+                                <button className="panelopen-contact-button-container">
+                                        <IconMail fill={Color.green}/>
                                     <div className="panelopen-contact-button-text">
                                         {Copy.email}
                                     </div>
                                 </button>
                                 <button className="panelopen-contact-button-container">
-                                    <img className="panelopen-contact-button-image" alt="icon-phone" src={iconPhone} />
+                                        <IconPhone fill={Color.green}/>
                                     <div className="panelopen-contact-button-text">
                                         {Copy.phone}
                                     </div>
@@ -86,13 +87,13 @@ function PanelOpen(props) {
                         </div>
                         <div className="panelopen-social-options-container">
                             <button className="panelopen-social-button-container">
-                                <img className="panelopen-social-button-image" src={iconPrint} alt="icon-print"/>
+                                <IconPrint fill={Color.none} stroke={Color.black}/>
                                 <div className="panelopen-social-button-text">
                                     {Copy.print}
                                 </div>
                             </button>
                             <button className="panelopen-social-button-container">
-                                <img className="panelopen-social-button-image" src={iconShare} alt="icon-share"/>
+                                <IconShare fill={Color.none} stroke={Color.black}/>
                                 <div className="panelopen-social-button-text">
                                     {Copy.share}
                                     </div>

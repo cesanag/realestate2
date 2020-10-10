@@ -5,11 +5,11 @@ import React, { useState } from 'react';
 import './AppBackend.scss';
 
 //Import ReusableComponents
-import Header from 'components//ReusableComponents/Header/Header';
-import Navigator from 'components//ReusableComponents/Navigator/Navigator';
-import PanelClose from 'components//ReusableComponents/PanelClose/PanelClose';
-import PanelOpen from 'components//ReusableComponents/PanelOpen/PanelOpen';
-import Posting from 'components//ReusableComponents/Posting/Posting'
+import Header from 'components/ReusableComponents/Header/Header';
+import Navigator from 'components/ReusableComponents/Navigator/Navigator';
+import PanelClose from 'components/ReusableComponents/PanelClose/PanelClose';
+import PanelOpen from 'components/ReusableComponents/PanelOpen/PanelOpen';
+import Posting from 'components/ReusableComponents/Posting/Posting'
 
 function AppBackend() {
 

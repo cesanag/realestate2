@@ -1,14 +1,15 @@
 import React from 'react';
 import './Header.scss';
-import iconLogo from 'components/icon/icon-logo.svg';
+import {ReactComponent as IconLogo} from 'components/icon/icon-logo.svg';
 import {Copy} from 'components/Copy/Copy';
+import {Color} from 'components/Color/Color';
 
 function Header() {
     return (
         <header>
             <div className="header-container">
                 <div className="header-img">
-                    <img alt="icon-logo" src={iconLogo} />
+                    <IconLogo fill={Color.white}/>
                 </div>
                 <div className="header-text">
                     {Copy.company}

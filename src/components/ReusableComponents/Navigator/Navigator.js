@@ -1,14 +1,17 @@
 import React from 'react';
 import './Navigator.scss';
-import iconLeftArrow from 'components/icon/icon-leftarrow.svg'
-import {Copy} from '../../Copy/Copy';
+import { ReactComponent as IconLeftArrow } from 'components/icon/icon-leftarrow.svg'
+import { Copy } from 'components/Copy/Copy'
+import { Color } from 'components/Color/Color'
 
 function Navigator() {
     return (
         <div className="navigator-container">
             <button className="navigator-button back-button">
-                <img className="navigator-img" alt="left-arrow"
-                    src={iconLeftArrow} />
+                <div className="navigator-img">
+                    <IconLeftArrow fill={Color.green} stroke={Color.green}/>
+                </div>
+        
                 <div className="navigator-text">
                     {Copy.goback}{Copy.listings}
                 </div>
