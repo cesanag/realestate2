@@ -3,6 +3,7 @@
 //VARIABLES
 *, body, input {
     font-family: 'Montserrat', sans-serif;
+    transition: all .5s;
 }
 
 button {
@@ -13,10 +14,13 @@ button {
 $white:  rgb(255,255,255);
 $light-light-grey: rgb(241, 241, 241);
 $light-grey: rgb(231, 231, 231);
+$grey: rgb(182, 181, 181);
 $mid-grey: rgb(121, 121, 121);
 $mid-dark-grey: rgb(149, 149, 149);
 $dark-grey: rgb(66, 66, 66);
-$green: rgb(0, 171, 92);;
+$green: rgb(0, 171, 92);
+$light-green: rgb(74, 247, 166);
+$dark-green: rgb(0, 120, 64);
 $dark-cyan: rgb(137, 196, 250);
 $cyan: rgb(209, 233, 255);
 $red: rgb(214, 0, 0);

@@ -6,10 +6,10 @@
 }
 .panelclose {
     display: flex;
+    flex-grow: 1;
     box-shadow: -8px 12px 26px -10px $black-opaque;
     flex-direction: row;
-    height: 200px;
-    background-color: $white;   
+    background-color: white;
 }
 
 .panelclose-preview {
@@ -25,13 +25,14 @@
 .panelclose-left{
     display: flex;
     position: relative;
-    height: 200px;
+    height: 250px;
+    width: 250px;
 }
 
 .panelclose-img {
     border: none !important;
     width: 250px;
-    height: 100%;
+    height: 250px;
     object-fit: cover;
     background: $light-light-grey $imgplaceholder no-repeat center;
 }
@@ -59,6 +60,7 @@
 
 .panelclose-right {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     align-self: center;
     margin: 25px;
@@ -106,6 +108,13 @@
     text-overflow: ellipsis; 
     
 }
+
+@media screen and (max-width: 992px) {
+    .panelclose {
+      flex-direction: column;
+      width: 250px;
+    }
+  }
 
 
 

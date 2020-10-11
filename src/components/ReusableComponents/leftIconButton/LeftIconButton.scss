@@ -12,19 +12,13 @@ svg {
     margin-right: 15px;
     border-radius: 10px;
     font-weight: $semibold;
-    border: 1px solid $mid-grey;
+    border: 2px solid $grey;
     width: 130px;
     overflow: hidden;
-
-    &.buttonsfilters-button:hover {
-        background-color: $cyan;
-    }
     
     .buttonsfilters-img {
         margin-right: 10px;
     }
    
-
-    
 }
 

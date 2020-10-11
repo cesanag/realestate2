@@ -24,12 +24,16 @@ import { ReactComponent as IconList } from 'components/icon/icon-list.svg'
 import { Copy } from 'components/Copy/Copy'
 import { Color } from 'components/Color/Color'
 
+import CookieConsent from "react-cookie-consent";
+
 function AppFrontend() {
 
-  // ButtonsFilters State
-  const [isFilterHidden, setIsFilterHidden] = useState(true);
 
-  const [isMapHidden, setIsMapHidden] = useState(true);
+    
+  // ButtonsFilters State
+  const [isFilterHidden, setIsFilterHidden] = useState(false);
+
+  const [isMapHidden, setIsMapHidden] = useState(false);
 
   const [isListHidden, setIsListHidden] = useState(true);
 
@@ -42,10 +46,6 @@ function AppFrontend() {
     setIsMapHidden(!isMapHidden)
   }
 
-  
-
-
-
   return (
     <div className="App">
       <div className="App-Content">
@@ -54,26 +54,28 @@ function AppFrontend() {
           <ButtonsFilters >
             <div className="buttonfilters-content">
               <SearchBar />
-              <div className='buttonsfilters-buttoncontainer'>
-                <LeftIconButton
-                  icon={<IconFilters fill={Color.midGrey}/>}
-                  buttonText={Copy.filter}
-                  onButtonClick={handleFilterClick}
-                  isButtonClicked = {isFilterHidden}
-                />
-                <LeftIconButton
-                  icon={<IconMap fill={Color.midGrey}/>}
-                  buttonText={Copy.map}
-                  onButtonClick={handleMapClick}
-                  isButtonClicked = {isMapHidden}
-                />
-                <div className="buttonsfilters-list-container"
-                  onMouseEnter={() => setIsListHidden(false)}
-                  onMouseLeave={() => setIsListHidden(true)}> 
-                  <LeftIconButton 
-                    icon={<IconList fill={Color.midGrey}/>}
-                    buttonText={Copy.order}
+              <div className='buttonsfilters-buttoncontainer'> 
+                  <LeftIconButton
+                    icon={<IconFilters fill={isFilterHidden ? Color.grey : Color.midGrey}/>}
+                    buttonText={Copy.filter}
+                    onButtonClick={handleFilterClick}
+                    isButtonClicked = {!isFilterHidden}
                   />
+                  <LeftIconButton
+                    icon={<IconMap fill={isMapHidden ? Color.grey : Color.midGrey}/>}
+                    buttonText={Copy.map}
+                    onButtonClick={handleMapClick}
+                    isButtonClicked = {!isMapHidden}
+                  />
+                  <div className="buttonsfilters-list-container"
+                    onClick={() => setIsListHidden(false)}
+                    onMouseEnter={() => setIsListHidden(false)}
+                    onMouseLeave={() => setIsListHidden(true)}> 
+                    <LeftIconButton 
+                      icon={<IconList fill={Color.midGrey}/>}
+                      buttonText={Copy.order}
+                      isButtonClicked = {!isListHidden}
+                    />
                   <div className= {`buttonsfilters-list-modal ${isListHidden && "is-hidden"}`}>
                     <div className="buttonsfilters-list-text">
                      {Copy.orderByRelevance}
@@ -108,11 +110,6 @@ function AppFrontend() {
                 <TypeButton
                     buttonText={Copy.type4}
                 /> 
-                {/* <button className="type-button type-button-selected">
-                      <div className="type-text">
-                      {Copy.type3}
-                      </div>
-                    </button> */}
               </div>
               <Slider 
                 sliderName = {Copy.price}
@@ -143,15 +140,29 @@ function AppFrontend() {
               <div className="property-found"> 
                 148 {Copy.propertyResult} a {Copy.sampleCity}
               </div>
-              <PanelClose className="Panel-Close"/>
-              <PanelClose className="Panel-Close"/>
-              <PanelClose className="Panel-Close"/>
-              <PanelClose className="Panel-Close"/>
+              <PanelClose />
+              <PanelClose />
+              <PanelClose />
+              <PanelClose />
+              <PanelClose />
           </div>
               <Map isMapHidden={isMapHidden}/>
         </div>
       </div>
-    </div>
+      <CookieConsent
+          enableDeclineButton flipButtons
+          location="top"
+          declineButtonText = "Rifiuto"
+          buttonText="Accetto"
+          cookieName="myAwesomeCookieName2"
+          style={{ background: "#2B373B" }}
+          buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+          expires={150}
+          >
+          This website uses cookies to enhance the user experience.{" "}
+          <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
+        </CookieConsent>
+      </div>
   );
 }
 

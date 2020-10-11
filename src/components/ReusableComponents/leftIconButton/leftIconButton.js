@@ -10,7 +10,7 @@ function LeftIconButton({icon, buttonText, onButtonClick, isButtonClicked}) {
               <div className="buttonsfilters-img">
                 {icon}
               </div>
-              <div class="buttonsfilters-text">
+              <div className="buttonsfilters-text">
                 {buttonText}
               </div>
         </button>
