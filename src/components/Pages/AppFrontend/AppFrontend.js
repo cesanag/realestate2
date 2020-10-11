@@ -27,16 +27,24 @@ import { Color } from 'components/Color/Color'
 function AppFrontend() {
 
   // ButtonsFilters State
-  const [isFilterHidden, setIsFilterHidden] = useState(false);
-  const [isMapHidden, seIsMapHidden] = useState(false);
+  const [isFilterHidden, setIsFilterHidden] = useState(true);
+
+  const [isMapHidden, setIsMapHidden] = useState(true);
+
+  const [isListHidden, setIsListHidden] = useState(true);
 
   // ButtonsFilters Functions
+
   function handleFilterClick() {
-    setIsFilterHidden(!isFilterHidden) 
+    setIsFilterHidden(!isFilterHidden)
   }
   function handleMapClick() {
-    seIsMapHidden(!isMapHidden)
+    setIsMapHidden(!isMapHidden)
   }
+
+  
+
+
 
   return (
     <div className="App">
@@ -46,37 +54,38 @@ function AppFrontend() {
           <ButtonsFilters >
             <div className="buttonfilters-content">
               <SearchBar />
-              <div className="buttonsfilters-buttoncontainer">
+              <div className='buttonsfilters-buttoncontainer'>
                 <LeftIconButton
-                  icon={<IconFilters fill={Color.darkCyan}/>}
+                  icon={<IconFilters fill={Color.midGrey}/>}
                   buttonText={Copy.filter}
                   onButtonClick={handleFilterClick}
+                  isButtonClicked = {isFilterHidden}
                 />
                 <LeftIconButton
-                  icon={<IconMap fill={Color.darkCyan}/>}
+                  icon={<IconMap fill={Color.midGrey}/>}
                   buttonText={Copy.map}
                   onButtonClick={handleMapClick}
+                  isButtonClicked = {isMapHidden}
                 />
-                <button className="buttonsfilters-button">
-                  <div className="buttonsfilters-img">
-                    <IconList fill={Color.darkCyan}/>
-                  </div>
-                  <label for="button-select"></label>
-                  <select id="button-select"className="button-select">
-                    <option style={{display:'none'}} value={Copy.order}>
-                      {Copy.order}
-                    </option>
-                    <option>
-                      {Copy.orderByRelevance}
-                    </option>
-                    <option>
+                <div className="buttonsfilters-list-container"
+                  onMouseEnter={() => setIsListHidden(false)}
+                  onMouseLeave={() => setIsListHidden(true)}> 
+                  <LeftIconButton 
+                    icon={<IconList fill={Color.midGrey}/>}
+                    buttonText={Copy.order}
+                  />
+                  <div className= {`buttonsfilters-list-modal ${isListHidden && "is-hidden"}`}>
+                    <div className="buttonsfilters-list-text">
+                     {Copy.orderByRelevance}
+                    </div>
+                    <div className="buttonsfilters-list-text">
                       {Copy.orderByName}
-                    </option>
-                    <option>
+                    </div>
+                    <div className="buttonsfilters-list-text">
                       {Copy.orderByPrice}
-                    </option>
-                  </select>
-                </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </ButtonsFilters>

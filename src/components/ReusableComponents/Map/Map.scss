@@ -1,11 +1,11 @@
 @import  '../../style/variables.scss';
 
 .map-container {
-    display:flex;
+    display:none;
     width: 350px;
 
     &.is-hidden {
-        display: none;
+        display: flex;
     }
 
     .map-img {

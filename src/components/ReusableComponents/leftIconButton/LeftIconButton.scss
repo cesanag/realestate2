@@ -1,25 +1,30 @@
 @import  '../../style/variables.scss';
 
+svg {
+    display: flex;
+}
+
 .buttonsfilters-button {
     display: flex;
     align-items: center;
     padding: 10px 25px 10px 25px;
     background-color:$white;
     margin-right: 15px;
-    border-radius: 15px;
+    border-radius: 10px;
     font-weight: $semibold;
-    border: 3px solid $cyan;
+    border: 1px solid $mid-grey;
     width: 130px;
     overflow: hidden;
 
     &.buttonsfilters-button:hover {
-        background-color: $green;
-        border: 3px solid $green;
-        color: white;
+        background-color: $cyan;
     }
     
     .buttonsfilters-img {
         margin-right: 10px;
     }
+   
+
+    
 }
 

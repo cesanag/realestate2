@@ -3,7 +3,7 @@
 .buttonsfilters-container{
     box-shadow: -8px 12px 26px -10px $black-opaque;
     padding: 25px;
-    background-color: $white;
+    background-color: $light-light-grey;
 
     .buttonsfilters-buttoncontainer {
         display: flex;
@@ -12,10 +12,30 @@
         margin-top: 15px;
     }
 
-    .button-select {
-        -moz-appearance: none; 
-        -moz-appearance: none; 
-        -webkit-appearance: none; 
-        border: none;
+    .buttonsfilters-list-modal{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        position:absolute;
+        background-color: white;
+        margin-top: -3px;
+        border: 1px solid $mid-grey;
+        box-shadow: -8px 12px 26px -10px $black-opaque;
     }
+
+    .buttonsfilters-list-text {
+        cursor:pointer;
+        padding: 10px;
+    }
+    .buttonsfilters-list-text:hover {
+        background-color: $cyan;
+    }
+    .is-hidden {
+        display: none;
+    }
+
+    .is-clicked {
+        background-color: $cyan;
+    }
+
 }

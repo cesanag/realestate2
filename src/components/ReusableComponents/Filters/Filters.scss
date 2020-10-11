@@ -1,14 +1,14 @@
 @import  '../../style/variables.scss';
 
 .filters-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     padding:25px;
     width: 200px;
     background-color: $white;
 
     &.is-hidden {
-        display: none;
+        display: flex;
     }
 
     .filters-closefilters {

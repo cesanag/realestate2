@@ -1,7 +1,8 @@
 import React from 'react';
 import './SearchBar.scss';
-import iconSearch from 'components/icon/icon-search.svg'
+import { ReactComponent as IconSearch} from 'components/icon/icon-search.svg'
 import {Copy} from 'components/Copy/Copy'
+import {Color} from 'components/Color/Color'
 
 function SearchBar() {
     return (
@@ -10,7 +11,7 @@ function SearchBar() {
                 placeholder={Copy.search + " " + Copy.company + "..."} 
             />
             <div className="search-icon">
-                <img alt="search-icon" src={iconSearch} />
+                <IconSearch fill={Color.midGrey}/>
             </div>
         </div> 
     );
