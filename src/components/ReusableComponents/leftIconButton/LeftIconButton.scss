@@ -8,17 +8,24 @@ svg {
     display: flex;
     align-items: center;
     padding: 10px 25px 10px 25px;
-    background-color:$white;
+    background-color:$light-grey;
     margin-right: 15px;
     border-radius: 10px;
     font-weight: $semibold;
-    border: 2px solid $grey;
+    border: none;
     width: 130px;
     overflow: hidden;
     
     .buttonsfilters-img {
         margin-right: 10px;
     }
-   
+}
+
+.buttonsfilters-button:hover {
+    background-color: $grey;
+}
+
+.buttonsfilters-button:active {
+    background-color: $dark-cyan;
 }
 

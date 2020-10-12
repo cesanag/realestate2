@@ -12,8 +12,10 @@
     }
     
     .type-button:hover {
-        background-color: $green;
-        color: white;
+        background-color: $grey;
+    }
+    .type-button:active {
+        background-color: $dark-cyan;
     }
     
     .type-text {
@@ -24,7 +26,7 @@
         width: 100%;
     }
 
-    .button-is-selected {
+    .is-selected {
         background-color: $cyan;
        /* box-shadow: inset 0px -21px 0px -16px #00ab5c;*/
     }

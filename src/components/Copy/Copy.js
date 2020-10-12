@@ -1,7 +1,7 @@
 const Copy = {
     
     //Main
-    company: "ImmobiMonza",
+    company: "RealEstate",
     currency: "€",
     measure: "mq",
     country: "Italia",

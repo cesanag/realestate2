@@ -30,20 +30,38 @@ function AppFrontend() {
 
 
     
-  // ButtonsFilters State
+  // State
   const [isFilterHidden, setIsFilterHidden] = useState(false);
-
   const [isMapHidden, setIsMapHidden] = useState(false);
-
   const [isListHidden, setIsListHidden] = useState(true);
 
-  // ButtonsFilters Functions
+  const [isType1ButtonClicked, setIsType1ButtonClicked] = useState(false)
+  const [isType2ButtonClicked, setIsType2ButtonClicked] = useState(false)
+  const [isType3ButtonClicked, setIsType3ButtonClicked] = useState(false)
+  const [isType4ButtonClicked, setIsType4ButtonClicked] = useState(false)
+
+
+  // State Functions
 
   function handleFilterClick() {
     setIsFilterHidden(!isFilterHidden)
   }
+
   function handleMapClick() {
     setIsMapHidden(!isMapHidden)
+  }
+
+  function handleIsType1ButtonClicked() {
+    setIsType1ButtonClicked(!isType1ButtonClicked)
+  }
+  function handleIsType2ButtonClicked() {
+    setIsType2ButtonClicked(!isType2ButtonClicked)
+  }
+  function handleIsType3ButtonClicked() {
+    setIsType3ButtonClicked(!isType3ButtonClicked)
+  }
+  function handleIsType4ButtonClicked() {
+    setIsType4ButtonClicked(!isType4ButtonClicked)
   }
 
   return (
@@ -56,13 +74,13 @@ function AppFrontend() {
               <SearchBar />
               <div className='buttonsfilters-buttoncontainer'> 
                   <LeftIconButton
-                    icon={<IconFilters fill={isFilterHidden ? Color.grey : Color.midGrey}/>}
+                    icon={<IconFilters fill={isFilterHidden ? Color.midGrey : Color.darkGrey}/>}
                     buttonText={Copy.filter}
                     onButtonClick={handleFilterClick}
                     isButtonClicked = {!isFilterHidden}
                   />
                   <LeftIconButton
-                    icon={<IconMap fill={isMapHidden ? Color.grey : Color.midGrey}/>}
+                    icon={<IconMap fill={isMapHidden ? Color.midGrey : Color.darkGrey}/>}
                     buttonText={Copy.map}
                     onButtonClick={handleMapClick}
                     isButtonClicked = {!isMapHidden}
@@ -98,18 +116,29 @@ function AppFrontend() {
                 <div className="filters-name">
                     {Copy.type}
                 </div>
-                <TypeButton
+                <div className="type-container">
+                    <TypeButton
                     buttonText={Copy.type1}
-                />
-                <TypeButton 
+                    onButtonClick={handleIsType1ButtonClicked}
+                    isButtonClicked = {!isType1ButtonClicked}
+                    />
+                    <TypeButton 
                     buttonText={Copy.type2}
-                />
-                <TypeButton 
+                    onButtonClick={handleIsType2ButtonClicked}
+                    isButtonClicked = {!isType2ButtonClicked}
+                    />
+                    <TypeButton 
                     buttonText={Copy.type3}
-                />
-                <TypeButton
+                    onButtonClick={handleIsType3ButtonClicked}
+                    isButtonClicked = {!isType3ButtonClicked}
+                    />
+                    <TypeButton
                     buttonText={Copy.type4}
-                /> 
+                    onButtonClick={handleIsType4ButtonClicked}
+                    isButtonClicked = {!isType4ButtonClicked}
+                    /> 
+                </div>
+               
               </div>
               <Slider 
                 sliderName = {Copy.price}
@@ -149,20 +178,7 @@ function AppFrontend() {
               <Map isMapHidden={isMapHidden}/>
         </div>
       </div>
-      <CookieConsent
-          enableDeclineButton flipButtons
-          location="top"
-          declineButtonText = "Rifiuto"
-          buttonText="Accetto"
-          cookieName="myAwesomeCookieName2"
-          style={{ background: "#2B373B" }}
-          buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-          expires={150}
-          >
-          This website uses cookies to enhance the user experience.{" "}
-          <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
-        </CookieConsent>
-      </div>
+    </div>
   );
 }
 

@@ -12,10 +12,6 @@
     background-color: white;
 }
 
-.panelclose-preview {
-    border: none;
-}
-
 .panelclose-preview:empty:not(:focus):before{
     content:attr(panel-sample-text);
     opacity: 0.4;
@@ -76,22 +72,7 @@
     flex-direction: row;
     margin: 10px 0 10px 0;
 }
-.panelclose-property-feature {
-    text-align: center;
-    font-size: $medium;
-    margin-right: 15px;
-}
 
-.panelclose-property-feature-size {
-    background-color:$light-grey;
-    padding: 5px;
-}
-
-.panelclose-property-feature-name {
-    margin: 5px;
-    font-size: $medium;
-    font-weight: 300;
-}
 
 .panelclose-property-location {
     margin-top: 3px;

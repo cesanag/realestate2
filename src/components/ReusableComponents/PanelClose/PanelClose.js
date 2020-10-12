@@ -1,6 +1,7 @@
 import React from 'react';
 import './PanelClose.scss';
 // import image from './ImageSample.jpg';
+import Feature from 'components/ReusableComponents/Feature/Feature'
 import {Copy} from 'components/Copy/Copy';
 
 function PanelClose(props) {

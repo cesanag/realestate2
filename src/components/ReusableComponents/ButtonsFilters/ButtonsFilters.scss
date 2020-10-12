@@ -3,7 +3,7 @@
 .buttonsfilters-container{
     box-shadow: -8px 12px 26px -10px $black-opaque;
     padding: 25px;
-    background-color: $light-light-grey;
+    background-color: $white;
 
     .buttonsfilters-buttoncontainer {
         display: flex;
@@ -19,7 +19,7 @@
         position:absolute;
         background-color: white;
         margin-top: -3px;
-        border: 1px solid $mid-grey;
+        border: none;
         box-shadow: -8px 12px 26px -10px $black-opaque;
     }
 
@@ -27,17 +27,17 @@
         cursor:pointer;
         padding: 10px;
     }
+
     .buttonsfilters-list-text:hover {
-        background-color: $cyan;
+        background-color: $grey;
     }
+
     .is-hidden {
         display: none;
         opacity: 0;
-        
     }
 
     .is-clicked {
-        border: 2px solid $mid-grey;
         color: black;
         background-color: $cyan;
     }

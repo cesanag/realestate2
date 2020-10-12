@@ -6,6 +6,8 @@
     padding:25px;
     width: 200px;
     background-color: $white;
+    transition: all .5s;
+
 
     &.is-hidden {
         // display: none;
