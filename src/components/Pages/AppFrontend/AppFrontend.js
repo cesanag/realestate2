@@ -28,8 +28,6 @@ import CookieConsent from "react-cookie-consent";
 
 function AppFrontend() {
 
-
-    
   // State
   const [isFilterHidden, setIsFilterHidden] = useState(false);
   const [isMapHidden, setIsMapHidden] = useState(false);
@@ -54,6 +52,28 @@ function AppFrontend() {
   function handleIsType1ButtonClicked() {
     setIsType1ButtonClicked(!isType1ButtonClicked)
   }
+  //chiamare le cose ESPLICITAMENTE
+  //function: handleHomeFilterClick
+  //Copy: homeFilterButton, officeFilterButton
+  //state: isHomeFilterEnabled setIsHomeFilterEnabled
+  //se è boolean: is...
+  //se è array/lista: propertyList
+
+  // [{text: 'casa', onClickHandler: () => {}, isToggled: false},{…},{…}]
+  // <typeFilters filtersState= [oggetto Sopra]>
+  // array.map(filterState => <filterButton>)}
+
+  //Mettere Pages fuori da cartella components
+  //Icon, Color fuori da components => cartella Assets
+  //Copy in cartella utilities fuori da components
+  //sistemare colors con sistema ale => usare background url() e content (placeholder)
+  //backgroundImage: 'svgPath';content: '[]',::before , ::after
+      //spostare style fuori da components e chiamarlo globalStyles
+      //reset da chiamare globalStyles.scss
+      //usare camelCase per cartelle
+      //importare variabels dentro globalStyles
+      //importare globalStyles dentro ciascun scss
+
   function handleIsType2ButtonClicked() {
     setIsType2ButtonClicked(!isType2ButtonClicked)
   }
@@ -121,6 +141,7 @@ function AppFrontend() {
                     buttonText={Copy.type1}
                     onButtonClick={handleIsType1ButtonClicked}
                     isButtonClicked = {!isType1ButtonClicked}
+                    // name: "isHomeFilterOn, isOfficeFilterOn
                     />
                     <TypeButton 
                     buttonText={Copy.type2}
