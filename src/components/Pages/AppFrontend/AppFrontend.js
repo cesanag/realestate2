@@ -11,7 +11,7 @@ import ButtonsFilters from 'components/ReusableComponents/ButtonsFilters/Buttons
 import Filters from 'components/ReusableComponents/Filters/Filters';
 import Map from 'components/ReusableComponents/Map/Map';
 import PanelClose from 'components/ReusableComponents/PanelClose/PanelClose';
-import LeftIconButton from 'components/ReusableComponents/LeftIconButton/LeftIconButton';
+import LeftIconButton from 'components/ReusableComponents/leftIconButton/leftIconButton';
 import TypeButton from 'components/ReusableComponents/TypeButton/TypeButton'
 import Slider from 'components/ReusableComponents/Slider/Slider'
 
