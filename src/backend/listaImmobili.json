@@ -1,0 +1,17 @@
+
+{
+   "listaImmobili": [
+        {
+            "number": "20",
+            "street": "Cesana e Villa",
+            "city": "Biassono",
+            "postCode": "20853"
+        },
+        {
+            "number": "23",
+            "street": "Cesana e Villa",
+            "city": "Biassono",
+            "postCode": "20853"
+        }
+    ]
+}
