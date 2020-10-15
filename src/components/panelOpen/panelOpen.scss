@@ -1,0 +1,195 @@
+@import  '../../globalStyles/globalStyles.scss';
+
+
+.panelopen-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.panelopen {
+    display: flex;
+    box-shadow: -8px 12px 26px -10px $black-opaque;
+    background-color:white;
+    flex-direction: column;
+}
+
+.panelopen-up {
+    text-align:center;
+    position: relative;
+    height: 300px;
+}
+
+.panelopen-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 0;
+    // background: $light-light-grey $imgplaceholder no-repeat center ;
+}
+
+.see-more-photo {
+    font-size: $medium;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    z-index: 999;
+    text-align: center;
+    background-color: $light-grey;
+    padding: 7px 12px 7px 12px;
+    border-radius: 6px;
+    color: $mid-grey;
+    font-weight: $bold;
+}
+
+.panelopen-down-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+}
+
+.panelopen-down-second {
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+    align-content: center;
+}
+
+.panelopen-property-price-container {
+    display: flex;
+    background-color: $green;
+    border-radius: 6px;
+}
+
+.panelopen-property-price-text {
+    display: flex;
+    align-items:center;
+    font-size: $big;
+    padding: 8px 15px 8px 15px;
+    border-radius: 6px;
+    color: $white;
+    font-weight: $bold;
+}
+
+.panelopen-down-location_price_feature {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.panelopen-down {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.panelopen-preview {
+    border: none;
+}
+
+.panelopen-preview:empty:not(:focus):before{
+    content:attr(panel-sample-text);
+    opacity: 0.4;
+    color: $dark-grey;
+}
+
+.panelopen-down-left {
+    flex-direction: column;
+}
+
+.panelopen-property-address {
+    display:flex;
+    justify-content: flex-start;
+    font-size: $giant;
+    font-weight: $bold;
+}
+
+.panelopen-down-right {
+    display:flex;
+    flex-direction: row;
+    margin-top: 15px;
+    
+}
+.panelopen-property-feature-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.panelopen-property-feature {
+    margin-left: 15px;
+}
+
+.panelopen-property-feature-size {
+    text-align: center;
+    font-size: $medium;
+    background-color:$light-grey;
+    padding: 7px;
+    font-weight: $semibold; 
+}
+
+.panelopen-property-feature-name {
+    margin-top: 5px;
+    font-size: $medium;
+    font-weight: $regular;
+}
+
+.panelopen-property-location {
+    margin-top: 3px;
+    font-size: $medium;
+    color: $dark-grey;
+    text-overflow: ellipsis;
+}
+.panelopen-property-description {
+    font-size: $medium;
+    color: $dark-grey;
+    line-height: 18px;
+    margin: 25px 0 25px 0;
+}
+
+.panelopen-contact-button-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: $white;
+    border-radius: 6px;
+    align-items:center;
+    margin-bottom: 5px;
+    border: 2px solid $green;
+    padding: 10px;
+}
+
+.panelopen-contact-button-image {
+    display: flex;
+}
+
+.panelopen-contact-button-text {
+    font-size: $big;
+    color: $green;
+    font-weight: $semibold;
+}
+
+.panelopen-social-options-container {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.panelopen-social-button-container {
+    display: flex;
+    font-size: $medium;
+    background-color: $white;
+    border: 0.5px solid $mid-grey;
+    color:$dark-grey;
+    margin-right: 25px; 
+    padding: 10px 25px 10px 25px;
+}
+
+.panelopen-social-button-text {
+    margin-left: 10px;
+}
+
+
+

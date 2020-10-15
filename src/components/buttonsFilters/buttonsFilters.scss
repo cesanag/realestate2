@@ -1,0 +1,42 @@
+@import  '../../globalStyles/globalStyles.scss';
+ 
+.buttonsfilters-container{
+    box-shadow: -8px 12px 26px -10px $black-opaque;
+    padding: 25px;
+    background-color: $white;
+
+    .buttonsfilters-buttoncontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+
+    .buttonsfilters-list-modal{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        position:absolute;
+        background-color: white;
+        margin-top: 1px;
+        border: none;
+        box-shadow: -8px 12px 26px -10px $black-opaque;
+    }
+
+
+    .is-hidden {
+        display: none;
+        opacity: 0;
+    }
+
+    .is-clicked {
+        color: black;
+        background-color: $grey;
+        color: white;
+        fill:white;
+    }
+    .is-clicked > .buttonsfilters-img {
+        fill:white;
+    }
+
+}

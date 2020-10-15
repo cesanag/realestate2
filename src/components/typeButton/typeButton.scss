@@ -1,0 +1,34 @@
+@import  '../../globalStyles/globalStyles.scss';
+
+
+.type-container {
+    display: flex;
+    flex-direction: column;
+
+    .type-button {
+        border: 0px solid $white;
+        padding: 12px;
+        background-color: $light-grey;
+        margin-bottom: 5px;
+    }
+    
+    .type-button:hover {
+        background-color: $cyan;
+        color:black;
+    }
+    
+    .type-text {
+        font-weight: $semibold;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .is-selected {
+        background-color: $grey;
+        color: white;
+       /* box-shadow: inset 0px -21px 0px -16px #00ab5c;*/
+    }
+    
+}

@@ -1,0 +1,57 @@
+@import  '../../globalStyles/globalStyles.scss';
+
+
+body {
+  background-color: $light-grey;
+}
+
+.App-Content {
+  display: flex; 
+  flex-direction: column;
+}
+
+.Section-Header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.Section-Main {
+  display:flex;
+  flex-direction: row;
+
+}
+
+.Panel-Close-Container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.is-clicked {
+  background-color: $cyan;
+}
+
+.property-found {
+        margin-top: 25px;
+        display: flex;
+        font-size: 13px;
+        color: $mid-grey;
+        justify-content: flex-start;
+    }
+
+
+@media only screen and (max-width: 800px) {
+
+    .Map-Container {
+      display: none;
+    }
+}

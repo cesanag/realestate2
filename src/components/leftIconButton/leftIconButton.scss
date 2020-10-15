@@ -1,0 +1,44 @@
+@import  '../../globalStyles/globalStyles.scss';
+
+
+svg {
+    display: flex;
+}
+
+.buttonsfilters-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 23px 13px 23px;
+    background-color:$light-grey;
+    margin-right: 15px;
+    border-radius: 10px;
+    font-weight: $semibold;
+    border: none;
+    width: 150px;
+    overflow: hidden;
+
+    .buttonsfilters-img {
+        margin-right: 10px;
+        fill: $mid-grey;
+    }
+}
+.buttonsfilters-button:hover {
+    background-color: $cyan;
+    color: black;
+}
+
+.buttonsfilters-button:hover > .buttonsfilters-img{
+    fill: $mid-grey;
+}
+
+.buttonsfilters-list-text {
+    cursor:pointer;
+    padding: 10px;
+}
+
+.buttonsfilters-list-text:hover {
+    background-color: $cyan;
+    color: $black;
+}
+

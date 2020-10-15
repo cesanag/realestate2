@@ -1,0 +1,23 @@
+@import  '../../globalStyles/globalStyles.scss';
+
+
+.panelclose-property-feature {
+    text-align: center;
+    font-size: $medium;
+    margin-right: 15px;
+}
+
+.panelclose-property-feature-size {
+    background-color:$light-grey;
+    padding: 5px;
+}
+
+.panelclose-property-feature-name {
+    margin: 5px;
+    font-size: $medium;
+    font-weight: 300;
+}
+
+.panelclose-preview {
+    border: none;
+}

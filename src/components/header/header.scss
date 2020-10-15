@@ -1,0 +1,21 @@
+@import  '../../globalStyles/globalStyles.scss';
+
+
+.header-container {
+    background-color: $green;
+    display: flex;
+    justify-content: flex-start;
+    
+
+    .header-text {
+        display: flex;
+        color: $white;
+        padding: 15px;
+    }
+    
+    .header-img {
+        margin-left: 25px;
+        align-self:center;
+    }
+}
+

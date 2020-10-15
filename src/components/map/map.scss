@@ -1,0 +1,26 @@
+@import  '../../globalStyles/globalStyles.scss';
+
+
+.map-container {
+    display:flex;
+    width: 250px;
+    right:0;
+    transition: all .5s;
+
+    .map-img {
+        width: 250px;
+        object-fit: cover;
+    }
+
+    &.is-hidden {
+        // display: none;
+        
+        opacity: 0;
+        width: 0;
+    }
+
+    
+    
+}
+
+
