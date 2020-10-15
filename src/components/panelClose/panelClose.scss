@@ -66,33 +66,50 @@
 .panelclose-property-address {
     display: flex;
     font-weight: $bold;
-    
+    font-size: $giant;
 }
+
 .panelclose-property-feature-container {
     display:flex;
     flex-direction: row;
     margin: 10px 0 10px 0;
 }
 
-.panelclose-property-feature-size {
+.panelclose-property-feature-up {
+    display: flex;
+    justify-content: center;
     background-color: $light-light-grey;
     padding: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
+    fill: $grey;
 }
 
+.panelclose-property-feature-img {
+    fill: $mid-grey;
+    margin-left: 10px;
+}
+
+
 .panelclose-property-feature-name {
-    display: none;
-    color: $grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    padding: 5px;
+    margin-right: 10px;
+    color: $mid-grey;
+    fill:$grey;
+    font-size: $big;
 }
 .panelclose-property-location {
     margin-top: 3px;
-    font-size: $medium;
+    font-size: $big;
     color: $mid-grey;
 }
 
 .panelclose-property-description {
     line-height: 14px;
-    font-size: $medium;
+    font-size: $big;
     color: $mid-grey;
     white-space: normal; 
     overflow: hidden;

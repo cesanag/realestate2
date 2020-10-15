@@ -3,6 +3,10 @@ import './panelClose.scss';
 // import image from './ImageSample.jpg';
 import {Copy} from 'utilities/copy';
 
+import {ReactComponent as IconBathroom} from 'assets/icon/icon-bathroom.svg'
+import {ReactComponent as IconRoom} from 'assets/icon/icon-room.svg'
+
+
 function PanelClose(props) {
     return (
         <div className="panelclose-container">
@@ -26,17 +30,27 @@ function PanelClose(props) {
                         </div>
                     </div>
                     <div className="panelclose-property-feature-container">
+                        
                         <div className="panelclose-property-feature">
-                            <div panel-sample-text={Copy.dimension}
-                                className="panelclose-property-feature-size panelclose-preview">
+                            <div className="panelclose-property-feature-up">
+                                <div panel-sample-text={`${Copy.sampleDimension} ${Copy.measure}`}
+                                    className="panelclose-property-feature-size panelclose-preview">
+                                </div>
+                                <div className="panelclose-property-feature-img">
+                                </div>
                             </div>
                             <div className="panelclose-property-feature-name">
                                 {Copy.dimension}
                             </div>
                         </div>
                         <div className="panelclose-property-feature">
-                            <div panel-sample-text={Copy.rooms}
-                                className="panelclose-property-feature-size panelclose-preview">
+                            <div className="panelclose-property-feature-up">
+                                <div panel-sample-text={Copy.sampleRooms}
+                                    className="panelclose-property-feature-size panelclose-preview">
+                                </div>
+                                <div className="panelclose-property-feature-img">
+                                    <IconRoom />
+                                </div>
                             </div>
                             <div className="panelclose-property-feature-name">
                                 {Copy.rooms}
@@ -44,8 +58,13 @@ function PanelClose(props) {
                         </div>
                         
                         <div className="panelclose-property-feature">
-                            <div panel-sample-text={Copy.bathrooms}
-                                className="panelclose-property-feature-size panelclose-preview">
+                            <div className="panelclose-property-feature-up">
+                                <div panel-sample-text={Copy.sampleBathrooms}
+                                    className="panelclose-property-feature-size panelclose-preview">
+                                </div>
+                                <div className="panelclose-property-feature-img">
+                                    <IconBathroom />
+                                </div>
                             </div>
                             <div className="panelclose-property-feature-name">
                                 {Copy.bathrooms}

@@ -17,15 +17,19 @@ svg {
     border: none;
     width: 150px;
     overflow: hidden;
+    transition: all .2s ease-in-out;
 
     .buttonsfilters-img {
         margin-right: 10px;
         fill: $mid-grey;
+        transition: all .2s ease-in-out;
+
     }
 }
 .buttonsfilters-button:hover {
     background-color: $cyan;
     color: black;
+    
 }
 
 .buttonsfilters-button:hover > .buttonsfilters-img{

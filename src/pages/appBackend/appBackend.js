@@ -13,6 +13,8 @@ import PanelClose from 'components/panelClose/panelClose';
 import PanelOpen from 'components/panelOpen/panelOpen';
 import Posting from 'components/posting/posting'
 
+import { Copy } from 'utilities/copy'
+
 function AppBackend() {
 
   
@@ -50,10 +52,10 @@ function AppBackend() {
             </div>
             <div className="Panel-Container">
                 <div className="Preview-Text">
-                Anteprima
+                {Copy.preview}
                 </div>
                 <PanelClose address={inputAddress} />
-                <PanelOpen  address={inputAddress} />
+                <PanelOpen address={inputAddress} />
           </div>
         </div>
     </div>

@@ -155,13 +155,13 @@ function AppFrontend() {
               </div>
               <Slider 
                 sliderName = {Copy.price}
-                sliderText = {`${Copy.currency} 10000`}
+                sliderText = {`10000 ${Copy.currency}`}
                 sliderMinValue = "1000"
                 sliderMaxValue = "10000000" 
             />
               <Slider 
                 sliderName = {Copy.dimension}
-                sliderText = {`${Copy.measure} 180`}
+                sliderText = {`180 ${Copy.measure} `}
                 sliderMinValue = "10"
                 sliderMaxValue = "500" 
               />
