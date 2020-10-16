@@ -13,8 +13,7 @@
     }
     
     .type-button:hover {
-        background-color: $cyan;
-        color:black;
+        color:$mid-grey;
     }
     
     .type-text {
@@ -26,8 +25,8 @@
     }
 
     .is-selected {
-        background-color: $grey;
-        color: white;
+        background-color: $cyan;
+        color: black;
        /* box-shadow: inset 0px -21px 0px -16px #00ab5c;*/
     }
     

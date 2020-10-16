@@ -23,7 +23,7 @@
     width: 100%;
     object-fit: cover;
     border: 0;
-    // background: $light-light-grey $imgplaceholder no-repeat center ;
+    background: $light-light-grey $imgplaceholder no-repeat center ;
 }
 
 .see-more-photo {
@@ -142,10 +142,12 @@
     text-overflow: ellipsis;
 }
 .panelopen-property-description {
-    font-size: $medium;
+    font-size: $big;
     color: $dark-grey;
     line-height: 18px;
     margin: 25px 0 25px 0;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
 }
 
 .panelopen-contact-button-container {

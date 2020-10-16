@@ -11,6 +11,7 @@
     box-shadow: -8px 12px 26px -10px $black-opaque;
     flex-direction: row;
     background-color: white;
+    
 }
 
 .panelclose-preview:empty:before{
@@ -27,11 +28,11 @@
 }
 
 .panelclose-img {
-    border: none !important;
+    background: $light-light-grey $imgplaceholder no-repeat center;
+
     width: 250px;
     height: 250px;
     object-fit: cover;
-    background: $light-light-grey $iconEmptyImg no-repeat center;
 }
 
 .panelclose-property-price-container {
@@ -113,7 +114,8 @@
     color: $mid-grey;
     white-space: normal; 
     overflow: hidden;
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis;
+
     
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './panelOpen.scss';
 
-// import image from './ImageSample.jpg'
+import image from '../panelClose/imageSample.jpg'
 import { ReactComponent as IconMail } from 'assets/icon/icon-mail.svg'
 import { ReactComponent as IconPhone } from 'assets/icon/icon-phone.svg'
 import { ReactComponent as IconPrint } from 'assets/icon/icon-print.svg'
@@ -15,7 +15,7 @@ function PanelOpen(props) {
         <div className="panelopen-container">
             <div className="panelopen">
                 <div className="panelopen-up">
-                    <img className="panelopen-img" alt="" width="30" ></img>
+                    <img className="panelopen-img" src={image} alt="" width="30" ></img>
                     <div className="see-more-photo">
                         {Copy.morephoto}
                     </div>
@@ -31,18 +31,21 @@ function PanelOpen(props) {
                                     </div>
                                     <div panel-sample-text={Copy.province} 
                                         className="panelopen-property-location panelopen-preview">
+                                        {props.city}
                                     </div>
                                 </div>
                                 <div className="panelopen-down-right">
                                     <div className="panelopen-property-price-container">
-                                        <div panel-sample-text={Copy.price} 
+                                        <div panel-sample-text={`${Copy.price} ${Copy.currency}`}
                                             className="panelopen-property-price-text panelopen-preview">
+                                             {props.price}
                                         </div>
                                     </div>
                                     <div className="panelopen-property-feature-container">
                                         <div className="panelopen-property-feature">
                                             <div panel-sample-text={Copy.dimension} 
                                                 className="panelopen-property-feature-size panelopen-preview">
+                                                    {props.dimension}
                                             </div>
                                             <div className="panelopen-property-feature-name">
                                                 {Copy.dimension}
@@ -51,6 +54,7 @@ function PanelOpen(props) {
                                         <div className="panelopen-property-feature">
                                             <div panel-sample-text={Copy.rooms} 
                                                 className="panelopen-property-feature-size panelopen-preview">
+                                                    {props.room}
                                             </div>
                                             <div className="panelopen-property-feature-name"
                                                 >{Copy.rooms}
@@ -59,6 +63,7 @@ function PanelOpen(props) {
                                         <div className="panelopen-property-feature">
                                             <div panel-sample-text={Copy.bathrooms} 
                                                 className="panelopen-property-feature-size panelopen-preview">
+                                                    {props.bathroom}
                                             </div>
                                             <div className="panelopen-property-feature-name">
                                                 {Copy.bathrooms}
@@ -84,6 +89,7 @@ function PanelOpen(props) {
                         </div>    
                         <div panel-sample-text={Copy.description} 
                                 className="panelopen-property-description panelopen-preview">
+                                    {props.description}
                         </div>
                         <div className="panelopen-social-options-container">
                             <button className="panelopen-social-button-container">

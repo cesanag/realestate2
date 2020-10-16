@@ -28,7 +28,10 @@
 
 .input-description {
     resize: none;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
 }
+
 
 .button {
     padding: 15px;

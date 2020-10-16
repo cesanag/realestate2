@@ -27,9 +27,8 @@ svg {
     }
 }
 .buttonsfilters-button:hover {
-    background-color: $cyan;
-    color: black;
-    
+
+    color: $mid-grey; 
 }
 
 .buttonsfilters-button:hover > .buttonsfilters-img{

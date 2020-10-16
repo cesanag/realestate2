@@ -98,13 +98,13 @@ function AppFrontend() {
                     isButtonClicked = {!isMapHidden}
                   />
                   <div className="buttonsfilters-list-container"
-                    onClick={() => setIsListHidden(false)}
+                    // onClick={() => setIsListHidden(false)}
                     onMouseEnter={() => setIsListHidden(false)}
                     onMouseLeave={() => setIsListHidden(true)}> 
                     <LeftIconButton 
                       icon={<IconList />}
                       buttonText={Copy.order}
-                      isButtonClicked = {!isListHidden}
+                      // isButtonClicked = {!isListHidden}
                     />
                   <div className= {`buttonsfilters-list-modal ${isListHidden && "is-hidden"}`}>
                     <div className="buttonsfilters-list-text">

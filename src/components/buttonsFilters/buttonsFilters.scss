@@ -10,7 +10,6 @@
         flex-direction: row;
         justify-content: flex-start;
         margin-top: 15px;
-
     }
 
     .buttonsfilters-list-modal{
@@ -32,12 +31,12 @@
 
     .is-clicked {
         color: black;
-        background-color: $grey;
-        color: white;
-        fill:white;
+        background-color: $cyan;
+        color: black;
+        fill:black;
     }
     .is-clicked > .buttonsfilters-img {
-        fill:white;
+        fill: $mid-grey;
     }
 
 }

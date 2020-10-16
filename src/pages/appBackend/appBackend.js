@@ -6,26 +6,49 @@ import './appBackend.scss';
 
 //Import data
 import propertiesList from 'backend/listaImmobili.json'
+
 //Import ReusableComponents
 import Header from 'components/header/header';
 import Navigator from 'components/navigator/navigator';
 import PanelClose from 'components/panelClose/panelClose';
 import PanelOpen from 'components/panelOpen/panelOpen';
-import Posting from 'components/posting/posting'
+import Listing from 'components/listing/listing'
 
+//Import Copy
 import { Copy } from 'utilities/copy'
 
 function AppBackend() {
 
-  
   console.log(propertiesList)
   //Set Input Value State
   const [inputAddress, setInputAddress] = useState()
-  function handleInputs(newInputAddress) {
-    //console.log(newInputAddress);
+  function handleInputAddress(newInputAddress) {
     setInputAddress(newInputAddress)
   }
-
+  const [inputCity, setInputCity] = useState()
+  function handleInputCity(newInputCity) {
+    setInputCity(newInputCity)
+  }
+  const [inputPrice, setInputPrice] = useState()
+  function handleInputPrice(newInputPrice) {
+    setInputPrice(newInputPrice)
+  }
+  const [inputRoom, setInputRoom] = useState()
+  function handleInputRoom(newInputRoom) {
+    setInputRoom(newInputRoom)
+  }
+  const [inputBathroom, setInputBathroom] = useState()
+  function handleInputBathroom(newInputBathroom) {
+    setInputBathroom(newInputBathroom)
+  }
+  const [inputDimension, setInputDimension] = useState()
+  function handleInputDimension(newInputDimension) {
+    setInputDimension(newInputDimension)
+  }
+  const [inputDescription, setInputDescription] = useState()
+  function handleInputDescription(newInputDescription) {
+    setInputDescription(newInputDescription)
+  }
   console.log(inputAddress);
 
   //IDEAL: add property to propertiesList State
@@ -48,14 +71,39 @@ function AppBackend() {
         </div>
         <div className="Section-Main">
             <div className="Posting-Container">
-                <Posting onChange={handleInputs}/>
+                <Listing 
+                onChangeAddress={handleInputAddress}
+                onChangeCity={handleInputCity}
+                onChangePrice={handleInputPrice}
+                onChangeRoom={handleInputRoom}
+                onChangeBathroom={handleInputBathroom}
+                onChangeDimension={handleInputDimension}
+                onChangeDescription={handleInputDescription}
+                
+                />
             </div>
             <div className="Panel-Container">
                 <div className="Preview-Text">
                 {Copy.preview}
                 </div>
-                <PanelClose address={inputAddress} />
-                <PanelOpen address={inputAddress} />
+                <PanelClose 
+                  address={inputAddress} 
+                  city={inputCity} 
+                  price={inputPrice}
+                  room={inputRoom}
+                  bathroom={inputBathroom}
+                  dimension={inputDimension}
+                  description={inputDescription}
+                  />
+                <PanelOpen 
+                  address={inputAddress} 
+                  city={inputCity} 
+                  price={inputPrice}
+                  room={inputRoom}
+                  bathroom={inputBathroom}
+                  dimension={inputDimension}
+                  description={inputDescription}
+                  />
           </div>
         </div>
     </div>
