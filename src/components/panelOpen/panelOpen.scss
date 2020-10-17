@@ -1,5 +1,8 @@
 @import  '../../globalStyles/globalStyles.scss';
 
+svg{
+    display: flex;
+}
 
 .panelopen-container {
     margin-top: 50px;
@@ -58,13 +61,14 @@
     display: flex;
     background-color: $green;
     border-radius: 6px;
+    padding: 5px 12px 5px 15px;
 }
 
 .panelopen-property-price-text {
     display: flex;
     align-items:center;
     font-size: $big;
-    padding: 8px 15px 8px 15px;
+    padding: 8px 5px 8px 5px;
     border-radius: 6px;
     color: $white;
     font-weight: $bold;
@@ -82,6 +86,7 @@
     margin-right: 25px;
 }
 
+
 .panelopen-preview {
     border: none;
 }
@@ -94,6 +99,10 @@
 
 .panelopen-down-left {
     flex-direction: column;
+}
+
+.panelopen-property-content {
+    display: flex;
 }
 
 .panelopen-property-address {
@@ -114,30 +123,45 @@
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    
+}
+
+.panelopen-property-feature-up {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: $light-light-grey;
+    padding: 10px;
+    fill: $grey;
 }
 
 .panelopen-property-feature {
+    display: flex;
+    flex-direction: column;
     margin-left: 15px;
+}
+
+.panelopen-property-feature-img {
+    fill: $mid-grey;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;;
 }
 
 .panelopen-property-feature-size {
     text-align: center;
-    font-size: $medium;
-    background-color:$light-grey;
-    padding: 7px;
+    font-size: $big;
     font-weight: $semibold; 
 }
 
 .panelopen-property-feature-name {
     margin-top: 5px;
-    font-size: $medium;
+    font-size: $big;
     font-weight: $regular;
 }
 
 .panelopen-property-location {
     margin-top: 3px;
-    font-size: $medium;
+    font-size: $big;
     color: $dark-grey;
     text-overflow: ellipsis;
 }

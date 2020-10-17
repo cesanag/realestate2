@@ -2,6 +2,9 @@ import React from 'react';
 import './panelOpen.scss';
 
 import image from '../panelClose/imageSample.jpg'
+import { ReactComponent as IconDimension } from 'assets/icon/icon-dimension.svg'
+import { ReactComponent as IconBathroom } from 'assets/icon/icon-bathroom.svg'
+import { ReactComponent as IconRoom } from 'assets/icon/icon-room.svg'
 import { ReactComponent as IconMail } from 'assets/icon/icon-mail.svg'
 import { ReactComponent as IconPhone } from 'assets/icon/icon-phone.svg'
 import { ReactComponent as IconPrint } from 'assets/icon/icon-print.svg'
@@ -25,45 +28,93 @@ function PanelOpen(props) {
                         <div className="panelopen-down-location_price_feature">
                             <div className="panelopen-down">
                                 <div className="panelopen-down-left">
-                                    <div panel-sample-text={Copy.address} 
-                                        className="panelopen-property-address panelopen-preview">
-                                        {props.address}
+                                    <div className="panelopen-property-content">
+                                        <div panel-sample-text={Copy.address} 
+                                            className="panelopen-property-address panelopen-preview">
+                                            {props.address}
+                                        </div>
+                                        <div panel-sample-text={Copy.whitespace}
+                                            className="panelopen-property-address panelopen-preview">
+                                            {Copy.whitespace}
+                                        </div>
+                                        <div panel-sample-text={Copy.houseNumber} 
+                                            className="panelopen-property-address panelopen-preview">
+                                            {props.houseNumber}
+                                        </div>
                                     </div>
-                                    <div panel-sample-text={Copy.province} 
-                                        className="panelopen-property-location panelopen-preview">
-                                        {props.city}
+                                    <div className="panelopen-property-content">
+                                        <div panel-sample-text={Copy.city} 
+                                            className="panelopen-property-location panelopen-preview">
+                                            {props.city}
+                                        </div>
+                                        <div panel-sample-text={Copy.whitespace} 
+                                            className="panelopen-property-feature-size panelopen-preview">
+                                            {Copy.whitespace}
+                                        </div>
+                                        <div panel-sample-text={Copy.province} 
+                                            className="panelopen-property-location panelopen-preview">
+                                            {props.province}
+                                        </div>
                                     </div>
+                                   
                                 </div>
                                 <div className="panelopen-down-right">
                                     <div className="panelopen-property-price-container">
-                                        <div panel-sample-text={`${Copy.price} ${Copy.currency}`}
+                                        <div panel-sample-text={Copy.currency}
+                                            className="panelopen-property-price-text panelopen-preview">
+                                             {Copy.currency}
+                                        </div>
+                                        <div panel-sample-text={Copy.price}
                                             className="panelopen-property-price-text panelopen-preview">
                                              {props.price}
                                         </div>
                                     </div>
                                     <div className="panelopen-property-feature-container">
                                         <div className="panelopen-property-feature">
-                                            <div panel-sample-text={Copy.dimension} 
-                                                className="panelopen-property-feature-size panelopen-preview">
-                                                    {props.dimension}
+                                            <div className="panelopen-property-feature-up">
+                                                <div panel-sample-text={Copy.sampleDimension} 
+                                                    className="panelopen-property-feature-size panelopen-preview">
+                                                        {props.dimension}
+                                                </div>
+                                                <div panel-sample-text={Copy.whitespace} 
+                                                    className="panelopen-property-feature-size panelopen-preview">
+                                                        {Copy.whitespace}
+                                                </div>
+                                                <div panel-sample-text={Copy.measure} 
+                                                    className="panelopen-property-feature-size panelopen-preview">
+                                                        {Copy.measure}
+                                                </div>
+                                                <div className="panelopen-property-feature-img">
+                                                    <IconDimension />
+                                                </div>
                                             </div>
-                                            <div className="panelopen-property-feature-name">
-                                                {Copy.dimension}
-                                            </div>
+                                                <div className="panelopen-property-feature-name">
+                                                    {Copy.dimension}
+                                                </div>
                                         </div>
                                         <div className="panelopen-property-feature">
-                                            <div panel-sample-text={Copy.rooms} 
-                                                className="panelopen-property-feature-size panelopen-preview">
-                                                    {props.room}
+                                            <div className="panelopen-property-feature-up">
+                                                <div panel-sample-text={Copy.sampleRooms} 
+                                                    className="panelopen-property-feature-size panelopen-preview">
+                                                        {props.room}
+                                                </div>
+                                                <div className="panelopen-property-feature-img">
+                                                    <IconRoom />
+                                                </div>
                                             </div>
                                             <div className="panelopen-property-feature-name"
-                                                >{Copy.rooms}
+                                                    >{Copy.rooms}
                                             </div>
                                         </div>
                                         <div className="panelopen-property-feature">
-                                            <div panel-sample-text={Copy.bathrooms} 
-                                                className="panelopen-property-feature-size panelopen-preview">
-                                                    {props.bathroom}
+                                            <div className="panelopen-property-feature-up">
+                                                <div panel-sample-text={Copy.sampleBathrooms} 
+                                                    className="panelopen-property-feature-size panelopen-preview">
+                                                        {props.bathroom}
+                                                </div>
+                                                <div className="panelopen-property-feature-img">
+                                                    <IconBathroom />
+                                                </div>
                                             </div>
                                             <div className="panelopen-property-feature-name">
                                                 {Copy.bathrooms}

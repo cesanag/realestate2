@@ -7,8 +7,14 @@ function Listing(props) {
     function handleAddressInputsEvent (event) {
         props.onChangeAddress(event.target.value)
     }
+    function handleHouseNumberInputsEvent (event) {
+        props.onChangeHouseNumber(event.target.value)
+    }
     function handleCityInputsEvent (event) {
         props.onChangeCity(event.target.value)
+    }
+    function handleProvinceInputsEvent (event) {
+        props.onChangeProvince(event.target.value)
     }
     function handlePriceInputsEvent (event) {
         props.onChangePrice(event.target.value)
@@ -39,20 +45,26 @@ function Listing(props) {
                     className="input input-address required"
                     placeholder={Copy.address} />
                 <input 
+                    onChange={handleHouseNumberInputsEvent}
+                    name="houseNumber" type="number" 
+                    className="input input-address required"
+                    placeholder={Copy.houseNumber} />
+                <input 
                     onChange={handleCityInputsEvent}
                     name="city" type="text" 
                     className="input input-city"
                     placeholder={Copy.city}/>
                 <input
-                    
+                    onChange={handleProvinceInputsEvent}
                     name="province" type="text" 
                     className="input input-province"
                     placeholder={Copy.province}/>
                 <input
                     onChange={handlePriceInputsEvent}
-                    name="price" type="number" 
-                    className="input input-price" step="100" min="0"
-                    placeholder={Copy.price}/>
+                    name="price" type="number"
+                    className="input input-price" step="100" min="0" max="10"
+                    placeholder={Copy.price}
+                    />
                 <input
                     onChange={handleDimensionInputsEvent}
                     name="dimension"

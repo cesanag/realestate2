@@ -5,6 +5,7 @@ const Copy = {
     currency: "€",
     measure: "m²",
     country: "Italia",
+    whitespace: "\u00A0",
 
     //PanelOpen
     morephoto: "Vedi Altre foto",
@@ -44,6 +45,7 @@ const Copy = {
 
     //Posting
     address: "Indirizzo",
+    houseNumber: "Numero civico",
     city: "Città",
     province: "Provincia",
     description: "Descrizione",

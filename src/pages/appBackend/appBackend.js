@@ -25,9 +25,17 @@ function AppBackend() {
   function handleInputAddress(newInputAddress) {
     setInputAddress(newInputAddress)
   }
+  const [inputHouseNumber, setInputHouseNumber] = useState()
+  function handleInputHouseNumber(newInputHouseNumber) {
+    setInputHouseNumber(newInputHouseNumber)
+  }
   const [inputCity, setInputCity] = useState()
   function handleInputCity(newInputCity) {
     setInputCity(newInputCity)
+  }
+  const [inputProvince, setInputProvince] = useState()
+  function handleInputProvince(newInputProvince) {
+    setInputProvince(newInputProvince)
   }
   const [inputPrice, setInputPrice] = useState()
   function handleInputPrice(newInputPrice) {
@@ -73,7 +81,9 @@ function AppBackend() {
             <div className="Posting-Container">
                 <Listing 
                 onChangeAddress={handleInputAddress}
+                onChangeHouseNumber={handleInputHouseNumber}
                 onChangeCity={handleInputCity}
+                onChangeProvince={handleInputProvince}
                 onChangePrice={handleInputPrice}
                 onChangeRoom={handleInputRoom}
                 onChangeBathroom={handleInputBathroom}
@@ -87,8 +97,10 @@ function AppBackend() {
                 {Copy.preview}
                 </div>
                 <PanelClose 
-                  address={inputAddress} 
-                  city={inputCity} 
+                  address={inputAddress}
+                  houseNumber={inputHouseNumber} 
+                  city={inputCity}
+                  province={inputProvince}
                   price={inputPrice}
                   room={inputRoom}
                   bathroom={inputBathroom}
@@ -96,8 +108,10 @@ function AppBackend() {
                   description={inputDescription}
                   />
                 <PanelOpen 
-                  address={inputAddress} 
-                  city={inputCity} 
+                  address={inputAddress}
+                  houseNumber={inputHouseNumber} 
+                  city={inputCity}
+                  province={inputProvince}
                   price={inputPrice}
                   room={inputRoom}
                   bathroom={inputBathroom}

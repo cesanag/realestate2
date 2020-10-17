@@ -1,7 +1,8 @@
 import React from 'react';
-import './Login.scss';
-import { ReactComponent as IconLogo } from 'assets/icon/-logo.svg'
+import './login.scss';
+import { ReactComponent as IconLogo } from 'assets/icon/icon-logo.svg'
 import {Copy} from 'utilities/copy'
+
 
 function Login() {
     return (
@@ -15,7 +16,6 @@ function Login() {
                 <input type="text" className="login-username" placeholder="Utente" />
                 <input type="password"className="login-password" placeholder="Password" />
             </div>
-            <button className="login-button">Entra</button>
         </div>
     </div>
     );

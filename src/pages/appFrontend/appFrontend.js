@@ -76,6 +76,7 @@ function AppFrontend() {
     setIsType4ButtonClicked(!isType4ButtonClicked)
   }
 
+  
   return (
     <div className="App">
       <div className="App-Content">
@@ -192,7 +193,9 @@ function AppFrontend() {
         </div>
       </div>
     </div>
+    
   );
+  
 }
 
 export default AppFrontend;
