@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import './appBackend.scss';
 
 //Import data
-import propertiesList from 'backend/listaImmobili.json'
+// import propertiesList from 'backend/listaImmobili.json'
 
 //Import ReusableComponents
 import Header from 'components/header/header';
@@ -13,13 +13,18 @@ import Navigator from 'components/navigator/navigator';
 import PanelClose from 'components/panelClose/panelClose';
 import PanelOpen from 'components/panelOpen/panelOpen';
 import Listing from 'components/listing/listing'
+import ImgModal from 'components/imgModal/imgModal'
 
 //Import Copy
 import { Copy } from 'utilities/copy'
 
 function AppBackend() {
 
-  console.log(propertiesList)
+  //Set Modal State
+  const [isModalHidden, setIsModalHidden] = useState(true);
+  function handleModalClick() {
+    setIsModalHidden(!isModalHidden)
+  }
   //Set Input Value State
   const [inputAddress, setInputAddress] = useState()
   function handleInputAddress(newInputAddress) {
@@ -28,6 +33,10 @@ function AppBackend() {
   const [inputHouseNumber, setInputHouseNumber] = useState()
   function handleInputHouseNumber(newInputHouseNumber) {
     setInputHouseNumber(newInputHouseNumber)
+  }
+  const [inputZip, setInputZip] = useState()
+  function handleInputZip(newInputZip) {
+    setInputZip(newInputZip)
   }
   const [inputCity, setInputCity] = useState()
   function handleInputCity(newInputCity) {
@@ -73,9 +82,14 @@ function AppBackend() {
 
   return (
     <div className="App">
+        <ImgModal 
+          isModalHidden={isModalHidden} 
+          onModalClick={handleModalClick}/>
         <div className="Section-Header">
           <Header className="Section-Header"/>
           <Navigator />
+          
+          
         </div>
         <div className="Section-Main">
             <div className="Posting-Container">
@@ -83,13 +97,13 @@ function AppBackend() {
                 onChangeAddress={handleInputAddress}
                 onChangeHouseNumber={handleInputHouseNumber}
                 onChangeCity={handleInputCity}
+                onChangeZip={handleInputZip}
                 onChangeProvince={handleInputProvince}
                 onChangePrice={handleInputPrice}
                 onChangeRoom={handleInputRoom}
                 onChangeBathroom={handleInputBathroom}
                 onChangeDimension={handleInputDimension}
                 onChangeDescription={handleInputDescription}
-                
                 />
             </div>
             <div className="Panel-Container">
@@ -98,7 +112,8 @@ function AppBackend() {
                 </div>
                 <PanelClose 
                   address={inputAddress}
-                  houseNumber={inputHouseNumber} 
+                  houseNumber={inputHouseNumber}
+                  zip={inputZip}
                   city={inputCity}
                   province={inputProvince}
                   price={inputPrice}
@@ -109,7 +124,8 @@ function AppBackend() {
                   />
                 <PanelOpen 
                   address={inputAddress}
-                  houseNumber={inputHouseNumber} 
+                  houseNumber={inputHouseNumber}
+                  zip={inputZip}
                   city={inputCity}
                   province={inputProvince}
                   price={inputPrice}
@@ -117,6 +133,7 @@ function AppBackend() {
                   bathroom={inputBathroom}
                   dimension={inputDimension}
                   description={inputDescription}
+                  onModalClick={handleModalClick}
                   />
           </div>
         </div>

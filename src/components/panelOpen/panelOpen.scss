@@ -7,6 +7,7 @@ svg{
 .panelopen-container {
     margin-top: 50px;
     margin-bottom: 50px;
+    
 }
 .panelopen {
     display: flex;
@@ -19,6 +20,7 @@ svg{
     text-align:center;
     position: relative;
     height: 300px;
+    cursor:pointer;
 }
 
 .panelopen-img {
@@ -39,8 +41,12 @@ svg{
     background-color: $light-grey;
     padding: 7px 12px 7px 12px;
     border-radius: 6px;
-    color: $mid-grey;
+    color: $dark-grey;
     font-weight: $bold;
+}
+
+.see-more-photo:hover {
+    color: $mid-grey;
 }
 
 .panelopen-down-container {

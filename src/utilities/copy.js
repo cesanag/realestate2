@@ -44,8 +44,9 @@ const Copy = {
     goback: "Torna a",
 
     //Posting
-    address: "Indirizzo",
-    houseNumber: "Numero civico",
+    address: "Via",
+    houseNumber: "Civico",
+    zip: "CAP",
     city: "Città",
     province: "Provincia",
     description: "Descrizione",
@@ -58,8 +59,8 @@ const Copy = {
     sampleAddress: "via Italia, 1",
     sampleCity: "Monza",
     sampleProvince: "Milano MI - Italia",
-    samplePrice: "€ 100.000",
-    sampleDimension: "100",
+    samplePrice: "1",
+    sampleDimension: "1",
     sampleRooms: "1",
     sampleBathrooms: "1",
     sampleDescription: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."

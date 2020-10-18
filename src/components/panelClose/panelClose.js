@@ -19,7 +19,7 @@ function PanelClose(props) {
                             className="panelclose-property-price-text panelclose-preview">
                             {Copy.currency}
                         </div>
-                        <div panel-sample-text={Copy.price}
+                        <div panel-sample-text={Copy.samplePrice}
                             className="panelclose-property-price-text panelclose-preview">
                             {props.price}
                         </div>
@@ -43,14 +43,22 @@ function PanelClose(props) {
                             </div>
                         </div>
                         <div className="panelclose-property-content">
+                            <div panel-sample-text={Copy.zip}
+                                className="panelclose-property-location panelclose-preview">
+                                {props.zip}
+                            </div>
+                            <div panel-sample-text={Copy.whitespace}
+                                    className="panelclose-property-feature-size panelclose-preview">
+                                    {Copy.whitespace}
+                            </div>
                             <div panel-sample-text={Copy.city}
                                 className="panelclose-property-location panelclose-preview">
                                 {props.city}
                             </div>
                             <div panel-sample-text={Copy.whitespace}
                                     className="panelclose-property-feature-size panelclose-preview">
-                                        {Copy.whitespace}
-                                </div>
+                                    {Copy.whitespace}
+                            </div>
                             <div panel-sample-text={Copy.province}
                                 className="panelclose-property-location panelclose-preview">
                                 {props.province}

@@ -17,11 +17,13 @@ function PanelOpen(props) {
     return (
         <div className="panelopen-container">
             <div className="panelopen">
-                <div className="panelopen-up">
+                <div className="panelopen-up"
+                onClick={props.onModalClick}>
                     <img className="panelopen-img" src={image} alt="" width="30" ></img>
-                    <div className="see-more-photo">
+                    <button className="see-more-photo"
+                        onClick={props.onModalClick}>
                         {Copy.morephoto}
-                    </div>
+                    </button>
                 </div>
                 <div className="panelopen-down-container">
                     <div className="panelopen-down-first">
@@ -43,6 +45,14 @@ function PanelOpen(props) {
                                         </div>
                                     </div>
                                     <div className="panelopen-property-content">
+                                        <div panel-sample-text={Copy.zip} 
+                                            className="panelopen-property-location panelopen-preview">
+                                            {props.zip}
+                                        </div>
+                                        <div panel-sample-text={Copy.whitespace} 
+                                            className="panelopen-property-feature-size panelopen-preview">
+                                            {Copy.whitespace}
+                                        </div>
                                         <div panel-sample-text={Copy.city} 
                                             className="panelopen-property-location panelopen-preview">
                                             {props.city}
@@ -64,7 +74,7 @@ function PanelOpen(props) {
                                             className="panelopen-property-price-text panelopen-preview">
                                              {Copy.currency}
                                         </div>
-                                        <div panel-sample-text={Copy.price}
+                                        <div panel-sample-text={Copy.samplePrice}
                                             className="panelopen-property-price-text panelopen-preview">
                                              {props.price}
                                         </div>
