@@ -55,7 +55,6 @@ const Copy = {
     uploadPhoto: "Carica Foto",
 
     //Sample Panel
-    sampleImage: "components/ReusableComponents/PanelClose/ImageSample.jpg",
     sampleAddress: "via Italia, 1",
     sampleCity: "Monza",
     sampleProvince: "Milano MI - Italia",

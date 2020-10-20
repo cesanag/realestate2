@@ -1,7 +1,6 @@
 import React from 'react';
 import './style/css/PanelOpen.css';
 
-import image from './ImageSample.jpg'
 import iconMail from './icon/icon-mail.svg'
 import iconPhone from './icon/icon-phone.svg'
 import iconPrint from './icon/icon-print.svg'
@@ -14,7 +13,7 @@ function PanelOpen(props) {
         <div className="panelopen-container">
             <div className="panelopen">
                 <div className="panelopen-up">
-                    <img className="panelopen-img" alt="" src={image}></img>
+                    <img className="panelopen-img" alt="" src={}></img>
                     <div className="see-more-photo">
                         10 {Copy.morephoto}
                     </div>

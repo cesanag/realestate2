@@ -1,6 +1,5 @@
 import React from 'react';
 import './style/css/PanelClose.css';
-import image from './ImageSample.jpg';
 import {Copy} from './Copy/Copy';
 
 function PanelClose(props) {
@@ -9,7 +8,7 @@ function PanelClose(props) {
         <div className="panelclose-container">
             <div className="panelclose">
                 <div className="panelclose-left">
-                    <img className="panelclose-img" alt="img" src={image} />
+                    <img className="panelclose-img" alt="img" src={} />
                     <div className="panelclose-property-price-container">
                         <div className="panelclose-property-price-text">
                            {Copy.currency} 200.000

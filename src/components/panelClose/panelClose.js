@@ -1,6 +1,6 @@
 import React from 'react';
 import './panelClose.scss';
-import image from './imageSample.jpg';
+import img0 from 'assets/image/img0.jpg'
 import {Copy} from 'utilities/copy';
 
 import { ReactComponent as IconDimension } from 'assets/icon/icon-dimension.svg'
@@ -13,7 +13,7 @@ function PanelClose(props) {
         <div className="panelclose-container">
             <div className="panelclose">
                 <div className="panelclose-left">
-                    <img className="panelclose-img" src={image} alt="" />
+                    <img className="panelclose-img" src={img0} alt="" />
                     <div className="panelclose-property-price-container">
                         <div panel-sample-text={Copy.currency}
                             className="panelclose-property-price-text panelclose-preview">

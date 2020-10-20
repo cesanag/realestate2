@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-family: "Audiowide", cursive;
+    color: #fff;
+    line-height: 1.2;
+    text-shadow: 1px 1px 1px #333;
+    padding-top:50px;
+    text-align: center;
+}
+
+p{
+    padding:2% 10%;
+    color: white;
+    text-shadow: 1px 1px 1px #333;
+    text-align: center;
+}
+
+.carousel {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.64);
+}
+
+.carousel-inner {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    opacity: 100;
+}
+
+.carousel-item {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-control {
+    background: gray;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 50px;
+    height: 50px;
+    line-height: 45px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 50px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+     left: 2%;
+ }
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: black;
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.carousel-bullet {
+    color: #428bca;
+    cursor: pointer;
+    display: block;
+    font-size: 100px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet
+{
+    color: yellow;
+}
+
+.item-1 {
+    background-image:url("https://images.unsplash.com/photo-1457003633805-c9e8bd076e0b?ixlib=rb-0.3.5&s=68dc505c6baa70d3caace1bbc422f1c0&auto=format&fit=crop&w=1650&q=80");
+}
+
+.item-2 {
+    background-image:url("https://images.unsplash.com/photo-1454994834218-5ffbb76c0e74?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dddc4ee524eee04e325dbc73367391d8&auto=format&fit=crop&w=1651&q=80");
+}
+
+.item-3 {
+    background-image:url("https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f38e067fcad97bc3b247b3db0859af1c&auto=format&fit=crop&w=1651&q=80");
+}
+
+

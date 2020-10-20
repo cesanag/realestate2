@@ -1,7 +1,7 @@
 import React from 'react';
 import './panelOpen.scss';
 
-import image from '../panelClose/imageSample.jpg'
+import img0 from 'assets/image/img0.jpg'
 import { ReactComponent as IconDimension } from 'assets/icon/icon-dimension.svg'
 import { ReactComponent as IconBathroom } from 'assets/icon/icon-bathroom.svg'
 import { ReactComponent as IconRoom } from 'assets/icon/icon-room.svg'
@@ -19,7 +19,7 @@ function PanelOpen(props) {
             <div className="panelopen">
                 <div className="panelopen-up"
                 onClick={props.onModalClick}>
-                    <img className="panelopen-img" src={image} alt="" width="30" ></img>
+                    <img className="panelopen-img" src={img0} alt="" width="30" ></img>
                     <button className="see-more-photo"
                         onClick={props.onModalClick}>
                         {Copy.morephoto}

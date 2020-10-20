@@ -11,16 +11,38 @@
     left: 0;
     width:100%;
     height: 100%;
-    // background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
     transition: all .2s ease-in-out;
 }   
     
     .panelopen-img-modal-content {
+        background: $light-light-grey $imgplaceholder no-repeat center;
+        width: 60rem;
+        height: 35rem;
+        object-fit: cover;
         display: flex;
         box-shadow: -8px 12px 26px -10px $black;
         transition: all .2 ease-in-out;
     }
+
+    .panelopen-img-small-container {
+        background-color: $light-grey;
+        display: flex;
+        flex-direction: column;
+
+        
+    }
     
+    .panelopen-img-small {
+        cursor: pointer;
+        width: 10rem;
+        height: 5rem;
+        object-fit: cover;
+    }
+    .panelopen-img-small:hover{
+        opacity: 0.8;
+    }
+
 
     .panelopen-img-modal-close {
         border: none;
@@ -32,7 +54,8 @@
         position: absolute;
         margin: 10px;
         font-weight: $bold;
-        fill: $light-grey;
+        fill: $dark-grey;
+        stroke: $white;
     }
     .panelopen-img-modal-close:hover {
         fill:$grey;
