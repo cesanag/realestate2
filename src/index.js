@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-// import AppFrontend from 'pages/appFrontend/appFrontend';
+//import AppFrontend from 'pages/appFrontend/appFrontend';
 import AppBackend from 'pages/appBackend/appBackend';
-// import Login from 'pages/login/login';
+//import Login from 'pages/login/login';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-      // <AppFrontend />,
+       //<AppFrontend />,
     <AppBackend />,
-    // <Login />,
+    //<Login />,
   document.getElementById('root'));
 //registerServiceWorker();
 
