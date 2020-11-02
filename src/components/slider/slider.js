@@ -2,10 +2,11 @@ import React from 'react';
 import './slider.scss';
 
 function Slider({sliderName, sliderText, sliderMinValue, sliderMaxValue}) {
+
     return (
         <div className="slider-container">
             <div className="slider-name">
-            {sliderName}
+                {sliderName}
             </div>
             <div className="slider-text">
                 {sliderText} 

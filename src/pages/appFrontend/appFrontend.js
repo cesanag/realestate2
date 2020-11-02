@@ -24,8 +24,17 @@ import { ReactComponent as IconList } from 'assets/icon/icon-list.svg'
 
 //Import Copy
 import { Copy } from 'utilities/copy'
+import SliderMulti from 'components/sliderMulti/sliderMulti';
 
 function AppFrontend() {
+
+  const addScript = () => {
+    const script = document.createElement("script");
+    script.src = "./sliderMultiLogic.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }
+  addScript()
 
   // State
   const [isFilterHidden, setIsFilterHidden] = useState(false);
@@ -154,6 +163,10 @@ function AppFrontend() {
                 </div>
                
               </div>
+              <SliderMulti 
+                sliderName = {Copy.price}
+                sliderText = {`10000 ${Copy.currency}`}
+                />
               <Slider 
                 sliderName = {Copy.price}
                 sliderText = {`10000 ${Copy.currency}`}
