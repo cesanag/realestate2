@@ -24,6 +24,13 @@
   min-width: 250px;
 }
 
+.input-text-demargined {
+    position: absolute;
+    margin-bottom:-8px;
+    margin-left: 5px;
+    z-index: 99;
+    color: $dark-grey;
+}
 .input {
     margin-bottom: 25px;
     padding: 8px;

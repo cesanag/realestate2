@@ -23,14 +23,14 @@
 .panelclose-left{
     display: flex;
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
 }
 
 .panelclose-img {
     background: $light-light-grey $imgplaceholder no-repeat center;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -54,16 +54,23 @@
     font-size: $big;
     color: $white;
     font-weight: 700;
-    padding: 7px 4px 7px 4px;
-
+    padding: 7px 4px 7px 4px
 }
 
 .panelclose-right {
     display: flex;
-    flex-grow: 1;
+    flex: 1;
     flex-direction: column;
     align-self: center;
-    margin: 25px;
+    width: 300px;
+    
+}
+
+.panelclose-right-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 25px;
 }
 
 .panelclose-property-address {
@@ -118,20 +125,20 @@
     display: flex;
 }
 .panelclose-property-description {
-    line-height: 14px;
+    line-height: 16px;
     font-size: $big;
     color: $mid-grey;
+    height: 50px;
     white-space: normal; 
     overflow: hidden;
     text-overflow: ellipsis;
-
     
 }
 
 @media screen and (max-width: 992px) {
     .panelclose {
       flex-direction: column;
-      width: 250px;
+      width: 300px;
     }
   }
 

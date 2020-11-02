@@ -6,9 +6,4 @@ SERVER
 REACT
     - How to implement OpenStreetMap (OpenLayers) in React?
     - How to insert js function into jsx? (for multirangeslider)
-    - How to make button clicked with React?
-    - How to handle multiple React Inputs from Child to Parent?
     - How to React Route one page to another?
-   
-SVG
-    - Is it possible to add scss $variables to svg file?

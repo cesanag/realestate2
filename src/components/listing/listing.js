@@ -53,13 +53,13 @@ function Listing(props) {
                         name="houseNumber" type="number" 
                         className="input input-small input-address required" min="1"
                         placeholder={Copy.houseNumber} />
-                    
                 </div>
                     <input 
                         onChange={handleZipInputsEvent}
                         name="zip" type="number" 
                         className="input input-city"
-                        placeholder={Copy.zip}/>
+                        placeholder={Copy.zip}
+                        />
                 <div className="listing-input-row">
                     <input 
                         onChange={handleCityInputsEvent}

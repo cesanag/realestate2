@@ -66,7 +66,6 @@ function AppBackend() {
   function handleInputDescription(newInputDescription) {
     setInputDescription(newInputDescription)
   }
-  console.log(inputAddress);
 
   //IDEAL: add property to propertiesList State
     //user fills up form to add property
@@ -88,7 +87,6 @@ function AppBackend() {
         <div className="Section-Header">
           <Header className="Section-Header"/>
           <Navigator />
-          
           
         </div>
         <div className="Section-Main">

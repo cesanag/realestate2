@@ -19,7 +19,7 @@ function PanelOpen(props) {
             <div className="panelopen">
                 <div className="panelopen-up"
                 onClick={props.onModalClick}>
-                    <img className="panelopen-img" src={img0} alt="" width="30" ></img>
+                    <img className="panelopen-img" src="" alt="" width="30" ></img>
                     <button className="see-more-photo"
                         onClick={props.onModalClick}>
                         {Copy.morephoto}

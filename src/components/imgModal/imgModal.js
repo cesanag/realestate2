@@ -17,20 +17,17 @@ function imgModal(props) {
     return ( 
         <div className={`panelopen-img-modal ${props.isModalHidden && "is-hidden"}`} >
             <div className="panelopen-img-modal-content">
-                <img className="panelopen-img" src={img0} alt="" width="30"></img>
+                <img className="panelopen-img" src="src" alt="" width="30"></img>
                     <button className="panelopen-img-modal-close"
                     onClick={props.onModalClick}>
                         <IconClose /> 
                     </button>
                 <div className="panelopen-img-small-container">
-                    <img className="panelopen-img-small" src={img1} alt="" width="30"></img>
-                    <img className="panelopen-img-small" src={img2} alt="" width="30"></img>
-                    <img className="panelopen-img-small" src={img3} alt="" width="30"></img>
-                    <img className="panelopen-img-small" src={img4} alt="" width="30"></img>
-                    <img className="panelopen-img-small" src={img5} alt="" width="30"></img>
-
-
-
+                    <img className="panelopen-img-small" src="" alt="" width="30"></img>
+                    <img className="panelopen-img-small" src="" alt="" width="30"></img>
+                    <img className="panelopen-img-small" src="" alt="" width="30"></img>
+                    <img className="panelopen-img-small" src="" alt="" width="30"></img>
+                    <img className="panelopen-img-small" src="" alt="" width="30"></img>
                 </div>
             </div>
         </div>
