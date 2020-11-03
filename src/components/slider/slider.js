@@ -1,21 +1,19 @@
 import React from 'react';
 import './slider.scss';
 
-function Slider({sliderName, sliderText, sliderMinValue, sliderMaxValue}) {
+export default function Slider(props) {
 
     return (
         <div className="slider-container">
             <div className="slider-name">
-                {sliderName}
+                {props.sliderName}
             </div>
             <div className="slider-text">
-                {sliderText} 
+                {props.sliderText} 
             </div>
             <input className="slider" 
-                type="range" min={sliderMinValue} max={sliderMaxValue}
+                type="range" min={props.sliderMinValue} max={props.sliderMaxValue}
             />
         </div>
     );
 }
-
-export default Slider;

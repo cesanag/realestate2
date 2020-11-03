@@ -3,8 +3,7 @@ import './login.scss';
 import { ReactComponent as IconLogo } from 'assets/icon/icon-logo.svg'
 import {Copy} from 'utilities/copy'
 
-
-function Login() {
+export default function Login() {
     return (
         <div className="login-container">
         <div className="login-box">
@@ -20,7 +19,5 @@ function Login() {
     </div>
     );
   }
-
-  export default Login;
         
     

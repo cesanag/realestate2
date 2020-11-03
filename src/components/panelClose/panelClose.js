@@ -1,19 +1,20 @@
 import React from 'react';
 import './panelClose.scss';
-import img0 from 'assets/image/img0.jpg'
+//import img0 from 'assets/image/img0.jpg'
 import {Copy} from 'utilities/copy';
 
+import  IconImg  from 'assets/icon/icon-imgplaceholder.svg'
 import { ReactComponent as IconDimension } from 'assets/icon/icon-dimension.svg'
 import { ReactComponent as IconBathroom } from 'assets/icon/icon-bathroom.svg'
 import { ReactComponent as IconRoom } from 'assets/icon/icon-room.svg'
 
 
-function PanelClose(props) {
+export default function PanelClose(props) {
     return (
         <div className="panelclose-container">
             <div className="panelclose">
                 <div className="panelclose-left">
-                    <img className="panelclose-img" src="" alt="" />
+                    <div className="panelclose-img" alt=""></div>
                     <div className="panelclose-property-price-container">
                         <div panel-sample-text={Copy.currency}
                             className="panelclose-property-price-text panelclose-preview">
@@ -132,7 +133,5 @@ function PanelClose(props) {
         </div>
     )
   }
-
-  export default PanelClose;
         
     

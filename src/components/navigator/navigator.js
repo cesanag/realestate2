@@ -4,7 +4,7 @@ import { ReactComponent as IconLeftArrow } from 'assets/icon/icon-leftarrow.svg'
 import { Copy } from 'utilities/copy'
 import { Color } from 'assets/color'
 
-function Navigator() {
+export default function Navigator() {
     return (
         <div className="navigator-container">
             <button className="navigator-button back-button">
@@ -22,7 +22,5 @@ function Navigator() {
         </div>
     );
   }
-
-  export default Navigator;
         
     

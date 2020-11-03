@@ -4,7 +4,7 @@ import { ReactComponent as IconSearch} from 'assets/icon/icon-search.svg'
 import {Copy} from 'utilities/copy'
 import {Color} from 'assets/color'
 
-function SearchBar() {
+export default function SearchBar() {
     return (
         <div className="search-container">
             <input className="search-input" type="search" 
@@ -16,5 +16,3 @@ function SearchBar() {
         </div> 
     );
 }
-
-  export default SearchBar;

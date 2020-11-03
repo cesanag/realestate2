@@ -7,13 +7,16 @@ import './appFrontend.scss';
 //Import ReusableComponents
 import Header from 'components/header/header';
 import SearchBar from 'components/searchBar/searchBar';
-import ButtonsFilters from 'components/buttonsFilters/buttonsFilters';
+import FilterButtonMain from 'components/filterButtonMain/filterButtonMain';
 import Filters from 'components/filters/filters';
 import Map from 'components/map/map';
 import PanelClose from 'components/panelClose/panelClose';
 import LeftIconButton from 'components/leftIconButton/leftIconButton';
-import TypeButton from 'components/typeButton/typeButton'
-import Slider from 'components/slider/slider'
+import FilterButton from 'components/filterButton/filterButton'
+import FilterButtonModal from 'components/filterButtonModal/filterButtonModal'
+import FilterButtonSpacer from 'components/filterButtonSpacer/filterButtonSpacer'
+
+//import Slider from 'components/slider/slider'
 
 //Import Icons
 import { ReactComponent as IconFilters } from 'assets/icon/icon-filters.svg'
@@ -25,7 +28,7 @@ import { ReactComponent as IconList } from 'assets/icon/icon-list.svg'
 //Import Copy
 import { Copy } from 'utilities/copy'
 
-function AppFrontend() {
+export default function AppFrontend() {
 
   // State
   const [isFilterHidden, setIsFilterHidden] = useState(false);
@@ -82,10 +85,10 @@ function AppFrontend() {
       <div className="App-Content">
         <div className="Section-Header">
           <Header />
-          <ButtonsFilters >
+          <FilterButtonMain >
             <div className="buttonfilters-content">
               <SearchBar />
-              <div className='buttonsfilters-buttoncontainer'> 
+              <div className='filterbuttonmain-buttoncontainer'> 
                   <LeftIconButton
                     icon= {!isFilterHidden ? <IconFiltersHidden /> : <IconFilters />}
                     buttonText={Copy.filter}
@@ -98,7 +101,7 @@ function AppFrontend() {
                     onButtonClick={handleMapClick}
                     isButtonClicked = {!isMapHidden}
                   />
-                <div className="buttonsfilters-list-container"
+                <div className="filterbuttonmain-list-container"
                   // onClick={() => setIsListHidden(false)}
                   onMouseEnter={() => setIsListHidden(false)}
                   onMouseLeave={() => setIsListHidden(true)}> 
@@ -107,54 +110,72 @@ function AppFrontend() {
                     buttonText={Copy.order}
                     // isButtonClicked = {!isListHidden}
                   />
-                  <div className= {`buttonsfilters-list-modal ${isListHidden && "is-hidden"}`}>
-                    <div className="buttonsfilters-list-text">
+                  <div className= {`filterbuttonmain-list-modal ${isListHidden && "is-hidden"}`}>
+                    <div className="filterbuttonmain-list-text">
                     {Copy.orderByRelevance}
                     </div>
-                    <div className="buttonsfilters-list-text">
+                    <div className="filterbuttonmain-list-text">
                       {Copy.orderByName}
                     </div>
-                    <div className="buttonsfilters-list-text">
+                    <div className="filterbuttonmain-list-text">
                       {Copy.orderByPrice}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </ButtonsFilters>
+          </FilterButtonMain>
         </div>
-        <div className="Section-Main">
-            <Filters isFilterHidden={isFilterHidden}>
+
+        <Filters isFilterHidden={isFilterHidden}>
               <div className="filters-type">
-                <div className="filters-name">
+                
+                  <div className="filterbutton-container">
+                    {/*}
+                    <div className="filters-name">
                     {Copy.type}
-                </div>
-                <div className="type-container">
-                    <TypeButton
+                    </div>
+                    */}
+
+                    <FilterButton
                     buttonText={Copy.type1}
                     onButtonClick={handleIsType1ButtonClicked}
                     isButtonClicked = {!isType1ButtonClicked}
                     // name: "isHomeFilterOn, isOfficeFilterOn
                     />
-                    <TypeButton 
+                    <FilterButton 
                     buttonText={Copy.type2}
                     onButtonClick={handleIsType2ButtonClicked}
                     isButtonClicked = {!isType2ButtonClicked}
                     />
-                    <TypeButton 
+                    <FilterButton 
                     buttonText={Copy.type3}
                     onButtonClick={handleIsType3ButtonClicked}
                     isButtonClicked = {!isType3ButtonClicked}
                     />
-                    <TypeButton
+                    <FilterButton
                     buttonText={Copy.type4}
                     onButtonClick={handleIsType4ButtonClicked}
                     isButtonClicked = {!isType4ButtonClicked}
-                    /> 
-                </div>
-               
+                    />
+                    <FilterButtonSpacer 
+                    />
+                    <FilterButtonModal
+                    buttonText={Copy.price}
+                    />
+                    <FilterButtonModal
+                    buttonText={Copy.dimension}
+                    />
+                    <FilterButtonModal
+                    buttonText={Copy.rooms}
+                    />
+                    <FilterButtonModal
+                    buttonText={Copy.bathrooms}
+                    />
+                  </div>
               </div>
 
+            {/* 
               <Slider 
                 sliderName = {Copy.price}
                 sliderText = {`10000 ${Copy.currency}`}
@@ -179,8 +200,11 @@ function AppFrontend() {
                 sliderMinValue = "10"
                 sliderMaxValue = "500" 
                 /> 
-              
+              */}
             </Filters>
+            
+        <div className="Section-Main">
+            
             <div className="Panel-Close-Container">
               <div className="property-found"> 
                 148 {Copy.propertyResult} a {Copy.sampleCity}
@@ -199,5 +223,3 @@ function AppFrontend() {
   );
   
 }
-
-export default AppFrontend;

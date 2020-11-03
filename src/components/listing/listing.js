@@ -2,7 +2,7 @@ import React from 'react';
 import './listing.scss';
 import {Copy} from 'utilities/copy'
 
-function Listing(props) {
+export default function Listing(props) {
 
     function handleAddressInputsEvent (event) {
         props.onChangeAddress(event.target.value)
@@ -113,7 +113,5 @@ function Listing(props) {
         </div>   
     )
   }
-
-  export default Listing;
         
     

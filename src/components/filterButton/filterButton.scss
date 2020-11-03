@@ -1,22 +1,20 @@
-@import  '../../globalStyles/globalStyles.scss';
+@import '../../globalStyles/variables.scss';
 
-
-.type-container {
+.filterbutton-container {
     display: flex;
-    flex-direction: column;
+    margin-right: 10px;
 
-    .type-button {
+    .filterbutton-button {
         border: 0px solid $white;
         padding: 12px;
         background-color: $light-grey;
-        margin-bottom: 5px;
     }
     
-    .type-button:hover {
+    .filterbutton-button:hover {
         color:$mid-grey;
     }
     
-    .type-text {
+    .filterbutton-text {
         font-weight: $semibold;
         font-size: 12px;
         display: flex;
@@ -30,4 +28,12 @@
        /* box-shadow: inset 0px -21px 0px -16px #00ab5c;*/
     }
     
+}
+
+@media only screen and (max-width: 992px) {
+
+.filterbutton-container {
+    flex-direction: column;
+}
+
 }

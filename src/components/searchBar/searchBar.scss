@@ -1,4 +1,4 @@
-@import  '../../globalStyles/globalStyles.scss';
+@import  '../../globalStyles/variables.scss';
 
 
 .search-container {
@@ -9,7 +9,7 @@
     .search-input {
         display: flex;
         font-size: 14px;
-        border: 1px solid $mid-grey;
+        border: 1px solid $grey;
         padding: 8px;
         width: 100%;
         overflow: hidden;

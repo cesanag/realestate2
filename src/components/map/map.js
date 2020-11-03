@@ -2,14 +2,11 @@ import React from 'react';
 import './map.scss';
 import map from './MapSample.jpg'
 
-function Map({isMapHidden}) {
+export default function Map (props) {
     return (
-      <div className= {`map-container ${isMapHidden && "is-hidden"}`}>
-        <img className={`map-img ${isMapHidden && "is-hidden"}`} src={map} alt="map"/>
+      <div className= {`map-container ${props.isMapHidden && "is-hidden"}`}>
+        <img className={`map-img ${props.isMapHidden && "is-hidden"}`} src={map} alt="map"/>
       </div>
     );
-  }
-
-export default Map;
-        
+  }        
     

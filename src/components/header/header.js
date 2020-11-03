@@ -4,7 +4,7 @@ import {ReactComponent as IconLogo} from 'assets/icon/icon-logo.svg';
 import {Copy} from 'utilities/copy';
 import {Color} from 'assets/color';
 
-function Header() {
+export default function Header() {
     return (
         <header>
             <div className="header-container">
@@ -20,7 +20,5 @@ function Header() {
         </header>
     );
   }
-
-  export default Header;
         
     

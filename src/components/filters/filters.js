@@ -1,14 +1,12 @@
 import React from 'react';
 import './filters.scss';
 
-function Filters({children, isFilterHidden}) {
+export default function Filters(props) {
     return (
-        <div className= {`filters-container ${isFilterHidden && "is-hidden"}`}>
-            {children}
+        <div className= {`filters-container ${props.isFilterHidden && "is-hidden"}`}>
+            {props.children}
         </div>
     );
   }
-
-  export default Filters;
         
     

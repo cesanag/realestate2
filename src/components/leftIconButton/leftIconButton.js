@@ -1,20 +1,17 @@
 import React from 'react';
 import './leftIconButton.scss';
 
-function LeftIconButton({icon, buttonText, onButtonClick, isButtonClicked}) {
-
+export default function LeftIconButton(props) {
     return (
         <button 
-            className={`buttonsfilters-button ${isButtonClicked && "is-clicked"}`}
-            onClick={onButtonClick}>
-              <div className="buttonsfilters-img">
-                {icon}
+            className={`filterbuttonmain-button ${props.isButtonClicked && "is-clicked"}`}
+            onClick={props.onButtonClick}>
+              <div className="filterbuttonmain-img">
+                {props.icon}
               </div>
-              <div className="buttonsfilters-text">
-                {buttonText}
+              <div className="filterbuttonmain-text">
+                {props.buttonText}
               </div>
         </button>
     );
   }
-
-export default LeftIconButton;

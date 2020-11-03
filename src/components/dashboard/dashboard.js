@@ -2,7 +2,7 @@ import React from 'react';
 import './dashboard.scss';
 import {Copy} from 'utilities/copy'
 
-function Dashboard() {
+export default function Dashboard() {
     return (
         <div className="dashboard-container">
             <div className="button-name">
@@ -24,7 +24,5 @@ function Dashboard() {
         </div> 
     );
   }
-
-  export default Dashboard;
         
     

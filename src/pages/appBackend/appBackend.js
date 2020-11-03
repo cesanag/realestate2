@@ -4,9 +4,6 @@ import React, { useState } from 'react';
 //Import Style
 import './appBackend.scss';
 
-//Import data
-// import propertiesList from 'backend/listaImmobili.json'
-
 //Import ReusableComponents
 import Header from 'components/header/header';
 import Navigator from 'components/navigator/navigator';
@@ -18,7 +15,7 @@ import ImgModal from 'components/imgModal/imgModal'
 //Import Copy
 import { Copy } from 'utilities/copy'
 
-function AppBackend() {
+export default function AppBackend() {
 
   //Set Modal State
   const [isModalHidden, setIsModalHidden] = useState(true);
@@ -139,5 +136,3 @@ function AppBackend() {
     </div>
   );
 }
-
-export default AppBackend;

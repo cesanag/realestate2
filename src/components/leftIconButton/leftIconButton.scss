@@ -1,46 +1,46 @@
-@import  '../../globalStyles/globalStyles.scss';
+@import  '../../globalStyles/variables.scss';
 
 
 svg {
     display: flex;
 }
 
-.buttonsfilters-button {
+.filterbuttonmain-button {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 13px 23px 13px 23px;
     background-color:$light-grey;
     margin-right: 15px;
-    border-radius: 10px;
+    // border-radius: 10px;
     font-weight: $semibold;
     border: none;
     width: 150px;
     overflow: hidden;
     transition: all .2s ease-in-out;
 
-    .buttonsfilters-img {
+    .filterbuttonmain-img {
         margin-right: 10px;
         fill: $mid-grey;
         transition: all .2s ease-in-out;
 
     }
 }
-.buttonsfilters-button:hover {
+.filterbuttonmain-button:hover {
 
     color: $mid-grey; 
 }
 
-.buttonsfilters-button:hover > .buttonsfilters-img{
+.filterbuttonmain-button:hover > .filterbuttonmain-img{
     fill: $mid-grey;
 }
 
-.buttonsfilters-list-text {
+.filterbuttonmain-list-text {
     cursor:pointer;
     padding: 10px;
 }
 
-.buttonsfilters-list-text:hover {
+.filterbuttonmain-list-text:hover {
     background-color: $cyan;
     color: $black;
 }

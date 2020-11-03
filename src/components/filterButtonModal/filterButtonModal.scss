@@ -1,0 +1,34 @@
+@import  '../../globalStyles/variables.scss';
+
+
+.filterbuttonmodal-container {
+    display: flex;
+    margin-right: 10px;
+
+    .filterbuttonmodal-button {
+        display:flex;
+        align-items: center;
+        border: 1px solid $grey;
+        padding: 12px;
+        background-color: $white;
+    }
+    
+    .filterbuttonmodal-button:hover {
+        color:$mid-grey;
+    }
+    
+    .filterbuttonmodal-text {
+        font-weight: $semibold;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .is-not-selected {
+        background-color: $cyan;
+        color: black;
+       /* box-shadow: inset 0px -21px 0px -16px #00ab5c;*/
+    }
+    
+}

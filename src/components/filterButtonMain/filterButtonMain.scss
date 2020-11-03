@@ -1,18 +1,18 @@
-@import  '../../globalStyles/globalStyles.scss';
+@import  '../../globalStyles/variables.scss';
  
-.buttonsfilters-container{
+.filterbuttonmain-container{
     box-shadow: -8px 12px 26px -10px $black-opaque;
     padding: 25px;
     background-color: $white;
 
-    .buttonsfilters-buttoncontainer {
+    .filterbuttonmain-buttoncontainer {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         margin-top: 15px;
     }
 
-    .buttonsfilters-list-modal{
+    .filterbuttonmain-list-modal{
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -35,7 +35,7 @@
         color: black;
         fill:black;
     }
-    .is-clicked > .buttonsfilters-img {
+    .is-clicked > .filterbuttonmain-img {
         fill: $mid-grey;
     }
 

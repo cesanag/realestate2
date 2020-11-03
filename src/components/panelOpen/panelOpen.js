@@ -1,7 +1,8 @@
 import React from 'react';
 import './panelOpen.scss';
 
-import img0 from 'assets/image/img0.jpg'
+//import img0 from 'assets/image/img0.jpg'
+import { ReactComponent as IconImg } from 'assets/icon/icon-imgplaceholder.svg'
 import { ReactComponent as IconDimension } from 'assets/icon/icon-dimension.svg'
 import { ReactComponent as IconBathroom } from 'assets/icon/icon-bathroom.svg'
 import { ReactComponent as IconRoom } from 'assets/icon/icon-room.svg'
@@ -13,13 +14,13 @@ import { ReactComponent as IconShare } from 'assets/icon/icon-share.svg'
 import {Copy} from 'utilities/copy'
 import {Color} from 'assets/color'
 
-function PanelOpen(props) {
+export default function PanelOpen(props) {
     return (
         <div className="panelopen-container">
             <div className="panelopen">
                 <div className="panelopen-up"
                 onClick={props.onModalClick}>
-                    <img className="panelopen-img" src="" alt="" width="30" ></img>
+                    <img className="panelopen-img" src={IconImg} alt="" width="30" ></img>
                     <button className="see-more-photo"
                         onClick={props.onModalClick}>
                         {Copy.morephoto}
@@ -171,8 +172,5 @@ function PanelOpen(props) {
             </div>
         </div>
     )
-  }
-
-  export default PanelOpen;
-        
+  }        
     
