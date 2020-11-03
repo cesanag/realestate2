@@ -125,6 +125,7 @@
     display: flex;
 }
 .panelclose-property-description {
+    
     line-height: 16px;
     font-size: $big;
     color: $mid-grey;
@@ -140,7 +141,12 @@
       flex-direction: column;
       width: 300px;
     }
+
+    .panelclose-property-description {
+        display: none;
   }
+
+}
 
 
 

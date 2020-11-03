@@ -24,17 +24,8 @@ import { ReactComponent as IconList } from 'assets/icon/icon-list.svg'
 
 //Import Copy
 import { Copy } from 'utilities/copy'
-import SliderMulti from 'components/sliderMulti/sliderMulti';
 
 function AppFrontend() {
-
-  const addScript = () => {
-    const script = document.createElement("script");
-    script.src = "./sliderMultiLogic.js";
-    script.async = true;
-    document.body.appendChild(script);
-  }
-  addScript()
 
   // State
   const [isFilterHidden, setIsFilterHidden] = useState(false);
@@ -107,18 +98,18 @@ function AppFrontend() {
                     onButtonClick={handleMapClick}
                     isButtonClicked = {!isMapHidden}
                   />
-                  <div className="buttonsfilters-list-container"
-                    // onClick={() => setIsListHidden(false)}
-                    onMouseEnter={() => setIsListHidden(false)}
-                    onMouseLeave={() => setIsListHidden(true)}> 
-                    <LeftIconButton 
-                      icon={<IconList />}
-                      buttonText={Copy.order}
-                      // isButtonClicked = {!isListHidden}
-                    />
+                <div className="buttonsfilters-list-container"
+                  // onClick={() => setIsListHidden(false)}
+                  onMouseEnter={() => setIsListHidden(false)}
+                  onMouseLeave={() => setIsListHidden(true)}> 
+                  <LeftIconButton 
+                    icon={<IconList />}
+                    buttonText={Copy.order}
+                    // isButtonClicked = {!isListHidden}
+                  />
                   <div className= {`buttonsfilters-list-modal ${isListHidden && "is-hidden"}`}>
                     <div className="buttonsfilters-list-text">
-                     {Copy.orderByRelevance}
+                    {Copy.orderByRelevance}
                     </div>
                     <div className="buttonsfilters-list-text">
                       {Copy.orderByName}
@@ -163,16 +154,13 @@ function AppFrontend() {
                 </div>
                
               </div>
-              <SliderMulti 
-                sliderName = {Copy.price}
-                sliderText = {`10000 ${Copy.currency}`}
-                />
+
               <Slider 
                 sliderName = {Copy.price}
                 sliderText = {`10000 ${Copy.currency}`}
                 sliderMinValue = "1000"
                 sliderMaxValue = "10000000" 
-            />
+              />
               <Slider 
                 sliderName = {Copy.dimension}
                 sliderText = {`180 ${Copy.measure} `}
@@ -190,7 +178,8 @@ function AppFrontend() {
                 sliderText = "1"
                 sliderMinValue = "10"
                 sliderMaxValue = "500" 
-              />
+                /> 
+              
             </Filters>
             <div className="Panel-Close-Container">
               <div className="property-found"> 

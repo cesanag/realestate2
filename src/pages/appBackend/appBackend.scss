@@ -29,10 +29,30 @@ body {
 
 .Panel-Container {
   margin: 50px;
-  width: 100%;
+  display:flex;
+  flex-direction:column;
+  align-self:center;
+  flex: 1;
 }
 
 .Preview-Text {
   font-weight: $bold;
   margin-bottom: 25px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+.Section-Main {
+  flex-direction: column;
+  align-items: center;
+}
+
+.Panel-Container {
+  align-items:center;
+}
+
+.panelopen-container {
+  display: none;
+}
 }

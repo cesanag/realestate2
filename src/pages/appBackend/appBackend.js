@@ -92,16 +92,16 @@ function AppBackend() {
         <div className="Section-Main">
             <div className="Posting-Container">
                 <Listing 
-                onChangeAddress={handleInputAddress}
-                onChangeHouseNumber={handleInputHouseNumber}
-                onChangeCity={handleInputCity}
-                onChangeZip={handleInputZip}
-                onChangeProvince={handleInputProvince}
-                onChangePrice={handleInputPrice}
-                onChangeRoom={handleInputRoom}
-                onChangeBathroom={handleInputBathroom}
-                onChangeDimension={handleInputDimension}
-                onChangeDescription={handleInputDescription}
+                  onChangeAddress={handleInputAddress}
+                  onChangeHouseNumber={handleInputHouseNumber}
+                  onChangeCity={handleInputCity}
+                  onChangeZip={handleInputZip}
+                  onChangeProvince={handleInputProvince}
+                  onChangePrice={handleInputPrice}
+                  onChangeRoom={handleInputRoom}
+                  onChangeBathroom={handleInputBathroom}
+                  onChangeDimension={handleInputDimension}
+                  onChangeDescription={handleInputDescription}
                 />
             </div>
             <div className="Panel-Container">
@@ -119,6 +119,7 @@ function AppBackend() {
                   bathroom={inputBathroom}
                   dimension={inputDimension}
                   description={inputDescription}
+                  onModalClick={handleModalClick}
                   />
                 <PanelOpen 
                   address={inputAddress}

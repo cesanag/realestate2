@@ -13,7 +13,6 @@
         display: flex;
         align-self: center;
         justify-content: center;
-        color: $green;
         margin: 15px 0px 15px 0;
         padding: 0 10px 0 10px;
     }
@@ -28,20 +27,27 @@
         align-self: center;
         justify-content: center;
     }
+    
     .navigator-img:hover {
         fill: $white;
     }
 
     .back-button {
+        color: $green;
         background-color: white;
         border: 2px solid $green;
         font-weight: $bold;
     }
+
     .save-button {
         color: $white;
-        background-color: red;
+        background-color: $red;
         border: none;
         font-weight: $bold;
+    }
+
+    .save-button:hover{
+        background-color: $dark-cyan; 
     }
 
     .navigator-text {
@@ -49,5 +55,12 @@
         padding: 15px;
     }
 
+}
+
+
+@media screen and (max-width: 992px) {
+    .navigator-container {
+        flex-direction:column;
+    }
 }
 
