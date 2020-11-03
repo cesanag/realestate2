@@ -66,4 +66,16 @@
     background-color: $cyan;
 }
 
+@media screen and (max-width: 992px) {
+
+.listing-container {
+    margin: 25px 0 0 0;
+}
+
+.listing-name {
+    text-align: center;
+}
+
+}
+
 
