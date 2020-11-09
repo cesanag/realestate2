@@ -79,15 +79,16 @@
 .panelclose-property-feature-container {
     display:flex;
     flex-direction: row;
+    align-items:center;
     margin: 25px 0 25px 0;
 }
 
 .panelclose-property-feature-up {
     display: flex;
     justify-content: center;
-    align-self: center;
-    background-color: $light-light-grey;
-    padding: 5px;
+    align-items:center;
+    // background-color: $light-light-grey;
+    // padding: 5px;
     margin-right: 10px;
     fill: $grey;
 }
@@ -139,9 +140,25 @@
       width: 300px;
     }
 
+    .panelclose-right-content {
+        text-align:center;
+        align-items:center;
+    }
+
+    .panelclose-property-container-address_location {
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        align-items:center;
+        
+    }
     .panelclose-property-description {
         display: none;
   }
+
+  
+
+
 
 }
 

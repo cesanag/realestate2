@@ -3,7 +3,7 @@ import './panelClose.scss';
 //import img0 from 'assets/image/img0.jpg'
 import {Copy} from 'utilities/copy';
 
-import  IconImg  from 'assets/icon/icon-imgplaceholder.svg'
+// import  IconImg  from 'assets/icon/icon-imgplaceholder.svg'
 import { ReactComponent as IconDimension } from 'assets/icon/icon-dimension.svg'
 import { ReactComponent as IconBathroom } from 'assets/icon/icon-bathroom.svg'
 import { ReactComponent as IconRoom } from 'assets/icon/icon-room.svg'
@@ -84,9 +84,9 @@ export default function PanelClose(props) {
                                             {Copy.measure}
                                     </div>
 
-                                    <div className="panelclose-property-feature-img">
+                                    {/* <div className="panelclose-property-feature-img">
                                         <IconDimension />
-                                    </div>
+                                    </div> */}
 
                                 </div>
                                 <div className="panelclose-property-feature-name">
@@ -99,9 +99,9 @@ export default function PanelClose(props) {
                                         className="panelclose-property-feature-size panelclose-preview">
                                             {props.room}
                                     </div>
-                                    <div className="panelclose-property-feature-img">
+                                    {/* <div className="panelclose-property-feature-img">
                                         <IconRoom />
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="panelclose-property-feature-name">
                                     {Copy.rooms}
@@ -114,9 +114,9 @@ export default function PanelClose(props) {
                                         className="panelclose-property-feature-size panelclose-preview">
                                             {props.bathroom}
                                     </div>
-                                    <div className="panelclose-property-feature-img">
+                                    {/* <div className="panelclose-property-feature-img">
                                         <IconBathroom />
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="panelclose-property-feature-name">
                                     {Copy.bathrooms}
