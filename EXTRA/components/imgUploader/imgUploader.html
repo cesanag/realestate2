@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body {
+    margin:0px;
+    background:#333;
+  }
+.image-upload-one{
+    grid-area: img-u-one;
+    display: flex;
+    justify-content: center;
+  }
+  .image-upload-two{
+    grid-area: img-u-two;
+    display: flex;
+    justify-content: center;
+  }
+  .image-upload-three{
+    grid-area: img-u-three;
+    display: flex;
+    justify-content: center;
+  }
+  .image-upload-four{
+    grid-area: img-u-four;
+    display: flex;
+    justify-content: center;
+  }
+  .image-upload-five{
+    grid-area: img-u-five;
+    display: flex;
+    justify-content: center;
+  }
+  .image-upload-six{
+    grid-area: img-u-six;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-upload-container{
+    display: grid;
+    grid-template-areas: 'img-u-one img-u-two img-u-three img-u-four img-u-five img-u-six';
+  }
+  .center {
+    display:inline;
+    margin: 3px;
+  }
+
+  .form-input {
+    width:500px;
+    height:500px;
+    padding:3px;
+    
+
+}
+  .form-input input {
+    display:none;
+  }
+  .form-input label {
+    display:block;
+    width:500px;
+    height: auto;
+    max-height: 100px;
+    background:#333;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  
+  .form-input img {
+    width:500px;
+    height: 500px;
+    margin: 2px;
+    object-fit: cover;
+  }
+
+  .imgRemove{
+      position: relative;
+    top: 100px;
+    left: 500px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    outline: none;
+  }
+  .imgRemove::after{
+    content: ' \21BA';
+    color: #fff;
+    font-weight: 900;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .small{
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 700px){
+    .image-upload-container{
+      grid-template-areas: 'img-u-one img-u-two img-u-three'
+       'img-u-four img-u-five img-u-six';
+    }
+  }
+</style>
+<body>
+    <script>
+        var number = 1;
+do {
+  function showPreview(event, number){
+    if(event.target.files.length > 0){
+      let src = URL.createObjectURL(event.target.files[0]);
+      let preview = document.getElementById("file-ip-"+number+"-preview");
+      preview.src = src;
+      preview.style.display = "block";
+    } 
+  }
+  function myImgRemove(number) {
+      document.getElementById("file-ip-"+number+"-preview").src = "https://i.ibb.co/ZVFsg37/default.png";
+      document.getElementById("file-ip-"+number).value = null;
+    }
+  number++;
+}
+while (number < 5);
+    </script>
+    <div class="image-upload-container">
+        <div class="image-upload-one">
+          <div class="center">
+            <div class="form-input">
+              <label for="file-ip-1">
+                <img id="file-ip-1-preview" src="https://i.ibb.co/ZVFsg37/default.png">
+                <button type="button" class="imgRemove" onclick="myImgRemove(1)"></button>
+              </label>
+              <input type="file"  name="img_one" id="file-ip-1" accept="image/*" onchange="showPreview(event, 1);">
+            </div>
+            <small class="small">Use the &#8634; icon to reset the image</small>
+          </div>
+        </div>
+        <!-- ************************************************************************************************************ -->
+        <!-- <div class="image-upload-two">
+          <div class="center">
+            <div class="form-input">
+              <label for="file-ip-2">
+                <img id="file-ip-2-preview" src="https://i.ibb.co/ZVFsg37/default.png">
+                <button type="button" class="imgRemove" onclick="myImgRemove(2)"></button>
+              </label>
+              <input type="file" name="img_two" id="file-ip-2" accept="image/*" onchange="showPreview(event, 2);">
+            </div>
+            <small class="small">Use the &#8634; icon to reset the image</small>
+          </div>
+        </div> -->
+  
+        <!-- ************************************************************************************************************ -->
+        <!-- <div class="image-upload-three">
+          <div class="center">
+            <div class="form-input">
+              <label for="file-ip-3">
+                <img id="file-ip-3-preview" src="https://i.ibb.co/ZVFsg37/default.png">
+                <button type="button" class="imgRemove" onclick="myImgRemove(3)"></button>
+              </label>
+              <input type="file" name="img_three" id="file-ip-3" accept="image/*" onchange="showPreview(event, 3);">
+            </div>
+            <small class="small">Use the &#8634; icon to reset the image</small>
+          </div>
+        </div> -->
+        <!-- *********************************************************************************************************** -->
+          <!-- <div class="image-upload-four">
+            <div class="center">
+              <div class="form-input">
+                <label for="file-ip-4">
+                  <img id="file-ip-4-preview" src="https://i.ibb.co/ZVFsg37/default.png">
+                  <button type="button" class="imgRemove" onclick="myImgRemove(4)"></button>
+                </label>
+                <input type="file" name="img_four" id="file-ip-4" accept="image/*" onchange="showPreview(event, 4);">
+              </div>
+              <small class="small">Use the &#8634; icon to reset the image</small>
+            </div>
+          </div> -->
+          <!-- ************************************************************************************************************ -->
+          <!-- <div class="image-upload-five">
+            <div class="center">
+              <div class="form-input">
+                <label for="file-ip-5">
+                  <img id="file-ip-5-preview" src="https://i.ibb.co/ZVFsg37/default.png">
+                  <button type="button" class="imgRemove" onclick="myImgRemove(5)"></button>
+                </label>
+                <input type="file" name="img_five" id="file-ip-5" accept="image/*" onchange="showPreview(event, 5);">
+              </div>
+              <small class="small">Use the &#8634; icon to reset the image</small>
+            </div>
+          </div>
+     -->
+          <!-- ************************************************************************************************************ -->
+          <!-- <div class="image-upload-six">
+            <div class="center">
+              <div class="form-input">
+                <label for="file-ip-6">
+                  <img id="file-ip-6-preview" src="https://i.ibb.co/ZVFsg37/default.png">
+                  <button type="button" class="imgRemove" onclick="myImgRemove(6)"></button>
+                </label>
+                <input type="file" name="img_six" id="file-ip-6" accept="image/*" onchange="showPreview(event, 6);">
+              </div>
+              <small class="small">Use the &#8634; icon to reset the image</small>
+            </div>
+          </div> -->
+  
+        <!-- ************************************************************************************************************** -->
+      </div>
+      
+</body>
+</html>
