@@ -4,33 +4,10 @@
 .navigator-container {
     background-color: $white;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-left: 50px;
     padding-right: 50px;
     box-shadow: -8px 12px 26px -10px $black-opaque;
-
-    .navigator-button {
-        display: flex;
-        align-self: center;
-        justify-content: center;
-        margin: 15px 0px 15px 0;
-        padding: 0 10px 0 10px;
-    }
-
-    .navigator-button:hover {
-        color: white;
-        background-color: $green;
-    }
-
-    .navigator-img {
-        display: flex;
-        align-self: center;
-        justify-content: center;
-    }
-    
-    .navigator-img:hover {
-        fill: $white;
-    }
 
     .back-button {
         color: $green;
@@ -50,17 +27,7 @@
         background-color: $dark-cyan; 
     }
 
-    .navigator-text {
-        display: flex;
-        padding: 15px;
-    }
-
 }
 
 
-@media screen and (max-width: 992px) {
-    .navigator-container {
-        flex-direction:column;
-    }
-}
 

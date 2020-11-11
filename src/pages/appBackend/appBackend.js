@@ -7,10 +7,11 @@ import './appBackend.scss';
 //Import ReusableComponents
 import Header from 'components/header/header';
 import Navigator from 'components/navigator/navigator';
-import PanelClose from 'components/panelClose/panelClose';
+import PanelClose from 'components/panelClose/panelCloseBackend';
 import PanelOpen from 'components/panelOpen/panelOpen';
 import Listing from 'components/listing/listing'
 import ImgModal from 'components/imgModal/imgModal'
+
 
 //Import Copy
 import { Copy } from 'utilities/copy'
@@ -77,17 +78,17 @@ export default function AppBackend() {
   //on click, array.push(data) on propertiesList.listaImmobili
 
   return (
-    <div className="App">
+    <div>
         <ImgModal 
           isModalHidden={isModalHidden} 
           onModalClick={handleModalClick}/>
-        <div className="Section-Header">
-          <Header className="Section-Header"/>
+        <div className="section-header">
+          <Header />
           <Navigator />
           
         </div>
-        <div className="Section-Main">
-            <div className="Posting-Container">
+        <div className="section-main">
+
                 <Listing 
                   onChangeAddress={handleInputAddress}
                   onChangeHouseNumber={handleInputHouseNumber}
@@ -100,38 +101,35 @@ export default function AppBackend() {
                   onChangeDimension={handleInputDimension}
                   onChangeDescription={handleInputDescription}
                 />
-            </div>
-            <div className="Panel-Container">
-                <div className="Preview-Text">
-                {Copy.preview}
-                </div>
-                <PanelClose 
-                  address={inputAddress}
-                  houseNumber={inputHouseNumber}
-                  zip={inputZip}
-                  city={inputCity}
-                  province={inputProvince}
-                  price={inputPrice}
-                  room={inputRoom}
-                  bathroom={inputBathroom}
-                  dimension={inputDimension}
-                  description={inputDescription}
-                  onModalClick={handleModalClick}
-                  />
-                <PanelOpen 
-                  address={inputAddress}
-                  houseNumber={inputHouseNumber}
-                  zip={inputZip}
-                  city={inputCity}
-                  province={inputProvince}
-                  price={inputPrice}
-                  room={inputRoom}
-                  bathroom={inputBathroom}
-                  dimension={inputDimension}
-                  description={inputDescription}
-                  onModalClick={handleModalClick}
-                  />
-          </div>
+                
+                <div className="panel-container">
+                  <PanelClose 
+                    address={inputAddress}
+                    houseNumber={inputHouseNumber}
+                    zip={inputZip}
+                    city={inputCity}
+                    province={inputProvince}
+                    price={inputPrice}
+                    room={inputRoom}
+                    bathroom={inputBathroom}
+                    dimension={inputDimension}
+                    description={inputDescription}
+                    onModalClick={handleModalClick}
+                    />
+                  <PanelOpen 
+                    address={inputAddress}
+                    houseNumber={inputHouseNumber}
+                    zip={inputZip}
+                    city={inputCity}
+                    province={inputProvince}
+                    price={inputPrice}
+                    room={inputRoom}
+                    bathroom={inputBathroom}
+                    dimension={inputDimension}
+                    description={inputDescription}
+                    onModalClick={handleModalClick}
+                    />
+                  </div>
         </div>
     </div>
   );

@@ -1,0 +1,40 @@
+@import  '../../globalStyles/variables.scss';
+
+
+.navigator-button {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 15px 15px 15px 0;
+    padding: 0 10px 0 10px;
+}
+
+.navigator-button:hover {
+    color: white;
+    background-color: $green;
+}
+
+.navigator-img {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.navigator-img:hover {
+    fill: $white;
+}
+
+.back-button {
+    color: $green;
+    background-color: white;
+    border: 2px solid $green;
+    font-weight: $bold;
+}
+
+
+.navigator-text {
+    display: flex;
+    padding: 15px;
+}
+
+

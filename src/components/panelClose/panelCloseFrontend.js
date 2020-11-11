@@ -4,9 +4,9 @@ import './panelClose.scss';
 import {Copy} from 'utilities/copy';
 
 // import  IconImg  from 'assets/icon/icon-imgplaceholder.svg'
-import { ReactComponent as IconDimension } from 'assets/icon/icon-dimension.svg'
-import { ReactComponent as IconBathroom } from 'assets/icon/icon-bathroom.svg'
-import { ReactComponent as IconRoom } from 'assets/icon/icon-room.svg'
+// import { ReactComponent as IconDimension } from 'assets/icon/icon-dimension.svg'
+// import { ReactComponent as IconBathroom } from 'assets/icon/icon-bathroom.svg'
+// import { ReactComponent as IconRoom } from 'assets/icon/icon-room.svg'
 
 
 export default function PanelClose(props) {
@@ -39,7 +39,7 @@ export default function PanelClose(props) {
                                     className="panelclose-property-address panelclose-preview">
                                     {Copy.whitespace}
                                 </div>
-                                <div panel-sample-text={Copy.houseNumber}
+                                <div panel-sample-text={Copy.ouseNumber}
                                     className="panelclose-property-address panelclose-preview">
                                     {props.houseNumber}
                                 </div>

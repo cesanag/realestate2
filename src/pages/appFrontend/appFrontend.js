@@ -10,7 +10,7 @@ import SearchBar from 'components/searchBar/searchBar';
 import FilterButtonMain from 'components/filterButtonMain/filterButtonMain';
 import Filters from 'components/filters/filters';
 import Map from 'components/map/map';
-import PanelClose from 'components/panelClose/panelClose';
+import PanelClose from 'components/panelClose/panelCloseFrontend';
 import LeftIconButton from 'components/leftIconButton/leftIconButton';
 import FilterButton from 'components/filterButton/filterButton'
 import FilterButtonModal from 'components/filterButtonModal/filterButtonModal'

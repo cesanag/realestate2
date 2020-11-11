@@ -1,0 +1,36 @@
+.panelImgUploaderContainer{
+  cursor: pointer;
+  align-items:center;
+  background-color: red;
+}
+
+.panelclose-selectimage {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: 999;
+}
+
+.panelclose-selectimage::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.panelclose-selectimage::before {
+  
+  justify-content: center;
+  align-self: center;
+  content: 'Select the Image';
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+}
+
+input[type='file'] {
+ color: transparent;
+}

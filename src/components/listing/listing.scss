@@ -1,81 +1,35 @@
 @import  '../../globalStyles/variables.scss';
 
-
 .listing-container {
-    margin: 50px 0px 50px 50px;
-    width: 250px;
+    display: flex;
 }
-
 .listing-name {
     font-weight: $bold;
 }
 
 .listing-input {
-    margin-top: 25px;
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-.listing-input-row {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-basis: 100%;
-  min-width: 250px;
+    margin-right: 50px;
+
 }
 
-.input-text-demargined {
-    position: absolute;
-    margin-bottom:-8px;
-    margin-left: 5px;
-    z-index: 99;
-    color: $dark-grey;
-}
 .input {
-    margin-bottom: 25px;
-    padding: 8px;
-    margin-bottom: 15px;
+    padding: 1vmax;
+    margin: 5px;
     border-radius: 10px;
-    border: 2px solid $light-grey;
-    min-width: 0;
+    border: 1px solid $grey;
+    width: 20rem;
+    background-color: $cyan;
 }
-.input-small {
-    max-width: 60px;
-}
+
 
 .input-description {
     resize: none;
     white-space: pre-wrap;
     overflow-wrap: break-word;
-}
-
-
-.button {
-    padding: 15px;
-    margin-top: 25px;
-    border-radius: 50px;
-}
-
-.preview-button {
-    border: none;
-    color: $white;
-    background-color: $red;
-}
-
-.upload-photo-button {
-    background-color: $cyan;
-}
-
-@media screen and (max-width: 992px) {
-
-.listing-container {
-    margin: 25px 0 0 0;
-}
-
-.listing-name {
-    text-align: center;
-}
-
 }
 
 
