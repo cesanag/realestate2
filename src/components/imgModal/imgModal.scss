@@ -16,7 +16,7 @@
 }   
     
     .panelopen-img-modal-content {
-        background: $light-light-grey $imgplaceholder no-repeat center;
+        background: $light-light-grey $imgplaceholdergrey no-repeat center;
         width: 50rem;
         height: 25rem;
         object-fit: cover;
@@ -34,7 +34,7 @@
     }
     
     .panelopen-img-small {
-        background: $light-light-grey $imgplaceholder no-repeat center;
+        background: $light-light-grey $imgplaceholdergrey no-repeat center;
         cursor: pointer;
         width: 10rem;
         height: 5rem;

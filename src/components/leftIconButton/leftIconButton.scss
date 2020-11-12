@@ -19,6 +19,10 @@ svg {
     overflow: hidden;
     transition: all .2s ease-in-out;
 
+    &.is-clicked {
+        background-color: $cyan;
+    }
+
     .filterbuttonmain-img {
         margin-right: 10px;
         fill: $mid-grey;
@@ -44,4 +48,6 @@ svg {
     background-color: $cyan;
     color: $black;
 }
+
+
 

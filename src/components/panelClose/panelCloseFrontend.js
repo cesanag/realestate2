@@ -1,28 +1,27 @@
 import React from 'react';
-import './panelClose.scss';
-//import img0 from 'assets/image/img0.jpg'
+import './panelCloseFrontend.scss';
+import img0 from 'assets/image/img0.jpg'
 import {Copy} from 'utilities/copy';
 
-// import  IconImg  from 'assets/icon/icon-imgplaceholder.svg'
-// import { ReactComponent as IconDimension } from 'assets/icon/icon-dimension.svg'
-// import { ReactComponent as IconBathroom } from 'assets/icon/icon-bathroom.svg'
-// import { ReactComponent as IconRoom } from 'assets/icon/icon-room.svg'
+import { ReactComponent as IconDimension } from 'assets/icon/icon-dimension.svg'
+import { ReactComponent as IconBathroom } from 'assets/icon/icon-bathroom.svg'
+import { ReactComponent as IconRoom } from 'assets/icon/icon-room.svg'
 
 
-export default function PanelClose(props) {
+export default function PanelClose() {
     return (
         <div className="panelclose-container">
             <div className="panelclose">
                 <div className="panelclose-left">
-                    <div className="panelclose-img" alt=""></div>
+                    <img className="panelclose-img" alt="" src={img0} />
                     <div className="panelclose-property-price-container">
-                        <div panel-sample-text={Copy.currency}
+                        <div 
                             className="panelclose-property-price-text panelclose-preview">
                             {Copy.currency}
                         </div>
-                        <div panel-sample-text={Copy.samplePrice}
+                        <div 
                             className="panelclose-property-price-text panelclose-preview">
-                            {props.price}
+                            {Copy.samplePrice}
                         </div>
                         
                      </div>
@@ -31,39 +30,47 @@ export default function PanelClose(props) {
                     <div  className="panelclose-right-content">
                         <div className="panelclose-property-container-address_location">
                             <div className="panelclose-property-content">
-                                <div panel-sample-text={Copy.address}
+                                <div
                                     className="panelclose-property-address panelclose-preview">
-                                    {props.address}
+                                    {Copy.sampleStreet}
                                 </div>
-                                <div panel-sample-text={Copy.whitespace}
+                                <div 
                                     className="panelclose-property-address panelclose-preview">
                                     {Copy.whitespace}
                                 </div>
-                                <div panel-sample-text={Copy.ouseNumber}
+                                <div 
                                     className="panelclose-property-address panelclose-preview">
-                                    {props.houseNumber}
+                                    {Copy.sampleAddress}
+                                </div>
+                                <div 
+                                    className="panelclose-property-address panelclose-preview">
+                                    {Copy.whitespace}
+                                </div>
+                                <div 
+                                    className="panelclose-property-address panelclose-preview">
+                                    {Copy.sampleHouseNumber}
                                 </div>
                             </div>
                             <div className="panelclose-property-content">
-                                <div panel-sample-text={Copy.zip}
+                                <div 
                                     className="panelclose-property-location panelclose-preview">
-                                    {props.zip}
+                                    {Copy.sampleZip}
                                 </div>
-                                <div panel-sample-text={Copy.whitespace}
+                                <div 
+                                    className="panelclose-property-feature-size panelclose-preview">
+                                    {Copy.whitespace}
+                                </div>
+                                <div 
+                                    className="panelclose-property-location panelclose-preview">
+                                    {Copy.sampleCity}
+                                </div>
+                                <div 
                                         className="panelclose-property-feature-size panelclose-preview">
-                                        {Copy.whitespace}
+                                    {Copy.whitespace}
                                 </div>
-                                <div panel-sample-text={Copy.city}
+                                <div 
                                     className="panelclose-property-location panelclose-preview">
-                                    {props.city}
-                                </div>
-                                <div panel-sample-text={Copy.whitespace}
-                                        className="panelclose-property-feature-size panelclose-preview">
-                                        {Copy.whitespace}
-                                </div>
-                                <div panel-sample-text={Copy.province}
-                                    className="panelclose-property-location panelclose-preview">
-                                    {props.province}
+                                    {Copy.sampleProvince}
                                 </div>
                             </div>
                         </div>
@@ -71,22 +78,22 @@ export default function PanelClose(props) {
                             
                             <div className="panelclose-property-feature">
                                 <div className="panelclose-property-feature-up">
-                                    <div panel-sample-text={Copy.sampleDimension}
+                                    <div 
                                         className="panelclose-property-feature-size panelclose-preview">
-                                            {props.dimension}
+                                            {Copy.sampleDimension}
                                     </div>
-                                    <div panel-sample-text={Copy.whitespace}
+                                    <div
                                         className="panelclose-property-feature-size panelclose-preview">
                                             {Copy.whitespace}
                                     </div>
-                                    <div panel-sample-text={Copy.measure}
+                                    <div
                                         className="panelclose-property-feature-size panelclose-preview">
                                             {Copy.measure}
                                     </div>
 
-                                    {/* <div className="panelclose-property-feature-img">
+                                    <div className="panelclose-property-feature-img">
                                         <IconDimension />
-                                    </div> */}
+                                    </div>
 
                                 </div>
                                 <div className="panelclose-property-feature-name">
@@ -95,13 +102,13 @@ export default function PanelClose(props) {
                             </div>
                             <div className="panelclose-property-feature">
                                 <div className="panelclose-property-feature-up">
-                                    <div panel-sample-text={Copy.sampleRooms}
+                                    <div
                                         className="panelclose-property-feature-size panelclose-preview">
-                                            {props.room}
+                                            {Copy.sampleRooms}
                                     </div>
-                                    {/* <div className="panelclose-property-feature-img">
+                                    <div className="panelclose-property-feature-img">
                                         <IconRoom />
-                                    </div> */}
+                                    </div>
                                 </div>
                                 <div className="panelclose-property-feature-name">
                                     {Copy.rooms}
@@ -110,23 +117,23 @@ export default function PanelClose(props) {
                             
                             <div className="panelclose-property-feature">
                                 <div className="panelclose-property-feature-up">
-                                    <div panel-sample-text={Copy.sampleBathrooms}
+                                    <div
                                         className="panelclose-property-feature-size panelclose-preview">
-                                            {props.bathroom}
+                                            {Copy.sampleBathrooms}
                                     </div>
-                                    {/* <div className="panelclose-property-feature-img">
+                                    <div className="panelclose-property-feature-img">
                                         <IconBathroom />
-                                    </div> */}
+                                    </div>
                                 </div>
                                 <div className="panelclose-property-feature-name">
                                     {Copy.bathrooms}
                                 </div>
                             </div>
                         </div>
-                        <div panel-sample-text={Copy.description} 
+                        {/* <div 
                             className="panelclose-property-description panelclose-preview">
-                                {props.description}
-                        </div>
+                                {Copy.sampleDescription} 
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -5,13 +5,14 @@
     display: flex;
     padding:25px;
     background-color: $white;
-
+    position: absolute;
+    box-shadow: -8px 12px 26px -10px $black-opaque;
+    border: 1px solid $grey;
+    flex: 1;
 
     &.is-hidden {
-        // display: none;
-        padding: 0;
-        opacity: 0;
-        height: 0;
+    display: none;
+
     }
 
     .filters-closefilters {

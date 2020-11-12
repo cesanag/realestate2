@@ -2,14 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-// import AppFrontend from 'pages/appFrontend/appFrontend';
-import AppBackend from 'pages/appBackend/appBackend';
+import AppFrontend from 'pages/appFrontend/appFrontend';
+// import BackendHome from 'pages/backendHome/backendHome';
+// import BackendNew from 'pages/backendNew/backendNew';
+
 //import Login from 'pages/login/login';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-    // <AppFrontend />,
-    <AppBackend />,
+    // <BackendHome />,
+    // <BackendNew />,
+    <AppFrontend />,
     //<Login />,
   document.getElementById('root'));
 //registerServiceWorker();

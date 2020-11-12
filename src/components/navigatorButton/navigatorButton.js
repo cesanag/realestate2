@@ -4,7 +4,8 @@ import './navigatorButton.scss';
 export default function NavigatorButton(props) {
     return (
         <button 
-            className="navigator-button back-button">
+            className={props.class}
+            onClick={props.onButtonClick}>
               <div className="navigator-img">
                 {props.icon}
               </div>

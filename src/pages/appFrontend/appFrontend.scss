@@ -5,29 +5,19 @@ body {
   background-color: $light-grey;
 }
 
-.App-Content {
-  display: flex; 
-  flex-direction: column;
-}
-
-.Section-Header {
+.section-header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 9999;
 }
 
-.Section-Main {
-
-
-}
-
-.Panel-Close-Container {
-  display: flex;
+.section-main {
+  position: relative;
+  display:flex;
+  flex-direction: row;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-self: center;
 }
 
 .is-hidden {
@@ -38,18 +28,8 @@ body {
   background-color: $cyan;
 }
 
-.property-found {
-        margin-top: 25px;
-        display: flex;
-        font-size: 13px;
-        color: $mid-grey;
-        justify-content: flex-start;
-    }
-
-
-@media only screen and (max-width: 992px) {
-
-    .Map-Container {
-      display: none;
-    }
+@media only screen and (max-width: 1000px) {
+  .Map-Container {
+    display: none;
+  }
 }

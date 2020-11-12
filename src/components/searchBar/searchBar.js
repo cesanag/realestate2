@@ -1,18 +1,12 @@
 import React from 'react';
 import './searchBar.scss';
-import { ReactComponent as IconSearch} from 'assets/icon/icon-search.svg'
-import {Copy} from 'utilities/copy'
-import {Color} from 'assets/color'
 
-export default function SearchBar() {
+export default function SearchBar(props) {
     return (
         <div className="search-container">
             <input className="search-input" type="search" 
-                placeholder={Copy.search + " " + Copy.company + "..."} 
+                placeholder={props.text} 
             />
-            <div className="search-icon">
-                <IconSearch fill={Color.midGrey}/>
-            </div>
         </div> 
     );
 }

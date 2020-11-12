@@ -5,9 +5,9 @@
     margin-right: 10px;
 
     .filterbutton-button {
-        border: 0px solid $white;
+        border: 1px solid $grey;
         padding: 12px;
-        background-color: $light-grey;
+        background-color: $white;
     }
     
     .filterbutton-button:hover {
@@ -30,7 +30,7 @@
     
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1000px) {
 
 .filterbutton-container {
     flex-direction: column;

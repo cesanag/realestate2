@@ -1,15 +1,26 @@
 @import  '../../globalStyles/variables.scss';
 
+.leaflet-container {
+    right: 0;
+    width: 50vw;
+    height: 75vh;
+    
+  }
 
 .map-container {
-    display: flex;
-    width: 250px;
-    right:0;
-    transition: all .5s ease-in-out;
+    position: sticky;
+    top: 160px;
+    right: 0;
+    // width: 50%;
+    // height: 100vh;
+    // right: 0;
+   
 
     .map-img {
-        width: 250px;
+        position: sticky;
         object-fit: cover;
+        width: 100%;
+
     }
 
     &.is-hidden {
@@ -20,7 +31,7 @@
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1000px) {
 
     .map-container {
         display:none;

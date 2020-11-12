@@ -2,7 +2,7 @@ import React from 'react';
 import './panelOpen.scss';
 
 //import img0 from 'assets/image/img0.jpg'
-import { ReactComponent as IconImg } from 'assets/icon/icon-imgplaceholder.svg'
+import { ReactComponent as IconImg } from 'assets/icon/icon-imgplaceholdergrey.svg'
 import { ReactComponent as IconDimension } from 'assets/icon/icon-dimension.svg'
 import { ReactComponent as IconBathroom } from 'assets/icon/icon-bathroom.svg'
 import { ReactComponent as IconRoom } from 'assets/icon/icon-room.svg'

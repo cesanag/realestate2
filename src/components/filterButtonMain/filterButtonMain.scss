@@ -4,39 +4,84 @@
     box-shadow: -8px 12px 26px -10px $black-opaque;
     padding: 25px;
     background-color: $white;
-
-    .filterbuttonmain-buttoncontainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        margin-top: 15px;
-    }
-
-    .filterbuttonmain-list-modal{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        position:absolute;
-        background-color: white;
-        margin-top: 1px;
-        border: none;
-        box-shadow: -8px 12px 26px -10px $black-opaque;
-    }
-
-
-    .is-hidden {
-        display: none;
-        opacity: 0;
-    }
-
-    .is-clicked {
-        color: black;
-        background-color: $cyan;
-        color: black;
-        fill:black;
-    }
-    .is-clicked > .filterbuttonmain-img {
-        fill: $mid-grey;
-    }
-
+    z-index: 999999;
 }
+.filterbuttonmain-buttoncontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.filterbuttonmain-list-modal{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position:absolute;
+    background-color: white;
+    margin-top: 1px;
+    border: none;
+    box-shadow: -8px 12px 26px -10px $black-opaque;
+    z-index: 99999;
+}
+
+
+.is-hidden {
+    display: none;
+    opacity: 0;
+}
+
+.is-clicked {
+    color: black;
+    background-color: $cyan;
+    color: black;
+    fill:black;
+}
+.is-clicked > .filterbuttonmain-img {
+    fill: $mid-grey;
+}
+
+svg {
+    display: flex;
+}
+
+.filterbuttonmain-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 23px 13px 23px;
+    background-color:$light-grey;
+    margin-right: 15px;
+    // border-radius: 10px;
+    font-weight: $semibold;
+    border: none;
+    width: 150px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+
+    .filterbuttonmain-img {
+        margin-right: 10px;
+        fill: $mid-grey;
+        transition: all .2s ease-in-out;
+
+    }
+}
+.filterbuttonmain-button:hover {
+
+    color: $mid-grey; 
+}
+
+.filterbuttonmain-button:hover > .filterbuttonmain-img{
+    fill: $mid-grey;
+}
+
+.filterbuttonmain-list-text {
+    cursor:pointer;
+    padding: 10px;
+}
+
+.filterbuttonmain-list-text:hover {
+    background-color: $cyan;
+    color: $black;
+}
+
+

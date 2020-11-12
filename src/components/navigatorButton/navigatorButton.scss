@@ -1,18 +1,41 @@
 @import  '../../globalStyles/variables.scss';
 
-
 .navigator-button {
     display: flex;
     align-self: center;
     justify-content: center;
-    margin: 15px 15px 15px 0;
-    padding: 0 10px 0 10px;
+    margin-right: 15px;
+    color: $green;
+    background-color: $white;
+    border: 2px solid $green;
+    font-weight: $bold;
 }
 
-.navigator-button:hover {
-    color: white;
-    background-color: $green;
+.button-green {
+    color: $green;
+    background-color: $white;
+    border: 2px solid $green;
+    fill: $green;
 }
+
+// .button-green:hover {
+//     color: $white;
+//     background-color: $cyan;
+//     fill: $white;
+// }
+
+.button-red {
+    color: $white;
+    background-color: $red;
+    border: 2px solid $red;
+    fill: $red;
+}
+
+// .button-red:hover {
+//     color: $red;
+//     background-color: $white;
+//     border: 2px solid $red;
+// }
 
 .navigator-img {
     display: flex;
@@ -24,17 +47,18 @@
     fill: $white;
 }
 
-.back-button {
-    color: $green;
-    background-color: white;
-    border: 2px solid $green;
-    font-weight: $bold;
-}
-
-
 .navigator-text {
     display: flex;
     padding: 15px;
 }
 
+
+
+
+@media screen and (max-width: 1000px) {
+    .navigator-button {
+        margin:0;
+        align-self: auto;
+    }
+}
 

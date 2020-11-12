@@ -1,28 +1,21 @@
 @import  '../../globalStyles/variables.scss';
 
-.listing-container {
-    display: flex;
-}
 .listing-name {
     font-weight: $bold;
 }
 
 .listing-input {
-    
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-right: 50px;
-
 }
 
 .input {
     padding: 1vmax;
     margin: 5px;
     border-radius: 10px;
-    border: 1px solid $grey;
+    border: 1px solid $black;
     width: 20rem;
-    background-color: $cyan;
 }
 
 

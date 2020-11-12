@@ -6,11 +6,12 @@
     box-shadow: -8px 12px 26px -10px $black-opaque;
     flex-direction: row;
     background-color: white;
+    margin: 25px;
 }
 
 .panelclose-preview:empty:before{
     content:attr(panel-sample-text);
-    color: $dark-cyan;
+    color: $grey;
 }
 
 .panelclose-left{
@@ -21,8 +22,7 @@
 }
 
 .panelclose-img {
-    background: $cyan $imgplaceholder no-repeat center;
-    
+    background: $light-light-grey $imgplaceholdergrey no-repeat center;
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -132,7 +132,7 @@
     
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
     .panelclose {
       flex-direction: column;
       width: 300px;
@@ -153,11 +153,6 @@
     .panelclose-property-description {
         display: none;
   }
-
-  
-
-
-
 }
 
 

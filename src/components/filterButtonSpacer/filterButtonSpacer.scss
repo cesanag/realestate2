@@ -3,13 +3,13 @@
 
 .filterbuttonspacer-container {
     display: flex;
-    width: 2px;
-    background-color: $light-grey;
+    width: 1px;
+    background-color: $grey;
     margin-left: 15px;
     margin-right: 25px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1000px) {
 
 .filterbuttonspacer-container {
     display: none;

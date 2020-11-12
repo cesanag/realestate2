@@ -1,5 +1,5 @@
 import React from 'react';
-import './panelClose.scss';
+import './panelCloseBackend.scss';
 //import img0 from 'assets/image/img0.jpg'
 import {Copy} from 'utilities/copy';
 import ImgUploader from 'components/panelImgUploader/panelImgUploader'
@@ -134,10 +134,7 @@ export default function PanelClose(props) {
                                 </div>
                             </div>
                         </div>
-                        <div panel-sample-text={Copy.sampleDescription} 
-                            className="panelclose-property-description panelclose-preview">
-                                {props.description}
-                        </div>
+
                     </div>
                 </div>
             </div>

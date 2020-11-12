@@ -2,21 +2,23 @@
 import React, { useState } from 'react';
 
 //Import Style
-import './appBackend.scss';
+import './backendNew.scss';
 
 //Import ReusableComponents
 import Header from 'components/header/header';
 import Navigator from 'components/navigator/navigator';
+import NavigatorButton from 'components/navigatorButton/navigatorButton'
 import PanelClose from 'components/panelClose/panelCloseBackend';
 import PanelOpen from 'components/panelOpen/panelOpen';
 import Listing from 'components/listing/listing'
 import ImgModal from 'components/imgModal/imgModal'
 
+//Import Icon
+import { ReactComponent as IconLeftArrow } from 'assets/icon/icon-arrowleft.svg'
 
 //Import Copy
-import { Copy } from 'utilities/copy'
 
-export default function AppBackend() {
+export default function BackendNew() {
 
   //Set Modal State
   const [isModalHidden, setIsModalHidden] = useState(true);
@@ -84,11 +86,21 @@ export default function AppBackend() {
           onModalClick={handleModalClick}/>
         <div className="section-header">
           <Header />
-          <Navigator />
+          <Navigator>
+            <NavigatorButton
+                  class="navigator-button button-green"
+                  icon={<IconLeftArrow/>}
+                  buttonText= "Indietro"
+              />
+              <NavigatorButton
+                  class="navigator-button button-red"
+                  buttonText= "Salva"
+              />
+          </Navigator>
           
         </div>
         <div className="section-main">
-
+              <div className="listing-container">
                 <Listing 
                   onChangeAddress={handleInputAddress}
                   onChangeHouseNumber={handleInputHouseNumber}
@@ -101,35 +113,35 @@ export default function AppBackend() {
                   onChangeDimension={handleInputDimension}
                   onChangeDescription={handleInputDescription}
                 />
-                
-                <div className="panel-container">
-                  <PanelClose 
-                    address={inputAddress}
-                    houseNumber={inputHouseNumber}
-                    zip={inputZip}
-                    city={inputCity}
-                    province={inputProvince}
-                    price={inputPrice}
-                    room={inputRoom}
-                    bathroom={inputBathroom}
-                    dimension={inputDimension}
-                    description={inputDescription}
-                    onModalClick={handleModalClick}
-                    />
-                  <PanelOpen 
-                    address={inputAddress}
-                    houseNumber={inputHouseNumber}
-                    zip={inputZip}
-                    city={inputCity}
-                    province={inputProvince}
-                    price={inputPrice}
-                    room={inputRoom}
-                    bathroom={inputBathroom}
-                    dimension={inputDimension}
-                    description={inputDescription}
-                    onModalClick={handleModalClick}
-                    />
-                  </div>
+              </div>  
+              <div className="panel-container">
+                <PanelClose 
+                  address={inputAddress}
+                  houseNumber={inputHouseNumber}
+                  zip={inputZip}
+                  city={inputCity}
+                  province={inputProvince}
+                  price={inputPrice}
+                  room={inputRoom}
+                  bathroom={inputBathroom}
+                  dimension={inputDimension}
+                  description={inputDescription}
+                  onModalClick={handleModalClick}
+                  />
+                <PanelOpen 
+                  address={inputAddress}
+                  houseNumber={inputHouseNumber}
+                  zip={inputZip}
+                  city={inputCity}
+                  province={inputProvince}
+                  price={inputPrice}
+                  room={inputRoom}
+                  bathroom={inputBathroom}
+                  dimension={inputDimension}
+                  description={inputDescription}
+                  onModalClick={handleModalClick}
+                  />
+                </div>
         </div>
     </div>
   );
