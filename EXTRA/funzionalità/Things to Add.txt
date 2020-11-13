@@ -6,5 +6,23 @@ TO ADD
 
 TO FIX:
 
+chiamare le cose ESPLICITAMENTE
+function: handleHomeFilterClick
+Copy: homeFilterButton, officeFilterButton
+state: isHomeFilterEnabled setIsHomeFilterEnabled
+se è boolean: is...
+se è array/lista: propertyList
+
+[{text: 'casa', onClickHandler: () => {}, isToggled: false},{…},{…}]
+<typeFilters filtersState= [oggetto Sopra]>
+array.map(filterState => <filterButton>)}
+
+sistemare colors con sistema ale => usare background url() e content (placeholder)
+backgroundImage: 'svgPath';content: '[]',::before , ::after
+
+per TypeButton:
+name: "isHomeFilterOn, isOfficeFilterOn
+
+
 
 
