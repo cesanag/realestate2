@@ -10,7 +10,7 @@
 
 .panelclose-preview:empty:before{
     content:attr(panel-sample-text);
-    color: $dark-cyan;
+    color: $grey;
 }
 
 .panelclose-left{
@@ -21,7 +21,7 @@
 }
 
 .panelclose-img {
-    background: $cyan $imgplaceholdercyan no-repeat center;
+    background: $light-grey $imgplaceholdergrey no-repeat center;
     
     width: 300px;
     height: 300px;

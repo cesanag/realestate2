@@ -27,9 +27,3 @@ body {
 .is-clicked {
   background-color: $cyan;
 }
-
-@media only screen and (max-width: 1000px) {
-  .Map-Container {
-    display: none;
-  }
-}
