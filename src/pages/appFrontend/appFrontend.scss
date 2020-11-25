@@ -20,6 +20,13 @@ body {
   justify-self: center;
 }
 
+.panelclose {
+  display: flex;
+  flex-direction: column;
+  flex: 0.6;
+  
+}
+
 .is-hidden {
   display: none;
 }

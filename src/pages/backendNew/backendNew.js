@@ -67,18 +67,6 @@ export default function BackendNew() {
     setInputDescription(newInputDescription)
   }
 
-  //IDEAL: add property to propertiesList State
-    //user fills up form to add property
-    //user clicks 'submit property'
-    //api call is made with property data as parameters
-    //backend receives data from api call
-    //backend validates data against requirements
-    //backend adds property to properties list
-
-  //DEMO PATH
-  //modify inputs so that street number and street name are separate
-  //on click, array.push(data) on propertiesList.listaImmobili
-
   return (
     <div>
         <ImgModal 
@@ -101,7 +89,7 @@ export default function BackendNew() {
         </div>
         <div className="section-main">
               <div className="listing-container">
-                <Listing 
+                <Listing
                   onChangeAddress={handleInputAddress}
                   onChangeHouseNumber={handleInputHouseNumber}
                   onChangeCity={handleInputCity}
