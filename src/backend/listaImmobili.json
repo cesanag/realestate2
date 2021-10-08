@@ -3,15 +3,15 @@
    "listaImmobili": [
         {
             "number": "20",
-            "street": "Cesana e Villa",
-            "city": "Biassono",
-            "postCode": "20853"
+            "street": "Roma",
+            "city": "Milano",
+            "postCode": "20345"
         },
         {
             "number": "23",
-            "street": "Cesana e Villa",
-            "city": "Biassono",
-            "postCode": "20853"
+            "street": "Romula",
+            "city": "Roma",
+            "postCode": "20233"
         }
     ]
 }
